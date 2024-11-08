@@ -1,31 +1,31 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 112" itemID="672e9200-00000039" lastModified="1731015698">
-  <timeline>
-    <DOMTimeline name="Symbol 112">
-      <layers>
-        <DOMLayer name="Layer 1" color="#E09079" current="true" isSelected="true">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMShape isFloating="true">
-                  <strokes>
-                    <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal" weight="2">
-                        <fill>
-                          <SolidColor color="#B7B7B7"/>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
-                  </strokes>
-                  <edges>
-                    <Edge strokeStyle="1" edges="!2539 0[2539 712 2199 1283!2199 1283[2050 1532 1836 1754!1836 1754|1796 1795!1796 1795[1052 2539 0 2539!0 2539[-1052 2539 -1795 1795!-1795 1795[-2539 1052 -2539 0!-2539 0[-2539 -861 -2041 -1515!-2041 -1515[-1930 -1661 -1795 -1796!-1795
- -1796[-1606 -1985 -1397 -2126!-1397 -2126[-784 -2539 0 -2539!0 -2539[1052 -2539 1796 -1796!1796 -1796[2539 -1052 2539 0"/>
-                  </edges>
-                </DOMShape>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-      </layers>
-    </DOMTimeline>
-  </timeline>
+	<timeline>
+		<DOMTimeline name="Symbol 112">
+			<layers>
+				<DOMLayer name="Layer 1" color="#E09079" current="true" isSelected="true">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements>
+								<DOMShape isFloating="true">
+									<strokes>
+										<StrokeStyle index="1">
+											<SolidStroke scaleMode="normal" weight="2">
+												<fill>
+													<SolidColor color="#B7B7B7" />
+												</fill>
+											</SolidStroke>
+										</StrokeStyle>
+									</strokes>
+									<edges>
+										<Edge strokeStyle="1" edges="!2539 0[2539 712 2199 1283!2199 1283[2050 1532 1836 1754!1836 1754|1796 1795!1796 1795[1052 2539 0 2539!0 2539[-1052 2539 -1795 1795!-1795 1795[-2539 1052 -2539 0!-2539 0[-2539 -861 -2041 -1515!-2041 -1515[-1930 -1661 -1795 -1796!-1795
+ -1796[-1606 -1985 -1397 -2126!-1397 -2126[-784 -2539 0 -2539!0 -2539[1052 -2539 1796 -1796!1796 -1796[2539 -1052 2539 0" />
+									</edges>
+								</DOMShape>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
 </DOMSymbolItem>

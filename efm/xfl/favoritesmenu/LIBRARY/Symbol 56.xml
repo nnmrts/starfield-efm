@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 56" itemID="672e9200-00000028" symbolType="graphic" lastModified="1731015698">
+  <timeline>
+    <DOMTimeline name="Symbol 56">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#B7B7B7"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!302 -800|102 -599!102 -599[280 -337 280 0!280 0[280 337 101 600!101 600|302 800!302 800|1629 800!1629 800[1750 425 1750 0!1750 0[1750 -425 1629 -800!1629 -800|302 -800"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#707070"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!102 -599|0 -726!0 -726|0 -1102!0 -1102[84 -1039 162 -961!162 -961[239 -884 302 -800!302 -800|102 -599!302 800|302 801!302 801[239 885 162 962!162 962[84 1040 0 1103!0 1103|0 727!0 727[56 665 101 600!101 600|302 800"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

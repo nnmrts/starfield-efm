@@ -1,0 +1,97 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Macintosh" versionInfo="Saved by Animate Macintosh 24.0 build 40" majorVersion="24" buildNumber="40" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="E2F070341A014B84A3090FD78AC9A1E5">
+     <symbols>
+          <Include href="Symbol 1.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000001" lastModified="1731015698"/>
+          <Include href="Symbol 3.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000002" lastModified="1731015698"/>
+          <Include href="Symbol 4.xml" itemID="672e9200-00000003" lastModified="1731015698"/>
+          <Include href="Symbol 6.xml" itemID="672e9200-00000004" lastModified="1731015698"/>
+          <Include href="Symbol 8.xml" itemID="672e9200-00000005" lastModified="1731015698"/>
+          <Include href="Symbol 9.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000006" lastModified="1731015698"/>
+          <Include href="Symbol 10.xml" itemID="672e9200-00000007" lastModified="1731015698"/>
+          <Include href="Symbol 11.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000008" lastModified="1731015698"/>
+          <Include href="Symbol 12.xml" itemID="672e9200-00000009" lastModified="1731015698"/>
+          <Include href="Symbol 14.xml" itemID="672e9200-0000000a" lastModified="1731015698"/>
+          <Include href="Symbol 15.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000000b" lastModified="1731015698"/>
+          <Include href="Symbol 16.xml" itemID="672e9200-0000000c" lastModified="1731015698"/>
+          <Include href="Symbol 17.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000000d" lastModified="1731015698"/>
+          <Include href="Symbol 18.xml" itemID="672e9200-0000000e" lastModified="1731015698"/>
+          <Include href="Symbol 20.xml" itemID="672e9200-0000000f" lastModified="1731015698"/>
+          <Include href="Symbol 22.xml" itemID="672e9200-00000010" lastModified="1731015698"/>
+          <Include href="Symbol 24.xml" itemID="672e9200-00000011" lastModified="1731015698"/>
+          <Include href="Symbol 26.xml" itemID="672e9200-00000012" lastModified="1731015698"/>
+          <Include href="Symbol 28.xml" loadImmediate="false" itemID="672e9200-00000013" lastModified="1731015698"/>
+          <Include href="Symbol 30.xml" loadImmediate="false" itemID="672e9200-00000014" lastModified="1731015698"/>
+          <Include href="Symbol 32.xml" loadImmediate="false" itemID="672e9200-00000015" lastModified="1731015698"/>
+          <Include href="Symbol 34.xml" loadImmediate="false" itemID="672e9200-00000016" lastModified="1731015698"/>
+          <Include href="Symbol 35.xml" loadImmediate="false" itemID="672e9200-00000017" lastModified="1731015698"/>
+          <Include href="Symbol 36.xml" itemID="672e9200-00000018" lastModified="1731015698"/>
+          <Include href="Symbol 37.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000019" lastModified="1731015698"/>
+          <Include href="Symbol 38.xml" loadImmediate="false" itemID="672e9200-0000001a" lastModified="1731015698"/>
+          <Include href="Symbol 40.xml" loadImmediate="false" itemID="672e9200-0000001b" lastModified="1731015698"/>
+          <Include href="Symbol 41.xml" itemID="672e9200-0000001c" lastModified="1731015698"/>
+          <Include href="Symbol 42.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000001d" lastModified="1731015698"/>
+          <Include href="Symbol 43.xml" loadImmediate="false" itemID="672e9200-0000001e" lastModified="1731015698"/>
+          <Include href="Symbol 45.xml" loadImmediate="false" itemID="672e9200-0000001f" lastModified="1731015698"/>
+          <Include href="Symbol 46.xml" itemID="672e9200-00000020" lastModified="1731015698"/>
+          <Include href="Symbol 47.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000021" lastModified="1731015698"/>
+          <Include href="Symbol 48.xml" loadImmediate="false" itemID="672e9200-00000022" lastModified="1731015698"/>
+          <Include href="Symbol 49.xml" loadImmediate="false" itemID="672e9200-00000023" lastModified="1731015698"/>
+          <Include href="Symbol 51.xml" itemID="672e9200-00000024" lastModified="1731015698"/>
+          <Include href="Symbol 52.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000025" lastModified="1731015698"/>
+          <Include href="Symbol 53.xml" loadImmediate="false" itemID="672e9200-00000026" lastModified="1731015698"/>
+          <Include href="Symbol 55.xml" itemID="672e9200-00000027" lastModified="1731015698"/>
+          <Include href="Symbol 56.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000028" lastModified="1731015698"/>
+          <Include href="Symbol 57.xml" loadImmediate="false" itemID="672e9200-00000029" lastModified="1731015698"/>
+          <Include href="Symbol 59.xml" itemID="672e9200-0000002a" lastModified="1731015698"/>
+          <Include href="Symbol 64.xml" itemID="672e9200-0000002b" lastModified="1731015698"/>
+          <Include href="Symbol 69.xml" itemID="672e9200-0000002c" lastModified="1731015698"/>
+          <Include href="Symbol 74.xml" itemID="672e9200-0000002d" lastModified="1731015698"/>
+          <Include href="Symbol 79.xml" itemID="672e9200-0000002e" lastModified="1731015698"/>
+          <Include href="Symbol 84.xml" itemID="672e9200-0000002f" lastModified="1731015698"/>
+          <Include href="Symbol 89.xml" itemID="672e9200-00000030" lastModified="1731015698"/>
+          <Include href="Symbol 94.xml" itemID="672e9200-00000031" lastModified="1731015698"/>
+          <Include href="Symbol 99.xml" itemID="672e9200-00000032" lastModified="1731015698"/>
+          <Include href="Symbol 101.xml" loadImmediate="false" itemID="672e9200-00000033" lastModified="1731015698"/>
+          <Include href="Symbol 103.xml" loadImmediate="false" itemID="672e9200-00000034" lastModified="1731015698"/>
+          <Include href="Symbol 104.xml" itemID="672e9200-00000035" lastModified="1731015698"/>
+          <Include href="Symbol 106.xml" loadImmediate="false" itemID="672e9200-00000036" lastModified="1731015698"/>
+          <Include href="Symbol 108.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000037" lastModified="1731015698"/>
+          <Include href="Symbol 110.xml" itemID="672e9200-00000038" lastModified="1731015698"/>
+          <Include href="Symbol 112.xml" loadImmediate="false" itemID="672e9200-00000039" lastModified="1731015698"/>
+          <Include href="Symbol 114.xml" loadImmediate="false" itemID="672e9200-0000003a" lastModified="1731015698"/>
+          <Include href="Symbol 116.xml" loadImmediate="false" itemID="672e9200-0000003b" lastModified="1731015698"/>
+          <Include href="Symbol 117.xml" itemID="672e9200-0000003c" lastModified="1731108256"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#617CC4" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 117" name="Menu_mc" selected="true" centerPoint3DX="2888.2" centerPoint3DY="1140">
+                                             <matrix>
+                                                  <Matrix tx="960" ty="540"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings platform="macintosh"/>
+     <publishHistory>
+          <PublishItem publishSize="44148" publishTime="1731106803"/>
+          <PublishItem publishSize="44231" publishTime="1731106769"/>
+          <PublishItem publishSize="44229" publishTime="1731106699"/>
+          <PublishItem publishSize="44191" publishTime="1731106622"/>
+          <PublishItem publishSize="44190" publishTime="1731106329"/>
+          <PublishItem publishSize="44187" publishTime="1731105610"/>
+          <PublishItem publishSize="44147" publishTime="1731105585"/>
+     </publishHistory>
+</DOMDocument>

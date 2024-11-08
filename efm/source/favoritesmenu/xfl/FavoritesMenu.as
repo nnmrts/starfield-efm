@@ -8,7 +8,10 @@ package
    import Shared.GlobalFunc;
    import flash.display.MovieClip;
    import flash.events.Event;
+   import flash.events.IOErrorEvent;
    import flash.events.KeyboardEvent;
+   import flash.events.SecurityErrorEvent;
+   import flash.net.*;
    import flash.ui.Keyboard;
    
    public class FavoritesMenu extends IMenu
@@ -95,8 +98,31 @@ package
       
       private const _RightDirectory:Array = [FS_LEFT_2,FS_LEFT_1,FS_RIGHT_1,FS_RIGHT_2,FS_RIGHT_3,FS_RIGHT_3,FS_RIGHT_1,FS_RIGHT_1,FS_RIGHT_1,FS_RIGHT_1,FS_RIGHT_1,FS_RIGHT_1,FS_RIGHT_1];
       
+      private var bInstantAnimation:uint;
+      
+      private var bWASDControls:uint;
+      
+      private var source:String = "FasterFavoritesMenu.ini";
+      
+      private var loader:URLLoader;
+      
+      public var lines:Array;
+      
       public function FavoritesMenu()
       {
+         this.loader = new URLLoader();
+         this.loader.addEventListener(Event.COMPLETE,INIReader,false,0,true);
+         this.loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR,securityErrorHandler);
+         this.loader.addEventListener(IOErrorEvent.IO_ERROR,ioErrorHandler);
+         request = new URLRequest(this.source);
+         try
+         {
+            this.loader.load(request);
+         }
+         catch(error:Error)
+         {
+            this.INIDefault();
+         }
          super();
          addEventListener(KeyboardEvent.KEY_DOWN,this.onKeyDownHandler);
          addEventListener(KeyboardEvent.KEY_UP,this.onKeyUpHandler);
@@ -106,6 +132,85 @@ package
          BSUIDataManager.Subscribe("FavoritesData",this.onDataUpdate);
          this.AssignedItemIcon_mc.mouseEnabled = false;
          this.AssignedItemIcon_mc.mouseChildren = false;
+      }
+      
+      private function INIReader(event:Event) : void
+      {
+         var loaderText:URLLoader = URLLoader(event.target);
+         var rawData:String = loaderText.data;
+         lines = rawData.split(/\r\n|\r|\n/);
+         for each(var line in lines)
+         {
+            line = line.replace(/^\s+|\s+$/g,"");
+            if(line.length > 0)
+            {
+               if(line.indexOf("#") != 0 && line.indexOf(";") != 0 && line.charAt(0) != "[")
+               {
+                  var parts:Array = line.split("=");
+                  if(parts.length == 2)
+                  {
+                     var key:String = String(parts[0].replace(/^\s+|\s+$/g,""));
+                     var value:String = String(parts[1].replace(/^\s+|\s+$/g,""));
+                     if(key.length > 0)
+                     {
+                        if(key.match(/^iBackgroundAlpha$/))
+                        {
+                           if(int(value) < 0)
+                           {
+                              this.Vignette_mc.alpha = 0;
+                           }
+                           else if(int(value) < 100)
+                           {
+                              this.Vignette_mc.alpha = int(value) / 100;
+                           }
+                        }
+                        else if(key.match(/^bInstantAnimation$/))
+                        {
+                           if(int(value) == 1)
+                           {
+                              this.bInstantAnimation = 1;
+                              if(currentFrame < 4)
+                              {
+                                 gotoAndStop(4);
+                              }
+                           }
+                           else
+                           {
+                              this.bInstantAnimation = 0;
+                           }
+                        }
+                        else if(key.match(/^bWASDControls$/))
+                        {
+                           if(int(value) == 1)
+                           {
+                              this.bWASDControls = 1;
+                           }
+                           else
+                           {
+                              this.bWASDControls = 0;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      
+      private function ioErrorHandler(event:IOErrorEvent) : void
+      {
+         this.INIDefault();
+      }
+      
+      private function securityErrorHandler(event:SecurityErrorEvent) : void
+      {
+         this.INIDefault();
+      }
+      
+      private function INIDefault() : *
+      {
+         this.bInstantAnimation = 0;
+         this.bWASDControls = 0;
       }
       
       override public function onAddedToStage() : void
@@ -274,7 +379,14 @@ package
       
       private function StartClosingMenu() : void
       {
-         gotoAndPlay("Close");
+         if(this.bInstantAnimation == 1)
+         {
+            gotoAndPlay("QuickClose");
+         }
+         else
+         {
+            gotoAndPlay("Close");
+         }
          addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE,this.onCloseAnimFinished);
       }
       
@@ -306,6 +418,23 @@ package
             case Keyboard.RIGHT:
                this.selectedIndex = this._RightDirectory[this.selectedIndex];
          }
+         if(this.bWASDControls == 1)
+         {
+            switch(param1.keyCode)
+            {
+               case Keyboard.W:
+                  this.selectedIndex = this._UpDirectory[this.selectedIndex];
+                  break;
+               case Keyboard.S:
+                  this.selectedIndex = this._DownDirectory[this.selectedIndex];
+                  break;
+               case Keyboard.A:
+                  this.selectedIndex = this._LeftDirectory[this.selectedIndex];
+                  break;
+               case Keyboard.D:
+                  this.selectedIndex = this._RightDirectory[this.selectedIndex];
+            }
+         }
       }
       
       public function onKeyUpHandler(param1:KeyboardEvent) : *
@@ -317,6 +446,7 @@ package
                {
                   this.SelectItem();
                   param1.stopPropagation();
+                  break;
                }
          }
       }

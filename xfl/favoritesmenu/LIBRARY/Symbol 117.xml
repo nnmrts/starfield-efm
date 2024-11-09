@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 117" itemID="672e9200-0000003c" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731108256" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 117" itemID="672e9200-0000003c" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731129429" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="Symbol 117">
+    <DOMTimeline name="Symbol 117" currentFrame="18">
       <layers>
         <DOMLayer name="Labels Layer" color="#98CB21">
           <frames>
@@ -28,7 +28,8 @@
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script><![CDATA[stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -37,7 +38,9 @@
             </DOMFrame>
             <DOMFrame index="17" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));stop();]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
+stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -46,7 +49,9 @@
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));stop();]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
+stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -2064,6 +2069,163 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
+        <DOMLayer name="Layer 24" color="#E7F684" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" selected="true" centerPoint3DX="160.95" centerPoint3DY="-94.15">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_14" centerPoint3DX="160.95" centerPoint3DY="-94.1">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
         <DOMLayer name="Layer 20" color="#E7F684">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
@@ -2221,7 +2383,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 21" color="#FB4F9A">
+        <DOMLayer name="Layer 21" color="#FB4F9A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
@@ -2285,11 +2447,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 22" color="#4D73C0" current="true" isSelected="true">
+        <DOMLayer name="Layer 22" color="#4D73C0">
           <frames>
             <DOMFrame index="0" duration="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 104" name="SelectQuickslot_mc" selected="true" centerPoint3DX="175" centerPoint3DY="343" isVisible="false">
+                <DOMSymbolInstance libraryItemName="Symbol 104" name="SelectQuickslot_mc" centerPoint3DX="175" centerPoint3DY="343" isVisible="false">
                   <matrix>
                     <Matrix ty="330"/>
                   </matrix>

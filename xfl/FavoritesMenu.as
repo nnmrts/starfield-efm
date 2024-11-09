@@ -1,6 +1,5 @@
 package
 {
-	import System.Diagnostics.*;
 	import Components.ImageFixture;
 	import Shared.AS3.Data.BSUIDataManager;
 	import Shared.AS3.Data.FromClientDataEvent;
@@ -112,177 +111,246 @@ package
 		public function FavoritesMenu()
 		{
 			super();
-			addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDownHandler);
-			addEventListener(KeyboardEvent.KEY_UP, this.onKeyUpHandler);
-			addEventListener(FavoritesEntry.CLICK, this.SelectItem);
-			addEventListener(FavoritesEntry.MOUSE_OVER, this.onFavEntryMouseover);
-			addEventListener(FavoritesEntry.MOUSE_LEAVE, this.onFavEntryMouseleave);
-			BSUIDataManager.Subscribe("FavoritesData", this.onDataUpdate);
-			this.AssignedItemIcon_mc.mouseEnabled = false;
-			this.AssignedItemIcon_mc.mouseChildren = false;
-
-			// Utility.TraceObject(FavoritesInfoA);
+			try
+			{
+				addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDownHandler);
+				addEventListener(KeyboardEvent.KEY_UP, this.onKeyUpHandler);
+				addEventListener(FavoritesEntry.CLICK, this.SelectItem);
+				addEventListener(FavoritesEntry.MOUSE_OVER, this.onFavEntryMouseover);
+				addEventListener(FavoritesEntry.MOUSE_LEAVE, this.onFavEntryMouseleave);
+				BSUIDataManager.Subscribe("FavoritesData", this.onDataUpdate);
+				this.AssignedItemIcon_mc.mouseEnabled = false;
+				this.AssignedItemIcon_mc.mouseChildren = false;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu constructor TRACE ---------");
+				trace(e.getStackTrace());
+			}
 		}
 
 		override public function onAddedToStage():void
 		{
 			super.onAddedToStage();
-			stage.focus = this;
+			try
+			{
+				stage.focus = this;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onAddedToStage TRACE ---------");
+				trace(e.getStackTrace());
+			}
 		}
 
 		private function onDataUpdate(param1:FromClientDataEvent):void
 		{
-			// trace("BIG TRACE ---------");
-			// trace(getTimer());
-			// try
-			// {
-			// Utility.TraceObject(param1);
-			// Utility.TraceObject(param1.toString());
-			// Utility.TraceObject(param1.data);
-			// Utility.TraceObject(param1.data.aFavoriteItems);
-			// }
-			// catch (e:Error)
-			// {
-			// trace(e.getStackTrace());
-			// }
-
-			trace("FavoritesMenu.onDataUpdate TRACE ---------");
-
 			try
 			{
+				var index:uint = 0;
 				var _loc3_:Object = null;
 				var _loc4_:FavoritesEntry = null;
+
 				this.FavoritesInfoA = param1.data.aFavoriteItems;
 				if (!this.IsDataInitialized)
 				{
 					this.assignedItem = param1.data.ItemToBeAssigned;
-					this.selectedIndex = param1.data.uStartingSelection;
+					this.selectedIndex = FS_NONE;
 					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
 				}
 				this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
 				this.SelectQuickslot_mc.gotoAndPlay(this.SelectQuickslot_mc.visible ? "Open" : "Close");
 				this.AssignedItemIcon_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
 				this.AssignedItemIcon_mc.gotoAndPlay(this.AssignedItemIcon_mc.visible ? "Open" : "Close");
-				var _loc2_:uint = 0;
+
+				while (this.FavoritesInfoA != null && index < this.FavoritesInfoA.length)
+				{
+					_loc3_ = this.FavoritesInfoA[index];
+					_loc4_ = this.GetEntryClip(index);
+					if (_loc4_ != null)
+					{
+						_loc4_.LoadIcon(_loc3_);
+					}
+					index++;
+				}
+				this.IsDataInitialized = true;
 			}
 			catch (e:Error)
 			{
+				trace("FavoritesMenu.onDataUpdate TRACE ---------");
 				trace(e.getStackTrace());
+				GlobalFunc.InspectObject(param1, true, true);
 			}
-
-			trace("WHILE TRACE ---------");
-			while (this.FavoritesInfoA != null && _loc2_ < this.FavoritesInfoA.length)
-			{
-				trace("REACHED 1");
-				_loc3_ = this.FavoritesInfoA[_loc2_];
-				trace("REACHED 2");
-				_loc4_ = this.GetEntryClip(_loc2_);
-				trace("REACHED 3");
-				if (_loc4_ != null)
-				{
-					trace("REACHED 4");
-					_loc4_.LoadIcon(_loc3_);
-				}
-				trace("REACHED 5");
-				_loc2_++;
-			}
-			this.IsDataInitialized = true;
 		}
 
 		public function isAssigningItem():Boolean
 		{
-			return this.AssignedItem != null && this.AssignedItem.sName.length != 0;
+			try
+			{
+				return this.AssignedItem != null && this.AssignedItem.sName.length != 0;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.isAssigningItem TRACE ---------");
+				trace(e.getStackTrace());
+				return false;
+			}
+
+			return false;
 		}
 
 		public function get assignedItem():Object
 		{
-			return this.AssignedItem;
+			try
+			{
+				return this.AssignedItem;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.get assignedItem TRACE ---------");
+				trace(e.getStackTrace());
+				return null;
+			}
+			return null;
 		}
 
 		public function set assignedItem(param1:Object):void
 		{
-			this.AssignedItem = param1;
-			if (this.isAssigningItem())
+			try
 			{
-				this.ItemInfo_mc.UpdateDisplay(this.AssignedItem);
-				if (this.AssignedItem.iconImage.iFixtureType == ImageFixture.FT_SYMBOL)
+				this.AssignedItem = param1;
+				if (this.isAssigningItem())
 				{
-					if (this.AssignedItem.bIsPower)
+					this.ItemInfo_mc.UpdateDisplay(this.AssignedItem);
+					if (this.AssignedItem.iconImage.iFixtureType == ImageFixture.FT_SYMBOL)
 					{
-						this.AssignedItemIcon_mc.clipSizer = "Sizer_mc";
+						if (this.AssignedItem.bIsPower)
+						{
+							this.AssignedItemIcon_mc.clipSizer = "Sizer_mc";
+						}
+						this.AssignedItemIcon_mc.centerClip = true;
 					}
-					this.AssignedItemIcon_mc.centerClip = true;
+					else
+					{
+						this.AssignedItemIcon_mc.clipSizer = "";
+						this.AssignedItemIcon_mc.centerClip = false;
+					}
+					this.AssignedItemIcon_mc.LoadImageFixtureFromUIData(this.AssignedItem.iconImage, "FavoritesIconBuffer");
+					this.ItemInfo_mc.visible = true;
 				}
-				else
-				{
-					this.AssignedItemIcon_mc.clipSizer = "";
-					this.AssignedItemIcon_mc.centerClip = false;
-				}
-				this.AssignedItemIcon_mc.LoadImageFixtureFromUIData(this.AssignedItem.iconImage, "FavoritesIconBuffer");
-				this.ItemInfo_mc.visible = true;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.set assignedItem TRACE ---------");
+				trace(e.getStackTrace());
 			}
 		}
 
 		public function get selectedIndex():uint
 		{
-			return this._SelectedIndex;
+			try
+			{
+				return this._SelectedIndex;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.get selectedIndex TRACE ---------");
+				trace(e.getStackTrace());
+				return FS_NONE;
+			}
+			return FS_NONE;
 		}
 
 		public function set selectedIndex(param1:uint):void
 		{
-			if (param1 != this._SelectedIndex)
+			try
 			{
-				if (this._SelectedIndex != FS_NONE)
+				if (param1 != this._SelectedIndex)
 				{
-					this.GetEntryClip(this._SelectedIndex).selected = false;
+					if (this._SelectedIndex != FS_NONE)
+					{
+						this.GetEntryClip(this._SelectedIndex).selected = false;
+					}
+					this._SelectedIndex = param1;
+					if (this._SelectedIndex != FS_NONE)
+					{
+						this.GetEntryClip(this._SelectedIndex).selected = true;
+					}
+					this.onSelectionChange();
+					GlobalFunc.PlayMenuSound(this.selectionSound);
 				}
-				this._SelectedIndex = param1;
-				if (this._SelectedIndex != FS_NONE)
-				{
-					this.GetEntryClip(this._SelectedIndex).selected = true;
-				}
-				this.onSelectionChange();
-				GlobalFunc.PlayMenuSound(this.selectionSound);
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.set selectedIndex TRACE ---------");
+				trace(e.getStackTrace());
 			}
 		}
 
 		public function get selectedEntry():Object
 		{
-			return this.FavoritesInfoA != null && this._SelectedIndex >= 0 && this._SelectedIndex < this.FavoritesInfoA.length ? this.FavoritesInfoA[this._SelectedIndex] : null;
+			try
+			{
+				return this.FavoritesInfoA != null && this._SelectedIndex >= 0 && this._SelectedIndex < this.FavoritesInfoA.length ? this.FavoritesInfoA[this._SelectedIndex] : null;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.get selectedEntry TRACE ---------");
+				trace(e.getStackTrace());
+				return null;
+			}
+			return null;
 		}
 
 		public function get selectionSound():String
 		{
 			var _loc1_:String = "";
-			switch (this.selectedIndex)
+			try
 			{
-				case FS_UP_1:
-				case FS_DOWN_1:
-				case FS_LEFT_1:
-				case FS_RIGHT_1:
-					_loc1_ = "UIMenuQuickUseFocusDpadA";
-					break;
-				case FS_UP_2:
-				case FS_DOWN_2:
-				case FS_LEFT_2:
-				case FS_RIGHT_2:
-					_loc1_ = "UIMenuQuickUseFocusDpadB";
-					break;
-				case FS_UP_3:
-				case FS_DOWN_3:
-				case FS_LEFT_3:
-				case FS_RIGHT_3:
-					_loc1_ = "UIMenuQuickUseFocusDpadC";
+				switch (this.selectedIndex)
+				{
+					case FS_UP_1:
+					case FS_DOWN_1:
+					case FS_LEFT_1:
+					case FS_RIGHT_1:
+						_loc1_ = "UIMenuQuickUseFocusDpadA";
+						break;
+					case FS_UP_2:
+					case FS_DOWN_2:
+					case FS_LEFT_2:
+					case FS_RIGHT_2:
+						_loc1_ = "UIMenuQuickUseFocusDpadB";
+						break;
+					case FS_UP_3:
+					case FS_DOWN_3:
+					case FS_LEFT_3:
+					case FS_RIGHT_3:
+						_loc1_ = "UIMenuQuickUseFocusDpadC";
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.get selectionSound TRACE ---------");
+				trace(e.getStackTrace());
 			}
 			return _loc1_;
 		}
 
 		public function GetEntryClip(param1:uint):FavoritesEntry
 		{
-			var _loc2_:FavoritesEntry = getChildByName("Entry_" + param1) as FavoritesEntry;
-			if (_loc2_ == null)
+			var _loc2_:FavoritesEntry = null;
+			try
 			{
-				GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + param1 + "'!");
+				_loc2_ = getChildByName("Entry_" + param1) as FavoritesEntry;
+				if (_loc2_ == null)
+				{
+					GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + param1 + "'!");
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.GetEntryClip TRACE ---------");
+				trace(e.getStackTrace());
 			}
 			return _loc2_;
 		}
@@ -291,93 +359,149 @@ package
 		{
 			var _loc4_:Number = NaN;
 			var _loc3_:Boolean = false;
-			if (!param2)
+			try
 			{
-				_loc3_ = true;
-				switch (param1)
+				if (!param2)
 				{
-					case "Cancel":
-					case "Quickkeys":
-					case "YButton":
-						this.StartClosingMenu();
-						_loc3_ = true;
-						break;
-					default:
-						_loc4_ = Number(param1.substr(8));
-						if (_loc4_ >= 1 && _loc4_ <= FS_NONE)
-						{
-							this.selectedIndex = _loc4_ - 1;
-							this.SelectItem();
-						}
-						else
-						{
-							_loc3_ = false;
-						}
+					_loc3_ = true;
+					switch (param1)
+					{
+						case "Cancel":
+						case "Quickkeys":
+						case "YButton":
+							this.StartClosingMenu();
+							_loc3_ = true;
+							break;
+						default:
+							_loc4_ = Number(param1.substr(8));
+							if (_loc4_ >= 1 && _loc4_ <= FS_NONE)
+							{
+								this.selectedIndex = _loc4_ - 1;
+								this.SelectItem();
+							}
+							else
+							{
+								_loc3_ = false;
+							}
+					}
 				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.ProcessUserEvent TRACE ---------");
+				trace(e.getStackTrace());
 			}
 			return _loc3_;
 		}
 
 		private function StartClosingMenu():void
 		{
-			gotoAndPlay("Close");
-			addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
+			try
+			{
+				gotoAndPlay("Close");
+				addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.StartClosingMenu TRACE ---------");
+				trace(e.getStackTrace());
+			}
 		}
 
 		private function onCloseAnimFinished():void
 		{
-			removeEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
-			GlobalFunc.CloseMenu("FavoritesMenu");
+			try
+			{
+				removeEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
+				GlobalFunc.CloseMenu("FavoritesMenu");
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onCloseAnimFinished TRACE ---------");
+				trace(e.getStackTrace());
+			}
 		}
 
 		private function onSelectionChange():void
 		{
-			this.ItemInfo_mc.UpdateDisplay(this.selectedEntry);
-			this.ItemInfo_mc.visible = true;
+			try
+			{
+				this.ItemInfo_mc.UpdateDisplay(this.selectedEntry);
+				this.ItemInfo_mc.visible = true;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onSelectionChange TRACE ---------");
+				trace(e.getStackTrace());
+			}
 		}
 
 		public function onKeyDownHandler(param1:KeyboardEvent):*
 		{
-			switch (param1.keyCode)
+			try
 			{
-				case Keyboard.UP:
-					this.selectedIndex = this._UpDirectory[this.selectedIndex];
-					break;
-				case Keyboard.DOWN:
-					this.selectedIndex = this._DownDirectory[this.selectedIndex];
-					break;
-				case Keyboard.LEFT:
-					this.selectedIndex = this._LeftDirectory[this.selectedIndex];
-					break;
-				case Keyboard.RIGHT:
-					this.selectedIndex = this._RightDirectory[this.selectedIndex];
+				switch (param1.keyCode)
+				{
+					case Keyboard.UP:
+						this.selectedIndex = this._UpDirectory[this.selectedIndex];
+						break;
+					case Keyboard.DOWN:
+						this.selectedIndex = this._DownDirectory[this.selectedIndex];
+						break;
+					case Keyboard.LEFT:
+						this.selectedIndex = this._LeftDirectory[this.selectedIndex];
+						break;
+					case Keyboard.RIGHT:
+						this.selectedIndex = this._RightDirectory[this.selectedIndex];
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onKeyDownHandler TRACE ---------");
+				trace(e.getStackTrace());
 			}
 		}
 
 		public function onKeyUpHandler(param1:KeyboardEvent):*
 		{
-			switch (param1.keyCode)
+			try
 			{
-				case Keyboard.ENTER:
-					if (this.selectedIndex != FS_NONE)
-					{
-						this.SelectItem();
-						param1.stopPropagation();
-					}
+				switch (param1.keyCode)
+				{
+					case Keyboard.ENTER:
+						if (this.selectedIndex != FS_NONE)
+						{
+							this.SelectItem();
+							param1.stopPropagation();
+						}
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onKeyUpHandler TRACE ---------");
+				trace(e.getStackTrace());
 			}
 		}
 
 		private function SelectItem():void
 		{
-			if (this.isAssigningItem())
+			try
 			{
-				BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_AssignQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
+				if (this.isAssigningItem())
+				{
+					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_AssignQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
+				}
+				else
+				{
+					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
+				}
+				this.StartClosingMenu();
 			}
-			else
+			catch (e:Error)
 			{
-				BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
+				trace("FavoritesMenu.SelectItem TRACE ---------");
+				trace(e.getStackTrace());
 			}
-			this.StartClosingMenu();
 		}
 
 		private function onFavEntryMouseover(param1:Event):void
@@ -389,41 +513,22 @@ package
 			}
 			catch (e:Error)
 			{
-				// trace("Error: " + e.message);
-				trace(e);
-				trace(e.message);
+				trace("FavoritesMenu.onFavEntryMouseover TRACE ---------");
 				trace(e.getStackTrace());
 			}
-
-			// this.FavoritesInfoA = Array(12)
-			// .map(function()
-			// {
-			// return {
-			// sName: "MockItem1",
-			// iconImage: {
-			// iFixtureType: ImageFixture.FT_SYMBOL,
-			// sImageName: "Meds",
-			// sDirectory: "Symbols"
-			// },
-			// bIsPower: false,
-			// bIsEquippable: true,
-			// bIsEquipped: false,
-			// uCount: 1,
-			// sAmmoName: "",
-			// uAmmoCount: 0,
-			// aElementalStats: {
-			// 0: {
-			// iElementalType: 0,
-			// fValue: 16
-			// }
-			// }
-			// };
-			// });
 		}
 
 		private function onFavEntryMouseleave(param1:Event):void
 		{
-			this.OverEntry = false;
+			try
+			{
+				this.OverEntry = false;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onFavEntryMouseleave TRACE ---------");
+				trace(e.getStackTrace());
+			}
 		}
 	}
 }

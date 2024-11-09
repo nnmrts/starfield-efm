@@ -38,7 +38,7 @@
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 103" name="Text_mc" centerPoint3DX="-6" centerPoint3DY="3">
+                <DOMSymbolInstance libraryItemName="Symbol 103" name="Text_mc" selected="true" centerPoint3DX="-6" centerPoint3DY="3">
                   <matrix>
                     <Matrix tx="-181" ty="-10"/>
                   </matrix>

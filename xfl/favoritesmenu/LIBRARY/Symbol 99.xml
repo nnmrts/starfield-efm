@@ -5,10 +5,10 @@
         <DOMLayer name="Labels Layer" color="#D5C17F">
           <frames>
             <DOMFrame index="0" name="Unselected" labelType="name" keyMode="9728">
-              <elements/>
+              <elements />
             </DOMFrame>
             <DOMFrame index="1" name="Selected" labelType="name" keyMode="9728">
-              <elements/>
+              <elements />
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -16,9 +16,11 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script>
+                  <![CDATA[stop(); ]]>
+                </script>
               </Actionscript>
-              <elements/>
+              <elements />
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -28,10 +30,10 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 45" name="SlotInfoSpacer_mc" centerPoint3DX="55.15" centerPoint3DY="-87.55">
                   <matrix>
-                    <Matrix tx="55.15" ty="-87.55"/>
+                    <Matrix tx="55.15" ty="-87.55" />
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point />
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -44,13 +46,15 @@
               <elements>
                 <DOMDynamicText name="Quickkey_tf" width="66" height="23.5" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-32.35" ty="-73.4"/>
+                    <Matrix tx="-32.35" ty="-73.4" />
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>7</characters>
+                      <characters>
+                        7
+                      </characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="23.5" size="20" bitmapSize="400" fillColor="#B7B7B7"/>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="23.5" size="20" bitmapSize="400" fillColor="#B7B7B7" face="$MAIN_Font_Bold*" />
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -65,10 +69,10 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 43" name="Catcher_mc" centerPoint3DY="-40">
                   <matrix>
-                    <Matrix tx="-37.5" ty="-72"/>
+                    <Matrix tx="-37.5" ty="-72" />
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point />
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -81,13 +85,13 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 41" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
                   <matrix>
-                    <Matrix a="0.75" d="0.75" ty="-40"/>
+                    <Matrix a="0.75" d="0.75" ty="-40" />
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point />
                   </transformationPoint>
                   <color>
-                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183"/>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183" />
                   </color>
                 </DOMSymbolInstance>
               </elements>
@@ -96,13 +100,13 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 41" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
                   <matrix>
-                    <Matrix a="0.75" d="0.75" ty="-40"/>
+                    <Matrix a="0.75" d="0.75" ty="-40" />
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point />
                   </transformationPoint>
                   <color>
-                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="54" blueOffset="54" greenOffset="54"/>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="54" blueOffset="54" greenOffset="54" />
                   </color>
                 </DOMSymbolInstance>
               </elements>
@@ -116,12 +120,12 @@
                 <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#B7B7B7" alpha="0.2"/>
+                      <SolidColor color="#B7B7B7" alpha="0.2" />
                     </FillStyle>
                   </fills>
                   <edges>
                     <Edge fillStyle0="1" edges="!15 -1607[-405 -1607 -802 -1552!-802 -1552[-811 -1551 -816 -1544!-816 -1544|-820 -1529!-820 -1529|-819 0!-819 0|-813 14!-813 14|-799 20!-799 20|-785 14!-785 14[-779 8 -779 0!-779 0|-780 -1514!-780 -1514[-393 -1567 15 -1567!15 -1567[407
- -1567 779 -1518!779 -1518|779 -6!779 -6[779 2 785 8!785 8|799 14!799 14|813 8!813 8|819 -6!819 -6|819 -1533!819 -1533|815 -1548!815 -1548|802 -1556!802 -1556[418 -1607 15 -1607"/>
+ -1567 779 -1518!779 -1518|779 -6!779 -6[779 2 785 8!785 8|799 14!799 14|813 8!813 8|819 -6!819 -6|819 -1533!819 -1533|815 -1548!815 -1548|802 -1556!802 -1556[418 -1607 15 -1607" />
                   </edges>
                 </DOMShape>
               </elements>
@@ -135,12 +139,12 @@
                 <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor alpha="0.6"/>
+                      <SolidColor alpha="0.6" />
                     </FillStyle>
                   </fills>
                   <edges>
                     <Edge fillStyle1="1" edges="
-!-800 -1532[-404 -1587 15 -1587!15 -1587[417 -1587 799 -1536!799 -1536|799 -6!799 -6[422 -77 15 -77!15 -77[-408 -77 -799 0!-799 0|-800 -1532"/>
+!-800 -1532[-404 -1587 15 -1587!15 -1587[417 -1587 799 -1536!799 -1536|799 -6!799 -6[422 -77 15 -77!15 -77[-408 -77 -799 0!-799 0|-800 -1532" />
                   </edges>
                 </DOMShape>
               </elements>
@@ -150,12 +154,12 @@
                 <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#B7B7B7"/>
+                      <SolidColor color="#B7B7B7" />
                     </FillStyle>
                   </fills>
                   <edges>
                     <Edge fillStyle1="1" edges="
-!-800 -1532[-404 -1587 15 -1587!15 -1587[417 -1587 799 -1536!799 -1536|799 -6!799 -6[422 -77 15 -77!15 -77[-408 -77 -799 0!-799 0|-800 -1532"/>
+!-800 -1532[-404 -1587 15 -1587!15 -1587[417 -1587 799 -1536!799 -1536|799 -6!799 -6[422 -77 15 -77!15 -77[-408 -77 -799 0!-799 0|-800 -1532" />
                   </edges>
                 </DOMShape>
               </elements>

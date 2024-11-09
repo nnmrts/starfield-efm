@@ -8,13 +8,15 @@
               <elements>
                 <DOMDynamicText name="text_tf" width="73.95" height="25.85" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="2" ty="2"/>
+                    <Matrix tx="2" ty="2" />
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>(000)</characters>
+                      <characters>
+                        (000)
+                      </characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="25.85" size="22" bitmapSize="440" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="25.85" size="22" bitmapSize="440" fillColor="#FFFFFF" face="$MAIN_Font_Bold*" />
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

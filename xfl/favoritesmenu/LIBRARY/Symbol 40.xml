@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 40" itemID="672e9200-0000001b" lastModified="1731015698">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 40" itemID="672e9200-0000001b" lastModified="1731128852">
   <timeline>
     <DOMTimeline name="Symbol 40">
       <layers>
@@ -6,14 +6,14 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape selected="true" isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#FFFFFF"/>
+                      <SolidColor color="#FFFFFF" alpha="0"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 0|1000 0!1000 0|1000 1000!1000 1000|0 1000!0 1000|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0S2|1000 0!1000 0|1000 1000!1000 1000|0 1000!0 1000|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

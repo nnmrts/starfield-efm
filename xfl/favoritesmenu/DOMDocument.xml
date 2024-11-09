@@ -1,6 +1,6 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Macintosh" versionInfo="Saved by Animate Macintosh 24.0 build 40" majorVersion="24" buildNumber="40" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="E2F070341A014B84A3090FD78AC9A1E5">
      <fonts>
-          <DOMFontItem name="$MAIN_Font_Bold" itemID="672ed191-00000042" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="$MAIN_Font_Bold" font="NB-Grotesk-R-Bold" size="0" id="1" sourceLastImported="1731121647" embedRanges="9999"/>
+          <DOMFontItem name="$MAIN_Font_Bold" itemID="672ed191-00000042" linkageExportForAS="true" linkageClassName="$MAIN_Font_Bold" font="NB-Architekt" size="0" id="1" sourceLastImported="1731124604" embedRanges="9999"/>
      </fonts>
      <symbols>
           <Include href="Symbol 1.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000001" lastModified="1731015698"/>
@@ -89,6 +89,7 @@
      <scripts/>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="72640" publishTime="1731122892"/>
           <PublishItem publishSize="44148" publishTime="1731106803"/>
           <PublishItem publishSize="44231" publishTime="1731106769"/>
           <PublishItem publishSize="44229" publishTime="1731106699"/>

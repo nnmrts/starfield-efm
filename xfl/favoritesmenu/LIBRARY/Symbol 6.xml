@@ -8,15 +8,13 @@
               <elements>
                 <DOMDynamicText name="text_tf" width="61.75" height="25.85" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="31.4" ty="3.25" />
+                    <Matrix tx="31.4" ty="3.25"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>
-                        000
-                      </characters>
+                      <characters>000</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="25.85" size="22" bitmapSize="440" fillColor="#FFFFFF" face="$MAIN_Font_Bold*" />
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="24.95" size="22" bitmapSize="440" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -31,10 +29,10 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 4" name="Icon_mc" centerPoint3DX="26.25" centerPoint3DY="17.65">
                   <matrix>
-                    <Matrix a="0.747955322265625" d="0.7467041015625" tx="11.2" ty="2.55" />
+                    <Matrix a="0.747955322265625" d="0.7467041015625" tx="11.2" ty="2.55"/>
                   </matrix>
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

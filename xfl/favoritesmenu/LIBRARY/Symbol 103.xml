@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText selected="true" width="346" height="22" isSelectable="false" lineType="multiline no wrap">
+                <DOMDynamicText width="346" height="22" isSelectable="false" lineType="multiline no wrap">
                   <matrix>
                     <Matrix tx="2" ty="2"/>
                   </matrix>
@@ -14,7 +14,7 @@
                     <DOMTextRun>
                       <characters>$SELECT A QUICKSLOT</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="14.1" bitmapSize="240" face="$MAIN_Font_Bold*" fillColor="#EDEDED"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="13.6" bitmapSize="240" face="$MAIN_Font_Bold*" fillColor="#EDEDED"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

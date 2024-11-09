@@ -5,10 +5,10 @@
         <DOMLayer name="Labels Layer" color="#8787CA">
           <frames>
             <DOMFrame index="0" name="Unselected" labelType="name" keyMode="9728">
-              <elements />
+              <elements/>
             </DOMFrame>
             <DOMFrame index="1" name="Selected" labelType="name" keyMode="9728">
-              <elements />
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -16,11 +16,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script>
-                  <![CDATA[stop(); ]]>
-                </script>
+                <script><![CDATA[                  stop();                 ]]></script>
               </Actionscript>
-              <elements />
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -30,10 +28,10 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 45" name="SlotInfoSpacer_mc" centerPoint3DX="55.15" centerPoint3DY="-87.55">
                   <matrix>
-                    <Matrix tx="55.15" ty="-87.55" />
+                    <Matrix tx="55.15" ty="-87.55"/>
                   </matrix>
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -46,15 +44,13 @@
               <elements>
                 <DOMDynamicText name="Quickkey_tf" width="66" height="23.5" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="-32.3" ty="-78.7" />
+                    <Matrix tx="-32.3" ty="-78.7"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>
-                        9
-                      </characters>
+                      <characters>9</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="23.5" size="20" bitmapSize="400" fillColor="#B7B7B7" face="$MAIN_Font_Bold*" />
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="22.65" size="20" bitmapSize="400" face="$MAIN_Font_Bold*" fillColor="#B7B7B7"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -69,10 +65,10 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 43" name="Catcher_mc" centerPoint3DX="-0.5" centerPoint3DY="-48">
                   <matrix>
-                    <Matrix tx="-38" ty="-80" />
+                    <Matrix tx="-38" ty="-80"/>
                   </matrix>
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -85,13 +81,13 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 41" name="Icon_mc" centerPoint3DX="50">
                   <matrix>
-                    <Matrix a="0.75" d="0.75" ty="-50" />
+                    <Matrix a="0.75" d="0.75" ty="-50"/>
                   </matrix>
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                   <color>
-                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183" />
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183"/>
                   </color>
                 </DOMSymbolInstance>
               </elements>
@@ -100,13 +96,13 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 41" name="Icon_mc" centerPoint3DX="50">
                   <matrix>
-                    <Matrix a="0.75" d="0.75" ty="-50" />
+                    <Matrix a="0.75" d="0.75" ty="-50"/>
                   </matrix>
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                   <color>
-                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="54" blueOffset="54" greenOffset="54" />
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="54" blueOffset="54" greenOffset="54"/>
                   </color>
                 </DOMSymbolInstance>
               </elements>
@@ -119,10 +115,10 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 38" centerPoint3DX="55.1" centerPoint3DY="43.75">
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                   <color>
-                    <Color alphaMultiplier="0" />
+                    <Color alphaMultiplier="0"/>
                   </color>
                 </DOMSymbolInstance>
               </elements>
@@ -131,7 +127,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 38" centerPoint3DX="55.1" centerPoint3DY="43.75">
                   <transformationPoint>
-                    <Point />
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

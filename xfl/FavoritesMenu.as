@@ -121,29 +121,6 @@ package
 			this.AssignedItemIcon_mc.mouseEnabled = false;
 			this.AssignedItemIcon_mc.mouseChildren = false;
 
-			// this.FavoritesInfoA = [
-			// {
-			// sName: "MockItem1",
-			// iconImage: {
-			// iFixtureType: ImageFixture.FT_SYMBOL,
-			// sImageName: "Meds",
-			// sDirectory: "Symbols"
-			// },
-			// bIsPower: false,
-			// bIsEquippable: true,
-			// bIsEquipped: false,
-			// uCount: 1,
-			// sAmmoName: "",
-			// uAmmoCount: 0,
-			// aElementalStats: {
-			// 0: {
-			// iElementalType: 0,
-			// fValue: 16
-			// }
-			// }
-			// },
-			// ];
-
 			// Utility.TraceObject(FavoritesInfoA);
 		}
 
@@ -155,42 +132,58 @@ package
 
 		private function onDataUpdate(param1:FromClientDataEvent):void
 		{
-			trace("BIG TRACE ---------");
-			trace(getTimer());
+			// trace("BIG TRACE ---------");
+			// trace(getTimer());
+			// try
+			// {
+			// Utility.TraceObject(param1);
+			// Utility.TraceObject(param1.toString());
+			// Utility.TraceObject(param1.data);
+			// Utility.TraceObject(param1.data.aFavoriteItems);
+			// }
+			// catch (e:Error)
+			// {
+			// trace(e.getStackTrace());
+			// }
+
+			trace("FavoritesMenu.onDataUpdate TRACE ---------");
+
 			try
 			{
-				Utility.TraceObject(param1);
-				Utility.TraceObject(param1.toString());
-				Utility.TraceObject(param1.data);
-				Utility.TraceObject(param1.data.aFavoriteItems);
+				var _loc3_:Object = null;
+				var _loc4_:FavoritesEntry = null;
+				this.FavoritesInfoA = param1.data.aFavoriteItems;
+				if (!this.IsDataInitialized)
+				{
+					this.assignedItem = param1.data.ItemToBeAssigned;
+					this.selectedIndex = param1.data.uStartingSelection;
+					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
+				}
+				this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
+				this.SelectQuickslot_mc.gotoAndPlay(this.SelectQuickslot_mc.visible ? "Open" : "Close");
+				this.AssignedItemIcon_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
+				this.AssignedItemIcon_mc.gotoAndPlay(this.AssignedItemIcon_mc.visible ? "Open" : "Close");
+				var _loc2_:uint = 0;
 			}
 			catch (e:Error)
 			{
 				trace(e.getStackTrace());
 			}
 
-			var _loc3_:Object = null;
-			var _loc4_:FavoritesEntry = null;
-			this.FavoritesInfoA = param1.data.aFavoriteItems;
-			if (!this.IsDataInitialized)
-			{
-				this.assignedItem = param1.data.ItemToBeAssigned;
-				this.selectedIndex = param1.data.uStartingSelection;
-				this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
-			}
-			this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
-			this.SelectQuickslot_mc.gotoAndPlay(this.SelectQuickslot_mc.visible ? "Open" : "Close");
-			this.AssignedItemIcon_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
-			this.AssignedItemIcon_mc.gotoAndPlay(this.AssignedItemIcon_mc.visible ? "Open" : "Close");
-			var _loc2_:uint = 0;
+			trace("WHILE TRACE ---------");
 			while (this.FavoritesInfoA != null && _loc2_ < this.FavoritesInfoA.length)
 			{
+				trace("REACHED 1");
 				_loc3_ = this.FavoritesInfoA[_loc2_];
+				trace("REACHED 2");
 				_loc4_ = this.GetEntryClip(_loc2_);
+				trace("REACHED 3");
 				if (_loc4_ != null)
 				{
+					trace("REACHED 4");
 					_loc4_.LoadIcon(_loc3_);
 				}
+				trace("REACHED 5");
 				_loc2_++;
 			}
 			this.IsDataInitialized = true;
@@ -401,6 +394,31 @@ package
 				trace(e.message);
 				trace(e.getStackTrace());
 			}
+
+			// this.FavoritesInfoA = Array(12)
+			// .map(function()
+			// {
+			// return {
+			// sName: "MockItem1",
+			// iconImage: {
+			// iFixtureType: ImageFixture.FT_SYMBOL,
+			// sImageName: "Meds",
+			// sDirectory: "Symbols"
+			// },
+			// bIsPower: false,
+			// bIsEquippable: true,
+			// bIsEquipped: false,
+			// uCount: 1,
+			// sAmmoName: "",
+			// uAmmoCount: 0,
+			// aElementalStats: {
+			// 0: {
+			// iElementalType: 0,
+			// fValue: 16
+			// }
+			// }
+			// };
+			// });
 		}
 
 		private function onFavEntryMouseleave(param1:Event):void

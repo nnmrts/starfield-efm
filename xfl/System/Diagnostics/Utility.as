@@ -8,7 +8,7 @@ package System.Diagnostics
 	public class Utility
 	{
 		// Object
-		//---------------------------------------------
+		// ---------------------------------------------
 
 		/**
 		 * Will trace the members of an object.
@@ -21,7 +21,7 @@ package System.Diagnostics
 
 			if (classInfo != null && classInfo != "")
 			{
-				Debug.WriteLine("\n"+className+"\n"+classInfo);
+				Debug.WriteLine(className + " " + classInfo);
 			}
 			else
 			{
@@ -30,8 +30,8 @@ package System.Diagnostics
 			}
 		}
 
-
 		// TODO: The for-in method works for dynamic objects ONLY!
+
 		/**
 		 * This function uses recursion to trace the members of an object.
 		 * @param self - The object to use.
@@ -44,16 +44,15 @@ package System.Diagnostics
 			for (var member:* in self)
 			{
 				Debug.WriteLine(indentation, member + " : " + self[member], "  ");
-				if (typeof(self[member]) == "object")
+				if (typeof (self[member]) == "object")
 				{
 					TraceObjectRecursive(self[member], indentation);
 				}
 			}
 		}
 
-
 		// Display Object
-		//---------------------------------------------
+		// ---------------------------------------------
 
 		/**
 		 * Will trace the parent to child relationship of display objects as a hierarchy.
@@ -69,12 +68,11 @@ package System.Diagnostics
 		 * 	Utility.TraceDisplayList(stage, 100);
 		 * @example Recurse to, and only trace the display object with the given name.
 		 * 	Utility.TraceDisplayList(stage, "ButtonHintBar_mc");
-		*/
+		 */
 		public static function TraceDisplayList(self:DisplayObjectContainer, options:* = undefined):void
 		{
 			TraceDisplayListRecursive(self, options);
 		}
-
 
 		/**
 		 * This function uses recursion to trace the parent to child relationship of display objects as a hierarchy.
@@ -84,11 +82,17 @@ package System.Diagnostics
 		 * @param indentation - The current line indentation contains prefixs for nesting.
 		 * @param depth - The current depth of recursion.
 		 * @param childAt - The current child index.
-		*/
+		 */
 		private static function TraceDisplayListRecursive(self:DisplayObjectContainer, options:* = undefined, indentation:String = "", depth:int = 0, childAt:int = 0):void
 		{
-			if (typeof options == "undefined") { options = Number.POSITIVE_INFINITY; }
-			if (depth > options) { return; }
+			if (typeof options == "undefined")
+			{
+				options = Number.POSITIVE_INFINITY;
+			}
+			if (depth > options)
+			{
+				return;
+			}
 
 			const INDENT:String = "   ";
 			var index:int = self.numChildren;
@@ -96,21 +100,21 @@ package System.Diagnostics
 			while (index--)
 			{
 				var child:DisplayObject = self.getChildAt(index);
-				var output:String = indentation+(childAt++)+": "+child.name+" --> "+child;
+				var output:String = indentation + (childAt++ ) + ": " + child.name + " --> " + child;
 
 				// indent child properties
 				output += "\t\t";
 
 				// debug alpha/visible properties
-				output += "alpha: "+child.alpha.toFixed(2)+"/"+child.visible;
+				output += "alpha: " + child.alpha.toFixed(2) + "/" + child.visible;
 
 				// debug x and y position
-				output += ", @: ("+child.x+", "+child.y+")";
+				output += ", @: (" + child.x + ", " + child.y + ")";
 
 				// debug transform properties
-				output += ", w:"+child.width+"px ("+child.scaleX.toFixed(2)+")";
-				output += ", h:"+child.height+"px ("+child.scaleY.toFixed(2)+")";
-				output += ", r:"+child.rotation.toFixed(1)+"";
+				output += ", w:" + child.width + "px (" + child.scaleX.toFixed(2) + ")";
+				output += ", h:" + child.height + "px (" + child.scaleY.toFixed(2) + ")";
+				output += ", r:" + child.rotation.toFixed(1) + "";
 
 				if (typeof options == "number")
 				{
@@ -128,7 +132,6 @@ package System.Diagnostics
 				}
 			}
 		}
-
 
 	}
 }

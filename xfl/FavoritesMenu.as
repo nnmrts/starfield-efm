@@ -143,18 +143,18 @@ package
 			}
 		}
 
-		private function onDataUpdate(param1:FromClientDataEvent):void
+		private function onDataUpdate(clientDataEvent:FromClientDataEvent):void
 		{
 			try
 			{
 				var index:uint = 0;
-				var _loc3_:Object = null;
-				var _loc4_:FavoritesEntry = null;
+				var favEntryData:Object = null;
+				var favEntry:FavoritesEntry = null;
 
-				this.FavoritesInfoA = param1.data.aFavoriteItems;
+				this.FavoritesInfoA = clientDataEvent.data.aFavoriteItems;
 				if (!this.IsDataInitialized)
 				{
-					this.assignedItem = param1.data.ItemToBeAssigned;
+					this.assignedItem = clientDataEvent.data.ItemToBeAssigned;
 					this.selectedIndex = FS_NONE;
 					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
 				}
@@ -165,11 +165,11 @@ package
 
 				while (this.FavoritesInfoA != null && index < this.FavoritesInfoA.length)
 				{
-					_loc3_ = this.FavoritesInfoA[index];
-					_loc4_ = this.GetEntryClip(index);
-					if (_loc4_ != null)
+					favEntryData = this.FavoritesInfoA[index];
+					favEntry = this.GetEntryClip(index);
+					if (favEntry != null)
 					{
-						_loc4_.LoadIcon(_loc3_);
+						favEntry.LoadIcon(favEntryData);
 					}
 					index++;
 				}
@@ -179,7 +179,7 @@ package
 			{
 				trace("FavoritesMenu.onDataUpdate TRACE ---------");
 				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				GlobalFunc.InspectObject(clientDataEvent, true, true);
 			}
 		}
 
@@ -214,11 +214,11 @@ package
 			return null;
 		}
 
-		public function set assignedItem(param1:Object):void
+		public function set assignedItem(item:Object):void
 		{
 			try
 			{
-				this.AssignedItem = param1;
+				this.AssignedItem = item;
 				if (this.isAssigningItem())
 				{
 					this.ItemInfo_mc.UpdateDisplay(this.AssignedItem);
@@ -261,17 +261,17 @@ package
 			return FS_NONE;
 		}
 
-		public function set selectedIndex(param1:uint):void
+		public function set selectedIndex(value:uint):void
 		{
 			try
 			{
-				if (param1 != this._SelectedIndex)
+				if (value != this._SelectedIndex)
 				{
 					if (this._SelectedIndex != FS_NONE)
 					{
 						this.GetEntryClip(this._SelectedIndex).selected = false;
 					}
-					this._SelectedIndex = param1;
+					this._SelectedIndex = value;
 					if (this._SelectedIndex != FS_NONE)
 					{
 						this.GetEntryClip(this._SelectedIndex).selected = true;
@@ -304,7 +304,7 @@ package
 
 		public function get selectionSound():String
 		{
-			var _loc1_:String = "";
+			var value:String = "";
 			try
 			{
 				switch (this.selectedIndex)
@@ -313,19 +313,19 @@ package
 					case FS_DOWN_1:
 					case FS_LEFT_1:
 					case FS_RIGHT_1:
-						_loc1_ = "UIMenuQuickUseFocusDpadA";
+						value = "UIMenuQuickUseFocusDpadA";
 						break;
 					case FS_UP_2:
 					case FS_DOWN_2:
 					case FS_LEFT_2:
 					case FS_RIGHT_2:
-						_loc1_ = "UIMenuQuickUseFocusDpadB";
+						value = "UIMenuQuickUseFocusDpadB";
 						break;
 					case FS_UP_3:
 					case FS_DOWN_3:
 					case FS_LEFT_3:
 					case FS_RIGHT_3:
-						_loc1_ = "UIMenuQuickUseFocusDpadC";
+						value = "UIMenuQuickUseFocusDpadC";
 				}
 			}
 			catch (e:Error)
@@ -333,18 +333,18 @@ package
 				trace("FavoritesMenu.get selectionSound TRACE ---------");
 				trace(e.getStackTrace());
 			}
-			return _loc1_;
+			return value;
 		}
 
-		public function GetEntryClip(param1:uint):FavoritesEntry
+		public function GetEntryClip(entryID:uint):FavoritesEntry
 		{
-			var _loc2_:FavoritesEntry = null;
+			var favEntry:FavoritesEntry = null;
 			try
 			{
-				_loc2_ = getChildByName("Entry_" + param1) as FavoritesEntry;
-				if (_loc2_ == null)
+				favEntry = getChildByName("Entry_" + entryID) as FavoritesEntry;
+				if (favEntry == null)
 				{
-					GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + param1 + "'!");
+					GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + entryID + "'!");
 				}
 			}
 			catch (e:Error)
@@ -352,36 +352,36 @@ package
 				trace("FavoritesMenu.GetEntryClip TRACE ---------");
 				trace(e.getStackTrace());
 			}
-			return _loc2_;
+			return favEntry;
 		}
 
-		public function ProcessUserEvent(param1:String, param2:Boolean):Boolean
+		public function ProcessUserEvent(controlName:String, isHandled:Boolean):Boolean
 		{
-			var _loc4_:Number = NaN;
-			var _loc3_:Boolean = false;
+			var favEntryID:Number = NaN;
+			var handled:Boolean = false;
 			try
 			{
-				if (!param2)
+				if (!isHandled)
 				{
-					_loc3_ = true;
-					switch (param1)
+					handled = true;
+					switch (controlName)
 					{
 						case "Cancel":
 						case "Quickkeys":
 						case "YButton":
 							this.StartClosingMenu();
-							_loc3_ = true;
+							handled = true;
 							break;
 						default:
-							_loc4_ = Number(param1.substr(8));
-							if (_loc4_ >= 1 && _loc4_ <= FS_NONE)
+							favEntryID = Number(controlName.substr(8));
+							if (favEntryID >= 1 && favEntryID <= FS_NONE)
 							{
-								this.selectedIndex = _loc4_ - 1;
+								this.selectedIndex = favEntryID - 1;
 								this.SelectItem();
 							}
 							else
 							{
-								_loc3_ = false;
+								handled = false;
 							}
 					}
 				}
@@ -391,7 +391,7 @@ package
 				trace("FavoritesMenu.ProcessUserEvent TRACE ---------");
 				trace(e.getStackTrace());
 			}
-			return _loc3_;
+			return handled;
 		}
 
 		private function StartClosingMenu():void
@@ -436,11 +436,11 @@ package
 			}
 		}
 
-		public function onKeyDownHandler(param1:KeyboardEvent):*
+		public function onKeyDownHandler(event:KeyboardEvent):*
 		{
 			try
 			{
-				switch (param1.keyCode)
+				switch (event.keyCode)
 				{
 					case Keyboard.UP:
 						this.selectedIndex = this._UpDirectory[this.selectedIndex];
@@ -462,17 +462,17 @@ package
 			}
 		}
 
-		public function onKeyUpHandler(param1:KeyboardEvent):*
+		public function onKeyUpHandler(event:KeyboardEvent):*
 		{
 			try
 			{
-				switch (param1.keyCode)
+				switch (event.keyCode)
 				{
 					case Keyboard.ENTER:
 						if (this.selectedIndex != FS_NONE)
 						{
 							this.SelectItem();
-							param1.stopPropagation();
+							event.stopPropagation();
 						}
 				}
 			}
@@ -504,11 +504,11 @@ package
 			}
 		}
 
-		private function onFavEntryMouseover(param1:Event):void
+		private function onFavEntryMouseover(event:Event):void
 		{
 			try
 			{
-				this.selectedIndex = param1.target.entryIndex;
+				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
 			}
 			catch (e:Error)
@@ -518,7 +518,7 @@ package
 			}
 		}
 
-		private function onFavEntryMouseleave(param1:Event):void
+		private function onFavEntryMouseleave(event:Event):void
 		{
 			try
 			{

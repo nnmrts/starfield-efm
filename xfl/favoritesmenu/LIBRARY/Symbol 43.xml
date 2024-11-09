@@ -1,24 +1,24 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 43" itemID="672e9200-0000001e" lastModified="1731015698">
-	<timeline>
-		<DOMTimeline name="Symbol 43">
-			<layers>
-				<DOMLayer name="Layer 1" color="#C2D25C" current="true" isSelected="true">
-					<frames>
-						<DOMFrame index="0" keyMode="9728">
-							<elements>
-								<DOMSymbolInstance libraryItemName="Symbol 42" symbolType="graphic" loop="loop">
-									<matrix>
-										<Matrix a="1.171875" d="0.85333251953125" />
-									</matrix>
-									<transformationPoint>
-										<Point />
-									</transformationPoint>
-								</DOMSymbolInstance>
-							</elements>
-						</DOMFrame>
-					</frames>
-				</DOMLayer>
-			</layers>
-		</DOMTimeline>
-	</timeline>
+  <timeline>
+    <DOMTimeline name="Symbol 43">
+      <layers>
+        <DOMLayer name="Layer 1" color="#C2D25C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 42" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.171875" d="0.85333251953125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
 </DOMSymbolItem>

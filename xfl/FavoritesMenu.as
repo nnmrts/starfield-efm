@@ -348,8 +348,6 @@ package
 
 		private function onFavEntryMouseover(param1:Event):void
 		{
-			trace("onFavEntryMouseover");
-
 			try
 			{
 				this.selectedIndex = param1.target.entryIndex;
@@ -359,6 +357,8 @@ package
 			{
 				// trace("Error: " + e.message);
 				trace(e);
+				trace(e.message);
+				trace(e.getStackTrace());
 			}
 
 		}

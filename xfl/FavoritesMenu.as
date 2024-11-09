@@ -130,16 +130,16 @@ package
 			stage.focus = this;
 		}
 
-		private function onDataUpdate(param1:FromClientDataEvent):void
+		private function onDataUpdate(clientDataEvent:FromClientDataEvent):void
 		{
 			// trace("BIG TRACE ---------");
 			// trace(getTimer());
 			// try
 			// {
-			// Utility.TraceObject(param1);
-			// Utility.TraceObject(param1.toString());
-			// Utility.TraceObject(param1.data);
-			// Utility.TraceObject(param1.data.aFavoriteItems);
+			// Utility.TraceObject(clientDataEvent);
+			// Utility.TraceObject(clientDataEvent.toString());
+			// Utility.TraceObject(clientDataEvent.data);
+			// Utility.TraceObject(clientDataEvent.data.aFavoriteItems);
 			// }
 			// catch (e:Error)
 			// {
@@ -150,20 +150,20 @@ package
 
 			try
 			{
-				var _loc3_:Object = null;
-				var _loc4_:FavoritesEntry = null;
-				this.FavoritesInfoA = param1.data.aFavoriteItems;
+				var favEntryData:Object = null;
+				var favEntry:FavoritesEntry = null;
+				this.FavoritesInfoA = clientDataEvent.data.aFavoriteItems;
 				if (!this.IsDataInitialized)
 				{
-					this.assignedItem = param1.data.ItemToBeAssigned;
-					this.selectedIndex = param1.data.uStartingSelection;
+					this.assignedItem = clientDataEvent.data.ItemToBeAssigned;
+					this.selectedIndex = clientDataEvent.data.uStartingSelection;
 					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
 				}
 				this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
 				this.SelectQuickslot_mc.gotoAndPlay(this.SelectQuickslot_mc.visible ? "Open" : "Close");
 				this.AssignedItemIcon_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
 				this.AssignedItemIcon_mc.gotoAndPlay(this.AssignedItemIcon_mc.visible ? "Open" : "Close");
-				var _loc2_:uint = 0;
+				var index:uint = 0;
 			}
 			catch (e:Error)
 			{
@@ -171,20 +171,20 @@ package
 			}
 
 			trace("WHILE TRACE ---------");
-			while (this.FavoritesInfoA != null && _loc2_ < this.FavoritesInfoA.length)
+			while (this.FavoritesInfoA != null && index < this.FavoritesInfoA.length)
 			{
 				trace("REACHED 1");
-				_loc3_ = this.FavoritesInfoA[_loc2_];
+				favEntryData = this.FavoritesInfoA[index];
 				trace("REACHED 2");
-				_loc4_ = this.GetEntryClip(_loc2_);
+				favEntry = this.GetEntryClip(index);
 				trace("REACHED 3");
-				if (_loc4_ != null)
+				if (favEntry != null)
 				{
 					trace("REACHED 4");
-					_loc4_.LoadIcon(_loc3_);
+					favEntry.LoadIcon(favEntryData);
 				}
 				trace("REACHED 5");
-				_loc2_++;
+				index++;
 			}
 			this.IsDataInitialized = true;
 		}
@@ -199,9 +199,9 @@ package
 			return this.AssignedItem;
 		}
 
-		public function set assignedItem(param1:Object):void
+		public function set assignedItem(item:Object):void
 		{
-			this.AssignedItem = param1;
+			this.AssignedItem = item;
 			if (this.isAssigningItem())
 			{
 				this.ItemInfo_mc.UpdateDisplay(this.AssignedItem);
@@ -228,15 +228,15 @@ package
 			return this._SelectedIndex;
 		}
 
-		public function set selectedIndex(param1:uint):void
+		public function set selectedIndex(value:uint):void
 		{
-			if (param1 != this._SelectedIndex)
+			if (value != this._SelectedIndex)
 			{
 				if (this._SelectedIndex != FS_NONE)
 				{
 					this.GetEntryClip(this._SelectedIndex).selected = false;
 				}
-				this._SelectedIndex = param1;
+				this._SelectedIndex = value;
 				if (this._SelectedIndex != FS_NONE)
 				{
 					this.GetEntryClip(this._SelectedIndex).selected = true;
@@ -253,69 +253,69 @@ package
 
 		public function get selectionSound():String
 		{
-			var _loc1_:String = "";
+			var value:String = "";
 			switch (this.selectedIndex)
 			{
 				case FS_UP_1:
 				case FS_DOWN_1:
 				case FS_LEFT_1:
 				case FS_RIGHT_1:
-					_loc1_ = "UIMenuQuickUseFocusDpadA";
+					value = "UIMenuQuickUseFocusDpadA";
 					break;
 				case FS_UP_2:
 				case FS_DOWN_2:
 				case FS_LEFT_2:
 				case FS_RIGHT_2:
-					_loc1_ = "UIMenuQuickUseFocusDpadB";
+					value = "UIMenuQuickUseFocusDpadB";
 					break;
 				case FS_UP_3:
 				case FS_DOWN_3:
 				case FS_LEFT_3:
 				case FS_RIGHT_3:
-					_loc1_ = "UIMenuQuickUseFocusDpadC";
+					value = "UIMenuQuickUseFocusDpadC";
 			}
-			return _loc1_;
+			return value;
 		}
 
-		public function GetEntryClip(param1:uint):FavoritesEntry
+		public function GetEntryClip(entryID:uint):FavoritesEntry
 		{
-			var _loc2_:FavoritesEntry = getChildByName("Entry_" + param1) as FavoritesEntry;
-			if (_loc2_ == null)
+			var favEntry:FavoritesEntry = getChildByName("Entry_" + entryID) as FavoritesEntry;
+			if (favEntry == null)
 			{
-				GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + param1 + "'!");
+				GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + entryID + "'!");
 			}
-			return _loc2_;
+			return favEntry;
 		}
 
-		public function ProcessUserEvent(param1:String, param2:Boolean):Boolean
+		public function ProcessUserEvent(controlName:String, isHandled:Boolean):Boolean
 		{
-			var _loc4_:Number = NaN;
-			var _loc3_:Boolean = false;
-			if (!param2)
+			var favEntryID:Number = NaN;
+			var handled:Boolean = false;
+			if (!isHandled)
 			{
-				_loc3_ = true;
-				switch (param1)
+				handled = true;
+				switch (controlName)
 				{
 					case "Cancel":
 					case "Quickkeys":
 					case "YButton":
 						this.StartClosingMenu();
-						_loc3_ = true;
+						handled = true;
 						break;
 					default:
-						_loc4_ = Number(param1.substr(8));
-						if (_loc4_ >= 1 && _loc4_ <= FS_NONE)
+						favEntryID = Number(controlName.substr(8));
+						if (favEntryID >= 1 && favEntryID <= FS_NONE)
 						{
-							this.selectedIndex = _loc4_ - 1;
+							this.selectedIndex = favEntryID - 1;
 							this.SelectItem();
 						}
 						else
 						{
-							_loc3_ = false;
+							handled = false;
 						}
 				}
 			}
-			return _loc3_;
+			return handled;
 		}
 
 		private function StartClosingMenu():void
@@ -336,9 +336,9 @@ package
 			this.ItemInfo_mc.visible = true;
 		}
 
-		public function onKeyDownHandler(param1:KeyboardEvent):*
+		public function onKeyDownHandler(event:KeyboardEvent):*
 		{
-			switch (param1.keyCode)
+			switch (event.keyCode)
 			{
 				case Keyboard.UP:
 					this.selectedIndex = this._UpDirectory[this.selectedIndex];
@@ -354,15 +354,15 @@ package
 			}
 		}
 
-		public function onKeyUpHandler(param1:KeyboardEvent):*
+		public function onKeyUpHandler(event:KeyboardEvent):*
 		{
-			switch (param1.keyCode)
+			switch (event.keyCode)
 			{
 				case Keyboard.ENTER:
 					if (this.selectedIndex != FS_NONE)
 					{
 						this.SelectItem();
-						param1.stopPropagation();
+						event.stopPropagation();
 					}
 			}
 		}
@@ -380,11 +380,11 @@ package
 			this.StartClosingMenu();
 		}
 
-		private function onFavEntryMouseover(param1:Event):void
+		private function onFavEntryMouseover(event:Event):void
 		{
 			try
 			{
-				this.selectedIndex = param1.target.entryIndex;
+				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
 			}
 			catch (e:Error)
@@ -421,7 +421,7 @@ package
 			// });
 		}
 
-		private function onFavEntryMouseleave(param1:Event):void
+		private function onFavEntryMouseleave(event:Event):void
 		{
 			this.OverEntry = false;
 		}

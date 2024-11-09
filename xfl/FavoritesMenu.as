@@ -11,6 +11,7 @@ package
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
 	import flash.ui.Keyboard;
+	import flash.utils.getTimer;
 
 	public class FavoritesMenu extends IMenu
 	{
@@ -82,7 +83,7 @@ package
 
 		public var Entry_12:FavoritesEntry;
 
-		// public var Entry_13:FavoritesEntry;
+		public var Entry_13:FavoritesEntry;
 
 		// public var Entry_14:FavoritesEntry;
 
@@ -94,7 +95,7 @@ package
 
 		private var IsDataInitialized:Boolean = false;
 
-		private var _SelectedIndex:uint = 12;
+		private var _SelectedIndex:uint = 13;
 
 		public const TIMELINE_EVENT_CLOSE_ANIM_DONE:String = "onFinishedClosingAnim";
 
@@ -143,7 +144,7 @@ package
 			// },
 			// ];
 
-			Utility.TraceObject(FavoritesInfoA);
+			// Utility.TraceObject(FavoritesInfoA);
 		}
 
 		override public function onAddedToStage():void
@@ -154,6 +155,20 @@ package
 
 		private function onDataUpdate(param1:FromClientDataEvent):void
 		{
+			trace("BIG TRACE ---------");
+			trace(getTimer());
+			try
+			{
+				Utility.TraceObject(param1);
+				Utility.TraceObject(param1.toString());
+				Utility.TraceObject(param1.data);
+				Utility.TraceObject(param1.data.aFavoriteItems);
+			}
+			catch (e:Error)
+			{
+				trace(e.getStackTrace());
+			}
+
 			var _loc3_:Object = null;
 			var _loc4_:FavoritesEntry = null;
 			this.FavoritesInfoA = param1.data.aFavoriteItems;
@@ -179,7 +194,6 @@ package
 				_loc2_++;
 			}
 			this.IsDataInitialized = true;
-			Utility.TraceObject(FavoritesInfoA);
 		}
 
 		public function isAssigningItem():Boolean

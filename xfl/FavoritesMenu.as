@@ -1,5 +1,6 @@
 package
 {
+	import System.Diagnostics.*;
 	import Components.ImageFixture;
 	import Shared.AS3.Data.BSUIDataManager;
 	import Shared.AS3.Data.FromClientDataEvent;
@@ -118,6 +119,31 @@ package
 			BSUIDataManager.Subscribe("FavoritesData", this.onDataUpdate);
 			this.AssignedItemIcon_mc.mouseEnabled = false;
 			this.AssignedItemIcon_mc.mouseChildren = false;
+
+			// this.FavoritesInfoA = [
+			// {
+			// sName: "MockItem1",
+			// iconImage: {
+			// iFixtureType: ImageFixture.FT_SYMBOL,
+			// sImageName: "Meds",
+			// sDirectory: "Symbols"
+			// },
+			// bIsPower: false,
+			// bIsEquippable: true,
+			// bIsEquipped: false,
+			// uCount: 1,
+			// sAmmoName: "",
+			// uAmmoCount: 0,
+			// aElementalStats: {
+			// 0: {
+			// iElementalType: 0,
+			// fValue: 16
+			// }
+			// }
+			// },
+			// ];
+
+			Utility.TraceObject(FavoritesInfoA);
 		}
 
 		override public function onAddedToStage():void
@@ -153,6 +179,7 @@ package
 				_loc2_++;
 			}
 			this.IsDataInitialized = true;
+			Utility.TraceObject(FavoritesInfoA);
 		}
 
 		public function isAssigningItem():Boolean
@@ -360,7 +387,6 @@ package
 				trace(e.message);
 				trace(e.getStackTrace());
 			}
-
 		}
 
 		private function onFavEntryMouseleave(param1:Event):void

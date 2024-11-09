@@ -37,13 +37,13 @@ package
 
 		public static const FS_DOWN_3:uint = 11;
 
-		public static const FS_TOP_RIGHT_1:uint = 12;
+		// public static const FS_TOP_RIGHT_1:uint = 12;
 
-		public static const FS_TOP_RIGHT_2:uint = 13;
+		// public static const FS_TOP_RIGHT_2:uint = 13;
 
-		public static const FS_TOP_RIGHT_3:uint = 14;
+		public static const FS_TOP_RIGHT_3:uint = 12;
 
-		public static const FS_NONE:uint = 15;
+		public static const FS_NONE:uint = 13;
 
 		public var CenterClip_mc:MovieClip;
 
@@ -81,9 +81,9 @@ package
 
 		public var Entry_12:FavoritesEntry;
 
-		public var Entry_13:FavoritesEntry;
+		// public var Entry_13:FavoritesEntry;
 
-		public var Entry_14:FavoritesEntry;
+		// public var Entry_14:FavoritesEntry;
 
 		private var FavoritesInfoA:Array;
 
@@ -357,7 +357,8 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("Error: " + e.message);
+				// trace("Error: " + e.message);
+				trace(e);
 			}
 
 		}

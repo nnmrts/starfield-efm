@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 123" linkageExportForAS="true" linkageClassName="Tier2_BottomLeft" lastModified="1731015698">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 123" itemID="673044d3-00000162" linkageExportForAS="true" linkageClassName="Tier2_BottomLeft" lastModified="1731015698">
   <timeline>
     <DOMTimeline name="Symbol 123">
       <layers>
@@ -16,9 +16,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[
-                  stop(); 
-                ]]></script>
+                <script><![CDATA[                  stop();                 ]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>

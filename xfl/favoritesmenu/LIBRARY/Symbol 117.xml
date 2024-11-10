@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 117" itemID="672e9200-0000003c" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731212750" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 117" itemID="672e9200-0000003c" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731217807" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="Symbol 117" currentFrame="18">
       <layers>
-        <DOMLayer name="Labels Layer" color="#98CB21">
+        <DOMLayer name="Labels Layer" color="#98CB21" locked="true">
           <frames>
             <DOMFrame index="0" name="Open" labelType="name" keyMode="9728">
               <elements/>
@@ -21,15 +21,14 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#BECFFA">
+        <DOMLayer name="Script Layer" color="#BECFFA" locked="true">
           <frames>
             <DOMFrame index="0" duration="12" keyMode="9728">
               <elements/>
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -38,9 +37,7 @@
             </DOMFrame>
             <DOMFrame index="17" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
-stop();
-]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -49,15 +46,13 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
-stop();
-]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#55B1E0">
+        <DOMLayer name="Layer 3" color="#55B1E0" locked="true">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
@@ -73,7 +68,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#F710D5">
+        <DOMLayer name="Layer 4" color="#F710D5" locked="true">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
@@ -92,7 +87,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 5" color="#E4C640">
+        <DOMLayer name="Layer 5" color="#E4C640" locked="true">
           <frames>
             <DOMFrame index="0" duration="8" keyMode="9728">
               <elements>
@@ -204,7 +199,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#A86B8F">
+        <DOMLayer name="Layer 6" color="#A86B8F" locked="true">
           <frames>
             <DOMFrame index="0" duration="6" keyMode="9728">
               <elements>
@@ -316,7 +311,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 7" color="#0F95FC">
+        <DOMLayer name="Layer 7" color="#0F95FC" locked="true">
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>
@@ -455,7 +450,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 8" color="#AAE09E">
+        <DOMLayer name="Layer 8" color="#AAE09E" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -558,7 +553,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 9" color="#02F4A1">
+        <DOMLayer name="Layer 9" color="#02F4A1" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -619,7 +614,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 51" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="Symbol 51" name="Entry_2" selected="true" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -661,7 +656,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 10" color="#D490EA">
+        <DOMLayer name="Layer 10" color="#D490EA" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -764,7 +759,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 11" color="#F32BDD">
+        <DOMLayer name="Layer 11" color="#F32BDD" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -867,7 +862,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 12" color="#E0FB44">
+        <DOMLayer name="Layer 12" color="#E0FB44" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -970,7 +965,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 13" color="#7D2FDA">
+        <DOMLayer name="Layer 13" color="#7D2FDA" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1127,7 +1122,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 14" color="#F8E361">
+        <DOMLayer name="Layer 14" color="#F8E361" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1284,7 +1279,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 15" color="#E0F6D4">
+        <DOMLayer name="Layer 15" color="#E0F6D4" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1441,7 +1436,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 16" color="#A8A49E">
+        <DOMLayer name="Layer 16" color="#A8A49E" locked="true">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1598,7 +1593,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 17" color="#F32CCC">
+        <DOMLayer name="Layer 17" color="#F32CCC" locked="true">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -1755,7 +1750,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 18" color="#E5318D">
+        <DOMLayer name="Layer 18" color="#E5318D" locked="true">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -1912,7 +1907,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 19" color="#9671B1">
+        <DOMLayer name="Layer 19" color="#9671B1" locked="true">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -2069,7 +2064,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 20" color="#E7F684">
+        <DOMLayer name="Layer 20" color="#E7F684" locked="true">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -2226,7 +2221,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 24" color="#E7F684" autoNamed="false">
+        <DOMLayer name="Layer 24" color="#E7F684" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -2383,7 +2378,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 25" color="#A8A49E" autoNamed="false">
+        <DOMLayer name="Layer 25" color="#A8A49E" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -2540,7 +2535,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 26" color="#E7F684" autoNamed="false">
+        <DOMLayer name="Layer 26" color="#E7F684" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -2697,7 +2692,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 27" color="#A8A49E" autoNamed="false">
+        <DOMLayer name="Layer 27" color="#A8A49E" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -2854,7 +2849,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 28" color="#E7F684" autoNamed="false">
+        <DOMLayer name="Layer 28" color="#E7F684" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -3011,7 +3006,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 29" color="#A8A49E" autoNamed="false">
+        <DOMLayer name="Layer 29" color="#A8A49E" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -3168,7 +3163,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 30" color="#E7F684" autoNamed="false">
+        <DOMLayer name="Layer 30" color="#E7F684" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -3325,7 +3320,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 31" color="#A8A49E" autoNamed="false">
+        <DOMLayer name="Layer 31" color="#A8A49E" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -3482,11 +3477,11 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 21" color="#FB4F9A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Layer 21" color="#FB4F9A" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -3498,7 +3493,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -3522,7 +3517,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -3546,7 +3541,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 22" color="#4D73C0">
+        <DOMLayer name="Layer 22" color="#4D73C0" locked="true">
           <frames>
             <DOMFrame index="0" duration="13" keyMode="9728">
               <elements>
@@ -3577,7 +3572,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 23" color="#B7F3A0">
+        <DOMLayer name="Layer 23" color="#B7F3A0" locked="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

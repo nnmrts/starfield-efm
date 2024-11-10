@@ -75,11 +75,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#CDB6B4">
+        <DOMLayer name="Layer 6" color="#CDB6B4" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 41" name="Icon_mc" centerPoint3DY="50">
+                <DOMSymbolInstance libraryItemName="Symbol 41" name="Icon_mc" selected="true" centerPoint3DY="50">
                   <matrix>
                     <Matrix a="0.75" d="0.75" tx="-50"/>
                   </matrix>
@@ -109,7 +109,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 7" color="#4E9EC5" current="true" isSelected="true">
+        <DOMLayer name="Layer 7" color="#4E9EC5">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

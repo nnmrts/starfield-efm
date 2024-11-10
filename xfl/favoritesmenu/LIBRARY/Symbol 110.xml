@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 110" itemID="672e9200-00000038" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.Center_19" lastModified="1731015698">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 110" itemID="672e9200-00000038" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.Center_19" lastModified="1731217935" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="Symbol 110">
       <layers>
@@ -41,11 +41,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#71C653" current="true" isSelected="true">
+        <DOMLayer name="Layer 4" color="#71C653">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor alpha="0.6"/>
@@ -61,7 +61,7 @@
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor alpha="0.6"/>
@@ -76,6 +76,25 @@
 !1080 0[1080 448 764 764!764 764[448 1080 0 1080!0 1080[-448 1080 -764 764!-764 764[-1080 448 -1080 0!-1080 0[-1080 -448 -764 -764!-764 -764[-448 -1080 0 -1080!0 -1080[448 -1080 764 -764!764 -764[1080 -448 1080 0"/>
                   </edges>
                 </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2" selected="true">
+                  <matrix>
+                    <Matrix tx="-181.9" ty="-181.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="181.7" y="181.7"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="8" blurY="8" quality="3"/>
+                  </filters>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>

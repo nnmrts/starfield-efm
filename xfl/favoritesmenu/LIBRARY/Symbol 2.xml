@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2" itemID="673049cd-00000179" lastModified="1731217869">
+  <timeline>
+    <DOMTimeline name="Symbol 2">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.6"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!3652 4988S2[3542 4988 3437 4973!3437 4973|2499 5911!2499 5911[2151 5731 1850 5430!1850 5430[1548 5128 1368 4780!1368 4780|2307 3841!2307 3841[2291 3737 2291 3627!2291 3627[2292 3516 2307 3413!2307 3413|1368 2474!1368 2474[1547 2125 1849
+ 1823!1849 1823[2150 1522 2499 1343!2499 1343|3438 2282!3438 2282[3542 2266 3652 2266!3652 2266[3762 2266 3864 2282!3864 2282|4803 1343!4803 1343[5154 1522 5456 1824!5456 1824[5757 2125 5936 2474!5936 2474|4997 3413!4997 3413[5011 3517
+ 5011 3627!5011 3627[5011 3737 4997 3841!4997 3841|5936 4780!5936 4780[5757 5129 5456 5430!5456 5430[5154 5732 4803 5911!4803 5911|3864 4972!3864 4972[3763 4987 3652 4988"/>
+                    <Edge fillStyle0="1" edges="
+!4416 4390S1[4099 4707 3652 4708!3652 4708[3205 4707 2889 4391!2889 4391[2570 4074 2571 3627!2571 3627[2570 3180 2889 2863!2889 2863[3205 2547 3652 2546!3652 2546[4099 2547 4416 2864!4416 2864[4732 3180 4731 3627!4731 3627[4732 4074 4416
+ 4390"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="Symbol 108" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.999969482421875" d="0.999969482421875" tx="181.7" ty="181.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.15" y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Symbol 108" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="181.7" ty="181.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

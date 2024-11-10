@@ -64,6 +64,7 @@ package
 			catch (e:Error)
 			{
 				trace("ItemInfoDisplayBase.UpdateDisplay TRACE ---------");
+				trace(e);
 				trace(e.getStackTrace());
 				GlobalFunc.InspectObject(param1, true, true);
 			}
@@ -82,6 +83,7 @@ package
 			catch (e:Error)
 			{
 				trace("ItemInfoDisplayBase.ResetVisiblities TRACE ---------");
+				trace(e);
 				trace(e.getStackTrace());
 			}
 		}
@@ -102,6 +104,8 @@ package
 			catch (e:Error)
 			{
 				trace("ItemInfoDisplayBase.SetItemNameFromInfo TRACE ---------");
+				trace(e);
+
 				trace(e.getStackTrace());
 				GlobalFunc.InspectObject(param1, true, true);
 			}
@@ -123,6 +127,8 @@ package
 			catch (e:Error)
 			{
 				trace("ItemInfoDisplayBase.SetItemName TRACE ---------");
+				trace(e);
+
 				trace(e.getStackTrace());
 				GlobalFunc.InspectObject(param1, true, true);
 				GlobalFunc.InspectObject(param2, true, true);

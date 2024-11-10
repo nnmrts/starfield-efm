@@ -360,6 +360,8 @@ package
 		{
 			var favEntryID:Number = NaN;
 			var handled:Boolean = false;
+			trace("CONTROL NAME --------");
+			trace(controlName);
 			try
 			{
 				if (!isHandled)
@@ -434,7 +436,6 @@ package
 			{
 				trace("FavoritesMenu.onSelectionChange TRACE ---------");
 				trace(e.getStackTrace());
-
 				GlobalFunc.InspectObject(this.selectedEntry, true, true);
 			}
 		}

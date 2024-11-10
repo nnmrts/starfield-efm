@@ -6,14 +6,14 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor alpha="0.6"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!-25600 -12000|25600 -12000!25600 -12000|25600 12000!25600 12000|-25600 12000!-25600 12000|-25600 -12000"/>
+                    <Edge fillStyle1="1" edges="!-25600 -12000S2|25600 -12000!25600 -12000|25600 12000!25600 12000|-25600 12000!-25600 12000|-25600 -12000"/>
                   </edges>
                 </DOMShape>
               </elements>

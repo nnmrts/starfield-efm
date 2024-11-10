@@ -38,13 +38,23 @@ package
 
 		public static const FS_DOWN_3:uint = 11;
 
-		// public static const FS_TOP_RIGHT_1:uint = 12;
-
-		// public static const FS_TOP_RIGHT_2:uint = 13;
-
 		public static const FS_TOP_RIGHT_3:uint = 12;
 
-		public static const FS_NONE:uint = 13;
+		public static const FS_TOP_RIGHT_2:uint = 13;
+
+		public static const FS_BOTTOM_RIGHT_3:uint = 14;
+
+		public static const FS_BOTTOM_RIGHT_2:uint = 15;
+
+		public static const FS_BOTTOM_LEFT_3:uint = 16;
+
+		public static const FS_BOTTOM_LEFT_2:uint = 17;
+
+		public static const FS_TOP_LEFT_3:uint = 18;
+
+		public static const FS_TOP_LEFT_2:uint = 19;
+
+		public static const FS_NONE:uint = 20;
 
 		public var CenterClip_mc:MovieClip;
 
@@ -84,7 +94,17 @@ package
 
 		public var Entry_13:FavoritesEntry;
 
-		// public var Entry_14:FavoritesEntry;
+		public var Entry_14:FavoritesEntry;
+
+		public var Entry_15:FavoritesEntry;
+
+		public var Entry_16:FavoritesEntry;
+
+		public var Entry_17:FavoritesEntry;
+
+		public var Entry_18:FavoritesEntry;
+
+		public var Entry_19:FavoritesEntry;
 
 		private var FavoritesInfoA:Array;
 
@@ -94,19 +114,107 @@ package
 
 		private var IsDataInitialized:Boolean = false;
 
-		private var _SelectedIndex:uint = 13;
+		private var _SelectedIndex:uint = FS_NONE;
 
 		public const TIMELINE_EVENT_CLOSE_ANIM_DONE:String = "onFinishedClosingAnim";
 
 		private var OverEntry:Boolean = false;
 
-		private const _UpDirectory:Array = [FS_UP_1, FS_UP_1, FS_UP_1, FS_UP_1, FS_UP_1, FS_UP_1, FS_UP_3, FS_UP_3, FS_UP_2, FS_UP_1, FS_DOWN_1, FS_DOWN_2, FS_UP_1];
+		private const _UpDirectory:Array = [
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_3,
+				FS_UP_3,
+				FS_UP_2,
+				FS_UP_1,
+				FS_DOWN_1,
+				FS_DOWN_2,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1,
+				FS_UP_1
+			];
 
-		private const _DownDirectory:Array = [FS_DOWN_1, FS_DOWN_1, FS_DOWN_1, FS_DOWN_1, FS_DOWN_1, FS_DOWN_1, FS_UP_2, FS_UP_1, FS_DOWN_1, FS_DOWN_2, FS_DOWN_3, FS_DOWN_3, FS_DOWN_1];
+		private const _DownDirectory:Array = [
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_UP_2,
+				FS_UP_1,
+				FS_DOWN_1,
+				FS_DOWN_2,
+				FS_DOWN_3,
+				FS_DOWN_3,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+				FS_DOWN_1,
+			];
 
-		private const _LeftDirectory:Array = [FS_LEFT_3, FS_LEFT_3, FS_LEFT_2, FS_LEFT_1, FS_RIGHT_1, FS_RIGHT_2, FS_LEFT_1, FS_LEFT_1, FS_LEFT_1, FS_LEFT_1, FS_LEFT_1, FS_LEFT_1, FS_LEFT_1];
+		private const _LeftDirectory:Array = [
+				FS_LEFT_3,
+				FS_LEFT_3,
+				FS_LEFT_2,
+				FS_LEFT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_2,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1,
+				FS_LEFT_1
+			];
 
-		private const _RightDirectory:Array = [FS_LEFT_2, FS_LEFT_1, FS_RIGHT_1, FS_RIGHT_2, FS_RIGHT_3, FS_RIGHT_3, FS_RIGHT_1, FS_RIGHT_1, FS_RIGHT_1, FS_RIGHT_1, FS_RIGHT_1, FS_RIGHT_1, FS_RIGHT_1];
+		private const _RightDirectory:Array = [
+				FS_LEFT_2,
+				FS_LEFT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_2,
+				FS_RIGHT_3,
+				FS_RIGHT_3,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1,
+				FS_RIGHT_1
+			];
 
 		public function FavoritesMenu()
 		{
@@ -327,6 +435,9 @@ package
 					case FS_LEFT_3:
 					case FS_RIGHT_3:
 						value = "UIMenuQuickUseFocusDpadC";
+						break;
+					default:
+						value = "UIMenuQuickUseFocusDpadC";
 				}
 			}
 			catch (e:Error)
@@ -457,6 +568,9 @@ package
 						break;
 					case Keyboard.RIGHT:
 						this.selectedIndex = this._RightDirectory[this.selectedIndex];
+						break;
+					default:
+						this.selectedIndex = 0;
 				}
 			}
 			catch (e:Error)

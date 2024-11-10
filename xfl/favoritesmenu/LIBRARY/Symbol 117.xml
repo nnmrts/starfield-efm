@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 117" itemID="672e9200-0000003c" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731129429" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 117" itemID="672e9200-0000003c" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731212750" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="Symbol 117" currentFrame="18">
       <layers>
@@ -2069,163 +2069,6 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 24" color="#E7F684" current="true" isSelected="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="5" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="5" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="6" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="7" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="8" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="9" duration="5" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="14" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0.5"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="15" duration="3" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="18" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" selected="true" centerPoint3DX="160.95" centerPoint3DY="-94.15">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="-0.05" y="-0.05"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="19" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0.5"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="20" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="160.95" centerPoint3DY="-94.1">
-                  <matrix>
-                    <Matrix a="0.707107543945312" b="0.70709228515625" c="-0.70709228515625" d="0.707107543945312" tx="158.2" ty="-159.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point y="-0.05"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="Layer 20" color="#E7F684">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
@@ -2383,11 +2226,1267 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 21" color="#FB4F9A" autoNamed="false">
+        <DOMLayer name="Layer 24" color="#E7F684" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 118" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 25" color="#A8A49E" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 119" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 26" color="#E7F684" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 120" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 27" color="#A8A49E" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 121" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 28" color="#E7F684" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 122" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 29" color="#A8A49E" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 123" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                  <matrix>
+                    <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 30" color="#E7F684" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 124" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 31" color="#A8A49E" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 125" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                  <matrix>
+                    <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 21" color="#FB4F9A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -2399,7 +3498,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -2411,7 +3510,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -2423,7 +3522,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

@@ -1,7 +1,7 @@
 <flash_profiles>
 <flash_profile version="1.0" name="Default" current="true">
   <PublishFormatProperties enabled="true">
-    <defaultNames>1</defaultNames>
+    <defaultNames>0</defaultNames>
     <flash>1</flash>
     <projectorWin>0</projectorWin>
     <projectorMac>0</projectorMac>
@@ -11,7 +11,7 @@
     <png>0</png>
     <swc>0</swc>
     <oam>0</oam>
-    <flashDefaultName>1</flashDefaultName>
+    <flashDefaultName>0</flashDefaultName>
     <projectorWinDefaultName>1</projectorWinDefaultName>
     <projectorMacDefaultName>1</projectorMacDefaultName>
     <htmlDefaultName>1</htmlDefaultName>
@@ -20,7 +20,7 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>1</swcDefaultName>
     <oamDefaultName>1</oamDefaultName>
-    <flashFileName>favoritesmenu.swf</flashFileName>
+    <flashFileName>../dist/interface/favoritesmenu.swf</flashFileName>
     <projectorWinFileName>favoritesmenu.exe</projectorWinFileName>
     <projectorMacFileName>favoritesmenu.app</projectorMacFileName>
     <htmlFileName>favoritesmenu.html</htmlFileName>
@@ -63,11 +63,11 @@
   <PublishFlashProperties enabled="true">
     <TopDown></TopDown>
     <FireFox></FireFox>
-    <Report>0</Report>
+    <Report>1</Report>
     <Protect>0</Protect>
     <OptimizeForAE>0</OptimizeForAE>
     <OmitTraceActions>0</OmitTraceActions>
-    <Quality>80</Quality>
+    <Quality>100</Quality>
     <DeblockingFilter>0</DeblockingFilter>
     <StreamFormat>0</StreamFormat>
     <StreamCompress>7</StreamCompress>
@@ -81,11 +81,11 @@
     <PackagePaths></PackagePaths>
     <AS3PackagePaths>.</AS3PackagePaths>
     <AS3ConfigConst>CONFIG::FLASH_AUTHORING=&quot;true&quot;;</AS3ConfigConst>
-    <DebuggingPermitted>0</DebuggingPermitted>
+    <DebuggingPermitted>1</DebuggingPermitted>
     <DebuggingPassword></DebuggingPassword>
     <CompressMovie>1</CompressMovie>
     <CompressionType>0</CompressionType>
-    <InvisibleLayer>0</InvisibleLayer>
+    <InvisibleLayer>1</InvisibleLayer>
     <DeviceSound>0</DeviceSound>
     <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
     <EventUse8kSampleRate>0</EventUse8kSampleRate>

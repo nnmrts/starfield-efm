@@ -614,7 +614,7 @@
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 51" name="Entry_2" selected="true" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="Symbol 51" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -3505,7 +3505,7 @@
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Symbol 106" selected="true" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="Symbol 106" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

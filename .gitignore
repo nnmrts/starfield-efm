@@ -36,3 +36,4 @@ bin-release/
 vanilla/
 /xfl/RECOVER_favoritesmenu
 parse-logs.js
+/dist

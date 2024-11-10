@@ -16,7 +16,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[                  stop();                 ]]></script>
+                <script><![CDATA[
+                  stop(); 
+                ]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -34,27 +36,6 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Layer 4" color="#EABEC0">
-          <frames>
-            <DOMFrame index="0" duration="2" keyMode="9728">
-              <elements>
-                <DOMDynamicText name="Quickkey_tf" width="66" height="23.5" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="-32.35" ty="-73.4"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>7</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="22.65" size="20" bitmapSize="400" face="$MAIN_Font_Bold*" fillColor="#B7B7B7"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMDynamicText>
               </elements>
             </DOMFrame>
           </frames>

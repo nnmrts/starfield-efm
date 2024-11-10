@@ -243,6 +243,7 @@ package
 			{
 				trace("FavoritesMenu.set assignedItem TRACE ---------");
 				trace(e.getStackTrace());
+				GlobalFunc.InspectObject(item, true, true);
 			}
 		}
 
@@ -433,6 +434,8 @@ package
 			{
 				trace("FavoritesMenu.onSelectionChange TRACE ---------");
 				trace(e.getStackTrace());
+
+				GlobalFunc.InspectObject(this.selectedEntry, true, true);
 			}
 		}
 

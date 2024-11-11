@@ -1,4 +1,4 @@
-ScriptName EFM:EFM extends Quest
+ScriptName EFM extends Quest
 {This class will monitor the favorites menu.}
 
 Event OnInit()

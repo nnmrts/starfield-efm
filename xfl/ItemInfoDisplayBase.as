@@ -63,10 +63,10 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.UpdateDisplay TRACE ---------");
-				trace(e);
-				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				// trace("ItemInfoDisplayBase.UpdateDisplay TRACE ---------");
+				// trace(e);
+				// trace(e.getStackTrace());
+				// GlobalFunc.InspectObject(param1, true, true);
 			}
 		}
 
@@ -82,9 +82,9 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.ResetVisiblities TRACE ---------");
-				trace(e);
-				trace(e.getStackTrace());
+				// trace("ItemInfoDisplayBase.ResetVisiblities TRACE ---------");
+				// trace(e);
+				// trace(e.getStackTrace());
 			}
 		}
 
@@ -103,11 +103,10 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.SetItemNameFromInfo TRACE ---------");
-				trace(e);
-
-				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				// trace("ItemInfoDisplayBase.SetItemNameFromInfo TRACE ---------");
+				// trace(e);
+				// trace(e.getStackTrace());
+				// GlobalFunc.InspectObject(param1, true, true);
 			}
 		}
 
@@ -126,12 +125,12 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.SetItemName TRACE ---------");
-				trace(e);
+				// trace("ItemInfoDisplayBase.SetItemName TRACE ---------");
+				// trace(e);
 
-				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
-				GlobalFunc.InspectObject(param2, true, true);
+				// trace(e.getStackTrace());
+				// GlobalFunc.InspectObject(param1, true, true);
+				// GlobalFunc.InspectObject(param2, true, true);
 			}
 		}
 
@@ -170,9 +169,9 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.PopulateDamageType TRACE ---------");
-				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				// trace("ItemInfoDisplayBase.PopulateDamageType TRACE ---------");
+				// trace(e.getStackTrace());
+				// GlobalFunc.InspectObject(param1, true, true);
 			}
 		}
 
@@ -204,8 +203,8 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.PopulateAmmoInfo TRACE ---------");
-				trace(e.getStackTrace());
+				// trace("ItemInfoDisplayBase.PopulateAmmoInfo TRACE ---------");
+				// trace(e.getStackTrace());
 			}
 		}
 
@@ -220,8 +219,8 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.InitializeSpacings TRACE ---------");
-				trace(e.getStackTrace());
+				// trace("ItemInfoDisplayBase.InitializeSpacings TRACE ---------");
+				// trace(e.getStackTrace());
 			}
 		}
 
@@ -232,8 +231,8 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("ItemInfoDisplayBase.RepositionElements TRACE ---------");
-				trace(e.getStackTrace());
+				// trace("ItemInfoDisplayBase.RepositionElements TRACE ---------");
+				// trace(e.getStackTrace());
 			}
 		}
 	}

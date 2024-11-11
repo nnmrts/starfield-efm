@@ -80,7 +80,7 @@
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMDynamicText name="DebugText_tf" top="-243.15" width="670.45" height="363.1" isSelectable="false">
+                                        <DOMDynamicText name="DebugText_tf" top="-243.15" width="670.45" height="363.1" isSelectable="false" lineType="multiline">
                                              <matrix>
                                                   <Matrix tx="34.3" ty="274.45"/>
                                              </matrix>
@@ -119,6 +119,14 @@
      <scripts/>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="79352" publishTime="1731332384" publishDebug="true"/>
+          <PublishItem publishSize="79349" publishTime="1731329194" publishDebug="true"/>
+          <PublishItem publishSize="79365" publishTime="1731328964" publishDebug="true"/>
+          <PublishItem publishSize="79420" publishTime="1731328894" publishDebug="true"/>
+          <PublishItem publishSize="79383" publishTime="1731328262" publishDebug="true"/>
+          <PublishItem publishSize="79372" publishTime="1731326991" publishDebug="true"/>
+          <PublishItem publishSize="79414" publishTime="1731325554" publishDebug="true"/>
+          <PublishItem publishSize="79376" publishTime="1731325479" publishDebug="true"/>
           <PublishItem publishSize="79378" publishTime="1731325465" publishDebug="true"/>
           <PublishItem publishSize="31469" publishTime="1731325328" publishDebug="true"/>
           <PublishItem publishSize="77952" publishTime="1731280549" publishDebug="true"/>
@@ -131,13 +139,5 @@
           <PublishItem publishSize="63122" publishTime="1731217382"/>
           <PublishItem publishSize="61877" publishTime="1731217276"/>
           <PublishItem publishSize="62972" publishTime="1731216601"/>
-          <PublishItem publishSize="62252" publishTime="1731212763"/>
-          <PublishItem publishSize="62266" publishTime="1731212761"/>
-          <PublishItem publishSize="62257" publishTime="1731210992"/>
-          <PublishItem publishSize="62257" publishTime="1731210952"/>
-          <PublishItem publishSize="61805" publishTime="1731181714"/>
-          <PublishItem publishSize="61818" publishTime="1731180986"/>
-          <PublishItem publishSize="29837" publishTime="1731180895"/>
-          <PublishItem publishSize="61751" publishTime="1731180347"/>
      </publishHistory>
 </DOMDocument>

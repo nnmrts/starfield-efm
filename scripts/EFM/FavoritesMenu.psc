@@ -1,8 +1,22 @@
-ScriptName EFM:FavoritesMenu extends Quest
-{An abstraction for the extended favorites menu.}
+ScriptName EFM:FavoritesMenu extends EFM:FavoritesMenuType
+{An abstraction for interactions with the extended favorites menu.}
 
-; The item name for each of the EXTRA slots.
-; string[] Property Slots Auto Hidden
+;/ Cassiopeia Events
+- FavoritesMenu_AssignQuickkey
+- FavoritesMenu_UseQuickkey
+- InventoryMenu_ToggleFavorite
+- PowersMenu_FavoritePower
+/;
+;/ Cassiopeia Functions
+- RegisterForNativeEvent
+- UnregisterForNativeEvent
+- GetIsFormFlagSet
+- GetIsChangeFlagSet
+- GetReferenceName
+- GetInventoryItems
+/;
+
+Actor Player
 
 
 ; Events
@@ -14,21 +28,51 @@ EndEvent
 
 Event OnQuestStarted()
 	Debug.Trace(self+".OnQuestStarted()")
-	; Slots = new string[8]
-	; Slots[0] = "Dummy Item 1"
-	; Slots[1] = "Dummy Item 2"
-	; Slots[2] = "Dummy Item 3"
-	; Slots[3] = "Dummy Item 4"
-	; Slots[4] = "Dummy Item 5"
-	; Slots[5] = "Dummy Item 6"
-	; Slots[6] = "Dummy Item 7"
-	; Slots[7] = "Dummy Item 8"
+	Player = Game.GetPlayer()
 	RegisterForMenuOpenCloseEvent(Name)
+	RegisterForRemoteEvent(Player, "OnItemEquipped")
+	RegisterForRemoteEvent(Player, "OnItemUnequipped")
+	RegisterForCassiopeia()
 EndEvent
 
 Event OnQuestShutdown()
 	Debug.Trace(self+".OnQuestShutdown()")
 	UnregisterForMenuOpenCloseEvent(Name)
+	UnRegisterForCassiopeia()
+EndEvent
+
+
+; Cassiopeia
+;---------------------------------------------
+
+Event OnGameEvent(string eventName)
+    Debug.Trace("EFM:FavoriteMenu.OnGameEvent(eventName="+eventName+")")
+    SetDebugText("EVENT::" + eventName)
+
+	If (eventName == InventoryMenu_ToggleFavorite)
+		Weapon weap = Player.GetEquippedWeapon(9) ; 9:Gun
+		SetDebugText("WEAPON::" + weap)
+
+	ElseIf (eventName == PowersMenu_FavoritePower)
+		Spell power = Player.GetEquippedSpell(2) ; 2:Other
+		SetDebugText("POWER::" + power)
+	EndIf
+EndEvent
+
+
+; Player
+;---------------------------------------------
+
+; Event received when this actor equips something - akReference may be None if object is not persistent (only if this alias points at an actor)
+Event Actor.OnItemEquipped(Actor sender, Form akBaseObject, ObjectReference akReference)
+	Debug.Trace(self+".OnItemEquipped(akBaseObject="+akBaseObject+", akReference="+akReference+")")
+	SetDebugText(akBaseObject)
+EndEvent
+
+; Event received when this actor unequips something - akReference may be None if object is not persistent (only if this alias points at an actor)
+Event Actor.OnItemUnequipped(Actor sender, Form akBaseObject, ObjectReference akReference)
+	Debug.Trace(self+".OnItemUnequipped(akBaseObject="+akBaseObject+", akReference="+akReference+")")
+	SetDebugText(akBaseObject)
 EndEvent
 
 
@@ -38,7 +82,7 @@ EndEvent
 Event OnMenuOpenCloseEvent(string asMenuName, bool abOpening)
 	Debug.Trace(self+".OnMenuOpenCloseEvent(asMenuName="+asMenuName+", abOpening="+abOpening+")")
 	If (abOpening)
-		SetDebugText("Hello Scrivener07")
+		SetDebugText("Hello Scrivener07\nUse the command `HideMenu FavoritesMenu` in console.")
 	EndIf
 EndEvent
 

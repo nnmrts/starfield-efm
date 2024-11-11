@@ -288,8 +288,10 @@
 					this.selectedIndex = FS_NONE;
 					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
 				}
+
 				this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
 				this.SelectQuickslot_mc.gotoAndPlay(this.SelectQuickslot_mc.visible ? "Open" : "Close");
+
 				this.AssignedItemIcon_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
 				this.AssignedItemIcon_mc.gotoAndPlay(this.AssignedItemIcon_mc.visible ? "Open" : "Close");
 
@@ -307,8 +309,8 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.onDataUpdate TRACE ---------");
-				trace(e.getStackTrace());
+				// trace("FavoritesMenu.onDataUpdate TRACE ---------");
+				// trace(e.getStackTrace());
 				// GlobalFunc.InspectObject(clientDataEvent, true, true);
 			}
 		}

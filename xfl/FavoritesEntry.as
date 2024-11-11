@@ -53,8 +53,8 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.constructor TRACE ---------");
-				trace(e.getStackTrace());
+				// trace("FavoritesEntry.constructor TRACE ---------");
+				// trace(e.getStackTrace());
 			}
 		}
 
@@ -77,8 +77,8 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.OnControlMapChanged TRACE ---------");
-				trace(e.getStackTrace());
+				// trace("FavoritesEntry.OnControlMapChanged TRACE ---------");
+				// trace(e.getStackTrace());
 				// GlobalFunc.InspectObject(param1, true, true);
 			}
 		}

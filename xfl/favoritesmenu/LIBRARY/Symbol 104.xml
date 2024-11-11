@@ -22,13 +22,15 @@
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script><![CDATA[stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script><![CDATA[stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>

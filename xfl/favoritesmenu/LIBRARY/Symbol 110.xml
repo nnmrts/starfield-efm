@@ -16,13 +16,15 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script><![CDATA[stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script><![CDATA[stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>

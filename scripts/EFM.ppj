@@ -9,7 +9,8 @@
 	Final="false"
 >
 	<Imports>
-		<Import>C:\Program Files (x86)\Steam\steamapps\common\Starfield\Data\Scripts\Source</Import>
+		<Import>C:\Program Files (x86)\Steam\steamapps\common\Starfield\Data\Scripts\Source\Base</Import>
+		<Import>C:\Program Files (x86)\Steam\steamapps\common\Starfield\Data\Scripts\Source\Cassiopeia</Import>
 		<Import>.</Import>
 	</Imports>
 	<Folders>

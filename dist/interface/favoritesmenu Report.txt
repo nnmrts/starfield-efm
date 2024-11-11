@@ -1,19 +1,19 @@
 ﻿favoritesmenu.swf Movie Report
--------------------------------
+--------------------------------
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          77952          77952    Scene 1 (AS 3.0 Classes Export Frame)
+      1          79414          79414    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0             0                 46436
+Scene 1              0            91                 46974
 
 Symbol        Shape Bytes    Text Bytes    ActionScript Bytes
 ----------    -----------    ----------    ------------------
 Symbol 1               64             0                     0
 Symbol 2               83             0                     0
-Symbol 3              146             0                     0
+Symbol 3              147             0                     0
 Symbol 4               26             0                     0
 Symbol 6                0            74                     0
 Symbol 8              143             0                     0
@@ -24,15 +24,15 @@ Symbol 12               0             0                     0
 Symbol 14              94             0                     0
 Symbol 15              75             0                     0
 Symbol 16               0             0                     0
-Symbol 17             105             0                     0
+Symbol 17             106             0                     0
 Symbol 18               0             0                     0
 Symbol 20             247             0                     0
-Symbol 22             107             0                     0
+Symbol 22             108             0                     0
 Symbol 24              53             0                     0
 Symbol 26              65             0                     0
 Symbol 28              17             0                     0
 Symbol 30               0            79                     0
-Symbol 32               0            77                     0
+Symbol 32               0            78                     0
 Symbol 34               0            76                     0
 Symbol 35               0             0                     0
 Symbol 36               0             0                     0
@@ -43,29 +43,29 @@ Symbol 41               0             0                     0
 Symbol 42              15             0                     0
 Symbol 43               0             0                     0
 Symbol 45               0             0                     0
-Symbol 46               0            73                     0
-Symbol 47              53             0                     0
+Symbol 46               0            74                     0
+Symbol 47              54             0                     0
 Symbol 48               0             0                     0
 Symbol 49               0             0                     0
-Symbol 51               0            73                     0
+Symbol 51               0            74                     0
 Symbol 52              54             0                     0
 Symbol 53               0             0                     0
-Symbol 55               0            73                     0
+Symbol 55               0            74                     0
 Symbol 56              52             0                     0
 Symbol 57               0             0                     0
-Symbol 59               0            73                     0
-Symbol 64              90            73                     0
-Symbol 69              80            73                     0
-Symbol 74              90            73                     0
-Symbol 79              91            73                     0
-Symbol 84              90            73                     0
-Symbol 89              88            73                     0
-Symbol 94              88            73                     0
-Symbol 99              91            73                     0
+Symbol 59               0            74                     0
+Symbol 64              90            74                     0
+Symbol 69              80            74                     0
+Symbol 74              91            74                     0
+Symbol 79              91            74                     0
+Symbol 84              90            74                     0
+Symbol 89              88            74                     0
+Symbol 94              88            74                     0
+Symbol 99              91            74                     0
 Symbol 101             19             0                     0
 Symbol 103              0            32                     0
 Symbol 104              0             0                     0
-Symbol 106             57             0                     0
+Symbol 106             58             0                     0
 Symbol 108            164             0                     0
 Symbol 110            139             0                     0
 Symbol 112             50             0                     0
@@ -83,11 +83,11 @@ Symbol 125              0             0                     0
 
 Font Name       Bytes         Characters
 ------------    ----------    ----------
-NB-Architekt         23003     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇ˘˙˚˛˜˝Ωμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑√∞∫≠≤≥﹘﹣－
+NB-Architekt         23803     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇ˘˙˚˛˜˝Ωμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑√∞∫≠≤≥﹘﹣－
 
 ActionScript Bytes    Location
 ------------------    --------
-             46436    Scene 1:Frame 1
+             46974    Scene 1:Frame 1
 
 
 

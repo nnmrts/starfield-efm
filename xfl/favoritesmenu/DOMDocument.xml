@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Macintosh" versionInfo="Saved by Animate Macintosh 24.0 build 40" majorVersion="24" buildNumber="40" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="E2F070341A014B84A3090FD78AC9A1E5">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 24.0 build 19" majorVersion="24" buildNumber="19" vanishingPoint3DX="960" vanishingPoint3DY="540" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="E2F070341A014B84A3090FD78AC9A1E5">
      <fonts>
           <DOMFontItem name="$MAIN_Font_Bold" itemID="672ed191-00000042" linkageExportForAS="true" linkageClassName="$MAIN_Font_Bold" font="NB-Architekt" size="0" id="1" sourceLastImported="1731124604" embedRanges="9999"/>
      </fonts>
@@ -76,7 +76,28 @@
      <timelines>
           <DOMTimeline name="Scene 1">
                <layers>
-                    <DOMLayer name="Layer 1" color="#617CC4" current="true" isSelected="true">
+                    <DOMLayer name="DebugText_tf (Debug Only)" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMDynamicText name="DebugText_tf" top="-243.15" width="670.45" height="363.1" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="34.3" ty="274.45"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>COMMAND DATA STRING SHOULD DISPLAY HERE</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" lineHeight="27.15" size="24" bitmapSize="480" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Menu_mc" color="#617CC4" locked="true" outline="true" useOutlineView="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
@@ -98,6 +119,8 @@
      <scripts/>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="79378" publishTime="1731325465" publishDebug="true"/>
+          <PublishItem publishSize="31469" publishTime="1731325328" publishDebug="true"/>
           <PublishItem publishSize="77952" publishTime="1731280549" publishDebug="true"/>
           <PublishItem publishSize="77954" publishTime="1731280488" publishDebug="true"/>
           <PublishItem publishSize="77959" publishTime="1731280329" publishDebug="true"/>
@@ -116,7 +139,5 @@
           <PublishItem publishSize="61818" publishTime="1731180986"/>
           <PublishItem publishSize="29837" publishTime="1731180895"/>
           <PublishItem publishSize="61751" publishTime="1731180347"/>
-          <PublishItem publishSize="61660" publishTime="1731180297"/>
-          <PublishItem publishSize="61694" publishTime="1731180268"/>
      </publishHistory>
 </DOMDocument>

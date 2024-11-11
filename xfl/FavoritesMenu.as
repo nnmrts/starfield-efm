@@ -1,4 +1,4 @@
-package
+﻿package
 {
 	import Components.ImageFixture;
 	import Shared.AS3.Data.BSUIDataManager;
@@ -14,6 +14,18 @@ package
 
 	public class FavoritesMenu extends IMenu
 	{
+
+		private var CommandString:String;
+		public function get Command():String { return CommandString; }
+		public function set Command(value:String):void
+		{
+			if (CommandString != value)
+			{
+				CommandString = value;
+				OnCommand(CommandString);
+			}
+		}
+
 		public static const FS_LEFT_3:uint = 0;
 
 		public static const FS_LEFT_2:uint = 1;
@@ -120,6 +132,7 @@ package
 
 		private var OverEntry:Boolean = false;
 
+
 		private const _UpDirectory:Array = [
 				FS_UP_1,
 				FS_UP_1,
@@ -142,7 +155,7 @@ package
 				FS_UP_1,
 				FS_UP_1,
 				FS_UP_1
-			];
+		];
 
 		private const _DownDirectory:Array = [
 				FS_DOWN_1,
@@ -166,7 +179,7 @@ package
 				FS_DOWN_1,
 				FS_DOWN_1,
 				FS_DOWN_1,
-			];
+		];
 
 		private const _LeftDirectory:Array = [
 				FS_LEFT_3,
@@ -190,7 +203,7 @@ package
 				FS_LEFT_1,
 				FS_LEFT_1,
 				FS_LEFT_1
-			];
+		];
 
 		private const _RightDirectory:Array = [
 				FS_LEFT_2,
@@ -214,7 +227,8 @@ package
 				FS_RIGHT_1,
 				FS_RIGHT_1,
 				FS_RIGHT_1
-			];
+		];
+
 
 		public function FavoritesMenu()
 		{
@@ -250,6 +264,14 @@ package
 				trace(e.getStackTrace());
 			}
 		}
+
+
+		private function OnCommand(command:String):void
+		{
+			trace("Command: " + command);
+			MovieClip(root).DebugText_tf.text = command;
+		}
+
 
 		private function onDataUpdate(clientDataEvent:FromClientDataEvent):void
 		{

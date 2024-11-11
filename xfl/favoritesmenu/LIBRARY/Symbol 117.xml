@@ -28,7 +28,8 @@
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();]]></script>
+                <script><![CDATA[stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -37,7 +38,9 @@
             </DOMFrame>
             <DOMFrame index="17" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));stop();]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
+stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -46,7 +49,9 @@
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));stop();]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
+stop();
+]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>

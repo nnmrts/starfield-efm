@@ -3,11 +3,11 @@
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          78874          78874    Scene 1 (AS 3.0 Classes Export Frame)
+      1          78902          78902    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0            91                 46577
+Scene 1              0            91                 46594
 
 Symbol        Shape Bytes    Text Bytes    ActionScript Bytes
 ----------    -----------    ----------    ------------------
@@ -28,7 +28,7 @@ Symbol 17             105             0                     0
 Symbol 18               0             0                     0
 Symbol 20             246             0                     0
 Symbol 22             107             0                     0
-Symbol 24              52             0                     0
+Symbol 24              53             0                     0
 Symbol 26              65             0                     0
 Symbol 28              17             0                     0
 Symbol 30               0            79                     0
@@ -83,11 +83,11 @@ Symbol 125              0             0                     0
 
 Font Name       Bytes         Characters
 ------------    ----------    ----------
-NB-Architekt         23698     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇ˘˙˚˛˜˝Ωμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑√∞∫≠≤≥﹘﹣－
+NB-Architekt         23707     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇ˘˙˚˛˜˝Ωμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑√∞∫≠≤≥﹘﹣－
 
 ActionScript Bytes    Location
 ------------------    --------
-             46577    Scene 1:Frame 1
+             46594    Scene 1:Frame 1
 
 
 

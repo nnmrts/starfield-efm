@@ -36,4 +36,8 @@ bin-release/
 vanilla/
 /xfl/RECOVER_favoritesmenu
 parse-logs.js
-/dist
+/dist/**
+!/dist/.gitkeep
+!/dist/*/
+!/dist/*/.gitkeep
+!/dist/interface/favoritesmenu Report.txt

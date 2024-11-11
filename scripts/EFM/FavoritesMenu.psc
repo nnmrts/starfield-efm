@@ -1,6 +1,9 @@
 ScriptName EFM:FavoritesMenu extends Quest
 {An abstraction for the extended favorites menu.}
 
+; The item name for each of the EXTRA slots.
+; string[] Property Slots Auto Hidden
+
 
 ; Events
 ;---------------------------------------------
@@ -11,6 +14,15 @@ EndEvent
 
 Event OnQuestStarted()
 	Debug.Trace(self+".OnQuestStarted()")
+	; Slots = new string[8]
+	; Slots[0] = "Dummy Item 1"
+	; Slots[1] = "Dummy Item 2"
+	; Slots[2] = "Dummy Item 3"
+	; Slots[3] = "Dummy Item 4"
+	; Slots[4] = "Dummy Item 5"
+	; Slots[5] = "Dummy Item 6"
+	; Slots[6] = "Dummy Item 7"
+	; Slots[7] = "Dummy Item 8"
 	RegisterForMenuOpenCloseEvent(Name)
 EndEvent
 
@@ -42,6 +54,10 @@ Function SetDebugText(string text)
 	CassiopeiaPapyrusExtender.SetAS3Variable(Name, DebugText, text)
 EndFunction
 
+Function SendCommand(string argument)
+	CassiopeiaPapyrusExtender.SetAS3Variable(Name, Command, argument)
+EndFunction
+
 
 ; Properties
 ;---------------------------------------------
@@ -52,7 +68,6 @@ string Property Name Hidden
 		return "FavoritesMenu"
 	EndFunction
 EndProperty
-
 
 string Property DebugText Hidden
 	{Represents a debug textfield on the root favorites menu stage root.}

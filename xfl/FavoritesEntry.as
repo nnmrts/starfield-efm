@@ -79,7 +79,7 @@ package
 			{
 				trace("FavoritesEntry.OnControlMapChanged TRACE ---------");
 				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				// GlobalFunc.InspectObject(param1, true, true);
 			}
 		}
 

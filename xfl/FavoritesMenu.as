@@ -309,7 +309,7 @@
 			{
 				trace("FavoritesMenu.onDataUpdate TRACE ---------");
 				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(clientDataEvent, true, true);
+				// GlobalFunc.InspectObject(clientDataEvent, true, true);
 			}
 		}
 
@@ -534,8 +534,8 @@
 		{
 			try
 			{
-				gotoAndPlay("Close");
-				addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
+				// gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
+				// addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
 			}
 			catch (e:Error)
 			{

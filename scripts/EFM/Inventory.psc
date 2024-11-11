@@ -24,29 +24,20 @@ EndEvent
 ; Event received when this actor activates a ref
 Event OnActorActivatedRef(ObjectReference akActivatedRef)
 	Debug.Trace(self+".OnActorActivatedRef(akActivatedRef="+akActivatedRef+")")
+	FavoritesMenu.SetDebugText("Activated: " + akActivatedRef)
 EndEvent
 
-; Received when the player gains an item in their inventory
-; aeAcquireType is one of the following:
-; 0: None
-; 1: Steal
-; 2: Buy
-; 3: Pickpocket
-; 4: Pickup
-; 5: Container
-; 6: Dead body
-Event OnPlayerItemAdded(Form akBaseObject, ObjectReference akOwner, ObjectReference akSourceContainer, int aeAcquireType)
-	Debug.Trace(self+".OnActorActivatedRef(akBaseObject="+akBaseObject + ", akOwner="+akOwner + ", akSourceContainer="+akSourceContainer + ", aeAcquireType="+aeAcquireType + ")")
-EndEvent
 
 ; Event received when this actor equips something - akReference may be None if object is not persistent (only if this alias points at an actor)
 Event OnItemEquipped(Form akBaseObject, ObjectReference akReference)
 	Debug.Trace(self+".OnItemEquipped(akBaseObject="+akBaseObject+", akReference="+akReference+")")
-	FavoritesMenu.SetDebugText(akReference)
+	FavoritesMenu.SetDebugText(akBaseObject)
 EndEvent
 
 ; Event received when this actor unequips something - akReference may be None if object is not persistent (only if this alias points at an actor)
 Event OnItemUnequipped(Form akBaseObject, ObjectReference akReference)
+	Debug.Trace(self+".OnItemUnequipped(akBaseObject="+akBaseObject+", akReference="+akReference+")")
+	FavoritesMenu.SetDebugText(akBaseObject)
 EndEvent
 
 

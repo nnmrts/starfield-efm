@@ -3,35 +3,35 @@
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          78902          78902    Scene 1 (AS 3.0 Classes Export Frame)
+      1          78927          78927    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0            91                 46594
+Scene 1              0            91                 46523
 
 Symbol        Shape Bytes    Text Bytes    ActionScript Bytes
 ----------    -----------    ----------    ------------------
-Symbol 1               64             0                     0
-Symbol 2               83             0                     0
+Symbol 1               63             0                     0
+Symbol 2               82             0                     0
 Symbol 3              146             0                     0
 Symbol 4               26             0                     0
 Symbol 6                0            74                     0
-Symbol 8              143             0                     0
+Symbol 8              142             0                     0
 Symbol 9              248             0                     0
 Symbol 10               0             0                     0
 Symbol 11             145             0                     0
 Symbol 12               0             0                     0
-Symbol 14              94             0                     0
-Symbol 15              75             0                     0
+Symbol 14              93             0                     0
+Symbol 15              74             0                     0
 Symbol 16               0             0                     0
 Symbol 17             105             0                     0
 Symbol 18               0             0                     0
 Symbol 20             246             0                     0
 Symbol 22             107             0                     0
-Symbol 24              53             0                     0
+Symbol 24              52             0                     0
 Symbol 26              65             0                     0
 Symbol 28              17             0                     0
-Symbol 30               0            79                     0
+Symbol 30               0            78                     0
 Symbol 32               0            77                     0
 Symbol 34               0            76                     0
 Symbol 35               0             0                     0
@@ -83,11 +83,11 @@ Symbol 125              0             0                     0
 
 Font Name       Bytes         Characters
 ------------    ----------    ----------
-NB-Architekt         23707     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇ˘˙˚˛˜˝Ωμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑√∞∫≠≤≥﹘﹣－
+NB-Architekt         23816     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－
 
 ActionScript Bytes    Location
 ------------------    --------
-             46594    Scene 1:Frame 1
+             46523    Scene 1:Frame 1
 
 
 

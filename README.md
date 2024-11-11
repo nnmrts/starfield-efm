@@ -11,6 +11,7 @@ These are required for end users of the final distribution.
 ### Tools
 These tools were helpful in the development of this project.
 - [FFDec - Free Flash Decompiler by JPEXS](https://github.com/jindrapetrik/jpexs-decompiler/releases)
+- [Flash Command | Report Textfield Font Configuration.jsfl](https://github.com/F4CF/Interface/blob/f8b6fcfe35ca01667b8fd76de2bba53113b2abd7/--Tools/Adobe%20Animate/Configuration/Commands/Scaleform/Report%20-%20Textfield%20Font%20Configuration.jsfl)
 - [BAE - Bethesda Archive Extractor](https://www.nexusmods.com/starfield/mods/165)
 
 #### VS Code Extensions
@@ -40,7 +41,7 @@ This section has links to some useful documentation.
 - [Fallout 4 UI Dump](https://github.com/F4CF/Interface)
 - [AS3 System.Diagnostics](https://github.com/F4CF/Creation-Framework/tree/master/System/Interface/Source/System/System/Diagnostics)
 - [FO4 Papyrus - Actor.MarkItemAsFavorite](https://falloutck.uesp.net/wiki/MarkItemAsFavorite_-_Actor)
-
+- [Flash Command | JSFL FLA Batch Compiler by Grant Skinner](https://github.com/F4CF/Interface/tree/master/--Tools/Flash%20Compiler)
 
 # Menu Restoration
 These were the steps taken to restore the vanilla Favorites menu to a functional state post-export from FFDec.
@@ -60,7 +61,7 @@ This `Font` symbol by default will specify meta data about a font on your OS, an
 Make sure to visit the "Actionscript" tab of the font embed window and find the **Linkage** section.
 Make sure the font has a unique class definition and has `Export for Actionscript` and `Export in frame 1` checked.
 
-Then you would then go back to all the `TextField` in the menu and change it from `Times New Roman`, to your `Font` symbol.
+Then you would go back to all the `TextField` in the menu and change it from `Times New Roman`, to your `Font` symbol.
 You will see these appear in the font selection drop down as entries suffixed with a `*`. Choose those.
 The favorites menu should use the class name `$MAIN_Font_Bold`, which represents the `NB Architekt` font, for all text fields in the menu.
 
@@ -90,7 +91,7 @@ PapyrusCompiler.exe "MyProject.ppj" --output="x:\some\other\directory"
 ```
 
 ### Developer Console
-In the event of a soft-lock or intention to debug, it is possible to open/close a menu by name using the in-game developer console.
+For debugging, or in the event of a soft-lock, it is possible to open/close a menu by name using the in-game developer console.
 
 #### Open a menu by name.
 ```
@@ -114,4 +115,12 @@ Quotes are required when the script has a namespace represented by the `:` chara
 ```
 ReloadScript "EFM:FavoritesMenuType"
 ReloadScript "EFM:FavoritesMenu"
+```
+
+
+### Adobe Flash JSFL Commands
+Adobe Animate will load commands from this directory on Windows by default.
+See [Flash Command | Report Textfield Font Configuration.jsfl](https://github.com/F4CF/Interface/blob/f8b6fcfe35ca01667b8fd76de2bba53113b2abd7/--Tools/Adobe%20Animate/Configuration/Commands/Scaleform/Report%20-%20Textfield%20Font%20Configuration.jsfl) for help hunting down all the TextField instances within any opened Flash document.
+```
+C:\Users\YourUserName\AppData\Local\Adobe\Animate 2024\en_US\Configuration\Commands\Report - Textfield Font Configuration.jsfl
 ```

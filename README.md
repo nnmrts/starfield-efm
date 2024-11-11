@@ -88,15 +88,24 @@ In the event of a soft-lock or intention to debug, it is possible to open/close 
 
 #### Open a menu by name.
 ```
-HideMenu FavoritesMenu
+ShowMenu FavoritesMenu
 ```
 
 #### Close a menu by name.
 ```
-ShowMenu FavoritesMenu
+HideMenu FavoritesMenu
 ```
 
 #### Find the name of all currently open menus.
 ```
 PAM
+```
+
+#### Force reload a Papyrus script.
+Force reloads a Papyrus script while the game is running.
+Each changed script in a script's inheritance chain needs to be reloaded separately.
+Quotes are required when the script has a namespace represented by the `:` character
+```
+ReloadScript "EFM:FavoritesMenuType"
+ReloadScript "EFM:FavoritesMenu"
 ```

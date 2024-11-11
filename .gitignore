@@ -34,7 +34,7 @@ bin-release/
 # information for Eclipse / Flash Builder.
 
 vanilla/
-/xfl/RECOVER_favoritesmenu
+RECOVER_*/
 parse-logs.js
 /dist/**
 !/dist/.gitkeep

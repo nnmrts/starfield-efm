@@ -3,14 +3,20 @@ The Extended Favorites Menu (EFM) provides additional favorite slots.
 
 
 ### End User Dependencies
+These are required for end users of the final distribution.
 - [Starfield Script Extender (SFSE) by SFSE Team](https://www.nexusmods.com/starfield/mods/106)
 - [Address Library for SFSE Plugins by meh321](https://www.nexusmods.com/starfield/mods/3256)
 - [Cassiopeia Papyrus Extender by LarannKiar](https://www.nexusmods.com/starfield/mods/10896)
 
-
 ### Tools
+These tools were helpful in the development of this project.
 - [FFDec - Free Flash Decompiler by JPEXS](https://github.com/jindrapetrik/jpexs-decompiler/releases)
 - [BAE - Bethesda Archive Extractor](https://www.nexusmods.com/starfield/mods/165)
+
+#### VS Code Extensions
+These are not required, just neat and worth checking out.
+- [ActionScript & MXML language extension for Visual Studio Code, by Bowler Hat LLC](https://marketplace.visualstudio.com/items?itemName=bowlerhatllc.vscode-as3mxml)
+- [Papyrus for Visual Studio Code, by Joel Day](https://marketplace.visualstudio.com/items?itemName=joelday.papyrus-lang-vscode)
 
 
 # Documentation

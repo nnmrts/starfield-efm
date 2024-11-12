@@ -81,7 +81,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 41" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
                   <matrix>
                     <Matrix a="0.75" d="0.75" ty="-40"/>
                   </matrix>
@@ -96,7 +96,7 @@
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 41" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
                   <matrix>
                     <Matrix a="0.75" d="0.75" ty="-40"/>
                   </matrix>

@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Ring/Symbol 114" itemID="672e9200-0000003a" lastModified="1731015698">
+  <timeline>
+    <DOMTimeline name="Symbol 114">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AAFD02" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="2">
+                        <fill>
+                          <SolidColor color="#B7B7B7"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!3991 1[3991 684 3792 1284!3792 1284[3508 2137 2822 2822!2822 2822[2553 3092 2258 3299!2258 3299[1273 3991 0 3991!0 3991[-1653 3991 -2822 2822!-2822 2822[-3990 1654 -3990 1!-3990 1[-3990 -816 -3705 -1514!-3705 -1514[-3445 -2151 -2948
+ -2690!-2948 -2690|-2822 -2821!-2822 -2821[-1653 -3990 0 -3990!0 -3990[1654 -3990 2822 -2821!2822 -2821[3991 -1653 3991 1"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

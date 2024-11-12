@@ -1,18 +1,19 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 24.0 build 19" majorVersion="24" buildNumber="19" vanishingPoint3DX="960" vanishingPoint3DY="540" sharedLibraryURL="fonts_en.swf" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="E2F070341A014B84A3090FD78AC9A1E5">
      <folders>
+          <DOMFolderItem name="Bethesda.Fonts_en" itemID="67329c49-000001f2"/>
           <DOMFolderItem name="EFM.FavoritesMenu" itemID="6732900f-0000018e" isExpanded="true"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Assets" itemID="67329057-0000019a" isExpanded="true"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Assets/DamageType" itemID="67329169-000001b6"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/Assets/ItemIcon" itemID="67329193-000001bc" isExpanded="true"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/Center" itemID="6732926b-000001c6"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Assets/ItemIcon" itemID="67329193-000001bc"/>
           <DOMFolderItem name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay" itemID="673290b9-000001a5"/>
           <DOMFolderItem name="EFM.FavoritesMenu/SelectQuickSlot" itemID="6732910f-000001aa"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Slot-Center" itemID="67329e7d-0000021e"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Entry" itemID="67329337-000001ca"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Grid" itemID="67329342-000001cf"/>
-          <DOMFolderItem name="TEMP.Fonts" itemID="6732902b-00000193"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Slot-Ring" itemID="6732a535-00000226"/>
      </folders>
      <fonts>
-          <DOMFontItem name="TEMP.Fonts/$MAIN_Font_Bold" itemID="672ed191-00000042" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="NB-Architekt" size="0" id="1" sourceLastImported="1731365347" embeddedCharacters="¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－" embedRanges="1|2|3|4|5"/>
+          <DOMFontItem name="Bethesda.Fonts_en/$MAIN_Font_Bold" itemID="672ed191-00000042" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="NB-Architekt" size="0" id="1" sourceLastImported="1731365347" embeddedCharacters="¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－" embedRanges="1|2|3|4|5"/>
      </fonts>
      <symbols>
           <Include href="EFM.FavoritesMenu/Assets/DamageType/DamageType.xml" itemID="67329404-000001d5" lastModified="1731368171"/>
@@ -20,70 +21,70 @@
           <Include href="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_EM.xml" itemIcon="1" loadImmediate="false" itemID="6732957b-000001d7" lastModified="1731368315"/>
           <Include href="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_Energy.xml" itemIcon="1" loadImmediate="false" itemID="673295f9-000001dd" lastModified="1731368442"/>
           <Include href="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_Physical.xml" itemIcon="1" loadImmediate="false" itemID="67329581-000001d8" lastModified="1731368321"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 8.xml" itemID="672e9200-00000005" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 9.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000006" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 10.xml" itemID="672e9200-00000007" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 11.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000008" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 12.xml" itemID="672e9200-00000009" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 14.xml" itemID="672e9200-0000000a" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 15.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000000b" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 16.xml" itemID="672e9200-0000000c" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 17.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000000d" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 18.xml" itemID="672e9200-0000000e" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 20.xml" itemID="672e9200-0000000f" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 22.xml" itemID="672e9200-00000010" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 24.xml" itemID="672e9200-00000011" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 26.xml" itemID="672e9200-00000012" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 40.xml" loadImmediate="false" itemID="672e9200-0000001b" lastModified="1731128852"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/Symbol 41.xml" itemID="672e9200-0000001c" lastModified="1731368533"/>
-          <Include href="EFM.FavoritesMenu/Center/Center.xml" itemID="673291f6-000001c0" lastModified="1731367665"/>
-          <Include href="EFM.FavoritesMenu/Center/Symbol 2.xml" loadImmediate="false" itemID="673049cd-00000179" lastModified="1731367840"/>
-          <Include href="EFM.FavoritesMenu/Center/Symbol 108.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000037" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon.xml" itemID="67329b07-000001e3" lastModified="1731370467"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Apparel.xml" itemID="67329b9f-000001ed" lastModified="1731369887"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Drink.xml" itemID="67329b99-000001ec" lastModified="1731369881"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Food.xml" itemID="67329b95-000001eb" lastModified="1731369877"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Grenade.xml" itemID="67329b91-000001ea" lastModified="1731369873"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet.xml" itemID="67329b89-000001e9" lastModified="1731369865"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet_Graphic.xml" itemIcon="1" loadImmediate="false" itemID="67329bca-000001ee" lastModified="1731369930"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Meds.xml" itemID="67329b81-000001e8" lastModified="1731369857"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Meds_Graphic.xml" itemIcon="1" loadImmediate="false" itemID="67329bec-000001ef" lastModified="1731369964"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Mine.xml" itemID="67329b7d-000001e7" lastModified="1731369853"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Pack.xml" itemID="67329b76-000001e6" lastModified="1731369846"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Pack_Graphic.xml" itemIcon="1" loadImmediate="false" itemID="67329c1f-000001f1" lastModified="1731370015"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit.xml" itemID="67329b70-000001e5" lastModified="1731369840"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit_Graphic.xml" itemIcon="1" loadImmediate="false" itemID="67329c0e-000001f0" lastModified="1731369998"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_WeaponGeneric.xml" itemID="67329b4d-000001e4" lastModified="1731369805"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip.xml" loadImmediate="false" itemID="67329b02-000001e2" lastModified="1731369730"/>
+          <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay.xml" itemID="67329cdc-000001f4" lastModified="1731370671"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 28.xml" loadImmediate="false" itemID="672e9200-00000013" lastModified="1731015698"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 30.xml" loadImmediate="false" itemID="672e9200-00000014" lastModified="1731015698"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 32.xml" loadImmediate="false" itemID="672e9200-00000015" lastModified="1731015698"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 34.xml" loadImmediate="false" itemID="672e9200-00000016" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 35.xml" loadImmediate="false" itemID="672e9200-00000017" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 36.xml" itemID="672e9200-00000018" lastModified="1731367092"/>
-          <Include href="EFM.FavoritesMenu/FavoritesMenu.xml" itemID="673291e8-000001be" lastModified="1731367560"/>
-          <Include href="EFM.FavoritesMenu/SelectQuickSlot/Symbol 103.xml" loadImmediate="false" itemID="672e9200-00000034" lastModified="1731121021"/>
-          <Include href="EFM.FavoritesMenu/SelectQuickSlot/Symbol 104.xml" itemID="672e9200-00000035" lastModified="1731367172"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 46.xml" itemID="672e9200-00000020" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 51.xml" itemID="672e9200-00000024" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 55.xml" itemID="672e9200-00000027" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 59.xml" itemID="672e9200-0000002a" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 64.xml" itemID="672e9200-0000002b" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 69.xml" itemID="672e9200-0000002c" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 74.xml" itemID="672e9200-0000002d" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 79.xml" itemID="672e9200-0000002e" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 84.xml" itemID="672e9200-0000002f" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 89.xml" itemID="672e9200-00000030" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 94.xml" itemID="672e9200-00000031" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 99.xml" itemID="672e9200-00000032" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 118.xml" itemID="672ef8e3-00000040" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 119.xml" itemID="673044d3-0000015e" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 120.xml" itemID="673044d3-0000015f" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 121.xml" itemID="673044d3-00000160" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 122.xml" itemID="673044d3-00000161" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 123.xml" itemID="673044d3-00000162" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 124.xml" itemID="673044d3-00000163" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Entry/Symbol 125.xml" itemID="673044d3-00000164" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Slot-Grid/Symbol 106.xml" loadImmediate="false" itemID="672e9200-00000036" lastModified="1731217118"/>
-          <Include href="EFM.FavoritesMenu/Symbol 37.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000019" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 38.xml" loadImmediate="false" itemID="672e9200-0000001a" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 42.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000001d" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 43.xml" loadImmediate="false" itemID="672e9200-0000001e" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 45.xml" loadImmediate="false" itemID="672e9200-0000001f" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 47.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000021" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 48.xml" loadImmediate="false" itemID="672e9200-00000022" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 35.xml" loadImmediate="false" itemID="672e9200-00000017" lastModified="1731370580"/>
+          <Include href="EFM.FavoritesMenu/FavoritesMenu.xml" itemID="673291e8-000001be" lastModified="1731372259"/>
+          <Include href="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot.xml" itemID="67329ceb-000001f6" lastModified="1731370789"/>
+          <Include href="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text.xml" loadImmediate="false" itemID="67329f0a-00000220" lastModified="1731370762"/>
+          <Include href="EFM.FavoritesMenu/Slot-Center/Center.xml" itemID="673291f6-000001c0" lastModified="1731367665"/>
+          <Include href="EFM.FavoritesMenu/Slot-Center/Symbol 2.xml" loadImmediate="false" itemID="673049cd-00000179" lastModified="1731367840"/>
+          <Include href="EFM.FavoritesMenu/Slot-Center/Symbol 108.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000037" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom.xml" itemID="67329d6d-0000020c" lastModified="1731370349"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left.xml" itemID="67329d67-0000020b" lastModified="1731370343"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right.xml" itemID="67329d73-0000020d" lastModified="1731370355"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top.xml" itemID="67329d2d-000001f7" lastModified="1731370285"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom.xml" itemID="67329d7c-0000020f" lastModified="1731370364"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft.xml" itemID="67329db5-0000021b" lastModified="1731370421"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight.xml" itemID="67329dad-00000219" lastModified="1731370413"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left.xml" itemID="67329d80-00000210" lastModified="1731370368"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right.xml" itemID="67329d77-0000020e" lastModified="1731370359"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top.xml" itemID="67329d85-00000211" lastModified="1731370373"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft.xml" itemID="67329dbc-0000021d" lastModified="1731370428"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight.xml" itemID="67329da5-00000217" lastModified="1731370405"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom.xml" itemID="67329d95-00000213" lastModified="1731370389"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft.xml" itemID="67329db0-0000021a" lastModified="1731370416"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight.xml" itemID="67329da9-00000218" lastModified="1731370409"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left.xml" itemID="67329d99-00000214" lastModified="1731370393"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right.xml" itemID="67329d8f-00000212" lastModified="1731370383"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top.xml" itemID="67329d9d-00000215" lastModified="1731370397"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft.xml" itemID="67329db8-0000021c" lastModified="1731370424"/>
+          <Include href="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight.xml" itemID="67329da1-00000216" lastModified="1731370401"/>
+          <Include href="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background.xml" loadImmediate="false" itemID="6732a50b-00000221" lastModified="1731372299"/>
+          <Include href="EFM.FavoritesMenu/Slot-Ring/Symbol 112.xml" loadImmediate="false" itemID="672e9200-00000039" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Slot-Ring/Symbol 114.xml" loadImmediate="false" itemID="672e9200-0000003a" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Slot-Ring/Symbol 116.xml" loadImmediate="false" itemID="672e9200-0000003b" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Symbol 37.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000019" lastModified="1731370938"/>
+          <Include href="EFM.FavoritesMenu/Symbol 38.xml" loadImmediate="false" itemID="672e9200-0000001a" lastModified="1731370838"/>
+          <Include href="EFM.FavoritesMenu/Symbol 42.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-0000001d" lastModified="1731370930"/>
+          <Include href="EFM.FavoritesMenu/Symbol 43.xml" loadImmediate="false" itemID="672e9200-0000001e" lastModified="1731370827"/>
+          <Include href="EFM.FavoritesMenu/Symbol 45.xml" loadImmediate="false" itemID="672e9200-0000001f" lastModified="1731370823"/>
+          <Include href="EFM.FavoritesMenu/Symbol 47.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000021" lastModified="1731370856"/>
+          <Include href="EFM.FavoritesMenu/Symbol 48.xml" loadImmediate="false" itemID="672e9200-00000022" lastModified="1731370821"/>
           <Include href="EFM.FavoritesMenu/Symbol 49.xml" loadImmediate="false" itemID="672e9200-00000023" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 52.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000025" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Symbol 52.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000025" lastModified="1731370853"/>
           <Include href="EFM.FavoritesMenu/Symbol 53.xml" loadImmediate="false" itemID="672e9200-00000026" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 56.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000028" lastModified="1731015698"/>
+          <Include href="EFM.FavoritesMenu/Symbol 56.xml" itemIcon="1" loadImmediate="false" itemID="672e9200-00000028" lastModified="1731370850"/>
           <Include href="EFM.FavoritesMenu/Symbol 57.xml" loadImmediate="false" itemID="672e9200-00000029" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 112.xml" loadImmediate="false" itemID="672e9200-00000039" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 114.xml" loadImmediate="false" itemID="672e9200-0000003a" lastModified="1731015698"/>
-          <Include href="EFM.FavoritesMenu/Symbol 116.xml" loadImmediate="false" itemID="672e9200-0000003b" lastModified="1731015698"/>
           <Include href="EFM.FavoritesMenu/Vignette.xml" loadImmediate="false" itemID="67329222-000001c1" lastModified="1731367458"/>
      </symbols>
      <timelines>
@@ -132,6 +133,8 @@
      <scripts/>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="78949" publishTime="1731372423" publishDebug="true"/>
+          <PublishItem publishSize="78923" publishTime="1731370136" publishDebug="true"/>
           <PublishItem publishSize="78927" publishTime="1731366849" publishDebug="true"/>
           <PublishItem publishSize="78932" publishTime="1731365514" publishDebug="true"/>
           <PublishItem publishSize="78902" publishTime="1731363141" publishDebug="true"/>
@@ -150,7 +153,5 @@
           <PublishItem publishSize="79414" publishTime="1731325554" publishDebug="true"/>
           <PublishItem publishSize="79376" publishTime="1731325479" publishDebug="true"/>
           <PublishItem publishSize="79378" publishTime="1731325465" publishDebug="true"/>
-          <PublishItem publishSize="31469" publishTime="1731325328" publishDebug="true"/>
-          <PublishItem publishSize="77952" publishTime="1731280549" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

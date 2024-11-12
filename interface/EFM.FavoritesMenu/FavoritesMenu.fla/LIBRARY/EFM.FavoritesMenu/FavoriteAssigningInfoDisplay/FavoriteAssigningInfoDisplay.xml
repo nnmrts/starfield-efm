@@ -1,0 +1,97 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay" itemID="67329cdc-000001f4" linkageExportForAS="true" linkageClassName="FavoriteAssigningInfoDisplay" lastModified="1731370671">
+  <timeline>
+    <DOMTimeline name="FavoriteAssigningInfoDisplay">
+      <layers>
+        <DOMLayer name="DamageTypeHolder_mc" color="#FF3300" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 35" name="DamageTypeHolder_mc" selected="true" centerPoint3DX="78.2" centerPoint3DY="5">
+                  <matrix>
+                    <Matrix tx="78.2" ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="AmmoAmount_mc" color="#3ABDC0" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 34" name="AmmoAmount_mc" selected="true" centerPoint3DX="23.95" centerPoint3DY="19.25">
+                  <matrix>
+                    <Matrix tx="-15" ty="6.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="AmmoType_mc" color="#F619B9" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 32" name="AmmoType_mc" selected="true" centerPoint3DX="-43.4" centerPoint3DY="19.25">
+                  <matrix>
+                    <Matrix tx="-165" ty="6.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="183" blueOffset="183" greenOffset="183"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ItemName_mc" color="#0066FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 30" name="ItemName_mc" selected="true" centerPoint3DY="-20.35">
+                  <matrix>
+                    <Matrix tx="-300" ty="-35.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ItemNameBg_mc" color="#EDD155" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 28" name="ItemNameBg_mc" selected="true" centerPoint3DX="165" centerPoint3DY="-5">
+                  <matrix>
+                    <Matrix a="0.999969482421875" ty="-22.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

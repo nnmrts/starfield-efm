@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Symbol 52" itemID="672e9200-00000025" symbolType="graphic" lastModified="1731015698">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Symbol 52" itemID="672e9200-00000025" symbolType="graphic" lastModified="1731370853">
   <timeline>
     <DOMTimeline name="Symbol 52">
       <layers>
-        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4F4FFF" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
@@ -20,7 +20,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#4F4FFF">
+        <DOMLayer name="Layer 2" color="#4F4FFF" locked="true">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>

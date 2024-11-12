@@ -3,11 +3,11 @@
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          78949          78949    Scene 1 (AS 3.0 Classes Export Frame)
+      1          78937          78937    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0            91                 46531
+Scene 1              0            91                 46524
 
 Symbol                            Shape Bytes    Text Bytes    ActionScript Bytes
 ------------------------------    -----------    ----------    ------------------
@@ -84,11 +84,11 @@ SlotEntry_Tier2_TopLeft                     0             0                     
 
 Font Name       Bytes         Characters
 ------------    ----------    ----------
-NB-Architekt         23820     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－
+NB-Architekt         23816     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－
 
 ActionScript Bytes    Location
 ------------------    --------
-             46531    Scene 1:Frame 1
+             46524    Scene 1:Frame 1
 
 
 

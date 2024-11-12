@@ -4,7 +4,7 @@
           <DOMFolderItem name="EFM.FavoritesMenu" itemID="6732900f-0000018e" isExpanded="true"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Assets" itemID="67329057-0000019a" isExpanded="true"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Assets/DamageType" itemID="67329169-000001b6"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/Assets/ItemIcon" itemID="67329193-000001bc"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Assets/ItemIcon" itemID="67329193-000001bc" isExpanded="true"/>
           <DOMFolderItem name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay" itemID="673290b9-000001a5"/>
           <DOMFolderItem name="EFM.FavoritesMenu/SelectQuickSlot" itemID="6732910f-000001aa"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Center" itemID="67329e7d-0000021e"/>
@@ -36,7 +36,7 @@
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit.xml" itemID="67329b70-000001e5" lastModified="1731369840"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit_Graphic.xml" itemIcon="1" loadImmediate="false" itemID="67329c0e-000001f0" lastModified="1731369998"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_WeaponGeneric.xml" itemID="67329b4d-000001e4" lastModified="1731369805"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip.xml" loadImmediate="false" itemID="67329b02-000001e2" lastModified="1731369730"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip.xml" loadImmediate="false" itemID="67329b02-000001e2" lastModified="1731374440"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay.xml" itemID="67329cdc-000001f4" lastModified="1731370671"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 28.xml" loadImmediate="false" itemID="672e9200-00000013" lastModified="1731015698"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 30.xml" loadImmediate="false" itemID="672e9200-00000014" lastModified="1731015698"/>
@@ -133,6 +133,8 @@
      <scripts/>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="78937" publishTime="1731373852" publishDebug="true"/>
+          <PublishItem publishSize="78949" publishTime="1731372447" publishDebug="true"/>
           <PublishItem publishSize="78949" publishTime="1731372423" publishDebug="true"/>
           <PublishItem publishSize="78923" publishTime="1731370136" publishDebug="true"/>
           <PublishItem publishSize="78927" publishTime="1731366849" publishDebug="true"/>
@@ -151,7 +153,5 @@
           <PublishItem publishSize="79383" publishTime="1731328262" publishDebug="true"/>
           <PublishItem publishSize="79372" publishTime="1731326991" publishDebug="true"/>
           <PublishItem publishSize="79414" publishTime="1731325554" publishDebug="true"/>
-          <PublishItem publishSize="79376" publishTime="1731325479" publishDebug="true"/>
-          <PublishItem publishSize="79378" publishTime="1731325465" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

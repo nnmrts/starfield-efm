@@ -16,7 +16,10 @@
 	{
 
 		private var CommandString:String;
-		public function get Command():String { return CommandString; }
+		public function get Command():String
+		{
+			return CommandString;
+		}
 		public function set Command(value:String):void
 		{
 			if (CommandString != value)
@@ -132,7 +135,6 @@
 
 		private var OverEntry:Boolean = false;
 
-
 		private const _UpDirectory:Array = [
 				FS_UP_1,
 				FS_UP_1,
@@ -155,7 +157,7 @@
 				FS_UP_1,
 				FS_UP_1,
 				FS_UP_1
-		];
+			];
 
 		private const _DownDirectory:Array = [
 				FS_DOWN_1,
@@ -179,7 +181,7 @@
 				FS_DOWN_1,
 				FS_DOWN_1,
 				FS_DOWN_1,
-		];
+			];
 
 		private const _LeftDirectory:Array = [
 				FS_LEFT_3,
@@ -203,7 +205,7 @@
 				FS_LEFT_1,
 				FS_LEFT_1,
 				FS_LEFT_1
-		];
+			];
 
 		private const _RightDirectory:Array = [
 				FS_LEFT_2,
@@ -227,8 +229,9 @@
 				FS_RIGHT_1,
 				FS_RIGHT_1,
 				FS_RIGHT_1
-		];
+			];
 
+		private var StoredItems:Array = [];
 
 		public function FavoritesMenu()
 		{
@@ -265,13 +268,11 @@
 			}
 		}
 
-
 		private function OnCommand(command:String):void
 		{
 			trace("Command: " + command);
 			MovieClip(root).DebugText_tf.text = command;
 		}
-
 
 		private function onDataUpdate(clientDataEvent:FromClientDataEvent):void
 		{
@@ -287,6 +288,8 @@
 					this.assignedItem = clientDataEvent.data.ItemToBeAssigned;
 					this.selectedIndex = FS_NONE;
 					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
+
+					StoredItems.push(this.assignedItem);
 				}
 
 				this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
@@ -536,8 +539,8 @@
 		{
 			try
 			{
-				// gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
-				// addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
+				gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
+				addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
 			}
 			catch (e:Error)
 			{
@@ -614,7 +617,7 @@
 						if (this.selectedIndex != FS_NONE)
 						{
 							this.SelectItem();
-							event.stopPropagation();
+							// event.stopPropagation();
 						}
 				}
 			}
@@ -652,6 +655,7 @@
 			{
 				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
+				GlobalFunc.InspectObject(StoredItems, true, true);
 			}
 			catch (e:Error)
 			{

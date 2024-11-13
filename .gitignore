@@ -41,3 +41,4 @@ parse-logs.js
 !/dist/*/
 !/dist/*/.gitkeep
 !/dist/interface/favoritesmenu Report.txt
+!/dist/interface/fonts_en Report.txt

@@ -231,8 +231,6 @@
 				FS_RIGHT_1
 			];
 
-		private var StoredItems:Array = [];
-
 		public function FavoritesMenu()
 		{
 			super();
@@ -288,8 +286,6 @@
 					this.assignedItem = clientDataEvent.data.ItemToBeAssigned;
 					this.selectedIndex = FS_NONE;
 					this.CenterClip_mc.gotoAndStop(this.isAssigningItem() ? "Inventory" : "Quick");
-
-					StoredItems.push(this.assignedItem);
 				}
 
 				this.SelectQuickslot_mc.visible = this.isAssigningItem() && !this.HasAssignedSlotOnce;
@@ -539,8 +535,8 @@
 		{
 			try
 			{
-				gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
-				addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
+				// gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
+				// addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
 			}
 			catch (e:Error)
 			{
@@ -617,7 +613,7 @@
 						if (this.selectedIndex != FS_NONE)
 						{
 							this.SelectItem();
-							// event.stopPropagation();
+							event.stopPropagation();
 						}
 				}
 			}
@@ -655,7 +651,6 @@
 			{
 				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
-				GlobalFunc.InspectObject(StoredItems, true, true);
 			}
 			catch (e:Error)
 			{

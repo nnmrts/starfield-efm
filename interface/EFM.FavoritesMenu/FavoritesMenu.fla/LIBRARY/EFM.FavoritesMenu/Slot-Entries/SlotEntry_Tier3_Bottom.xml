@@ -28,7 +28,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" name="SlotInfoSpacer_mc" selected="true" centerPoint3DX="55.1" centerPoint3DY="16.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" name="SlotInfoSpacer_mc" centerPoint3DX="55.1" centerPoint3DY="16.95">
                   <matrix>
                     <Matrix tx="55.1" ty="16.95"/>
                   </matrix>
@@ -65,7 +65,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Vertical" name="Catcher_mc" selected="true" centerPoint3DY="41">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Vertical" name="Catcher_mc" centerPoint3DY="41">
                   <matrix>
                     <Matrix tx="-37.5" ty="9"/>
                   </matrix>
@@ -81,7 +81,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" selected="true" centerPoint3DX="50" centerPoint3DY="90">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="90">
                   <matrix>
                     <Matrix a="0.75" d="0.75" ty="40"/>
                   </matrix>

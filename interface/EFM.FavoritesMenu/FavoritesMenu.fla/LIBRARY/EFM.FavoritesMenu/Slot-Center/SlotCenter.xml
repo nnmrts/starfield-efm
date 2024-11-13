@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Center/SlotCenter" itemID="673406f1-000001ba" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.Center_19" lastModified="1731465542" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Center/SlotCenter" itemID="673406f1-000001ba" linkageExportForAS="true" linkageClassName="Favorites_Center" lastModified="1731484599" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="SlotCenter">
       <layers>
@@ -34,7 +34,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Foreground_Outline" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Foreground_Outline" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -86,7 +86,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Background" selected="true">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Background">
                   <matrix>
                     <Matrix tx="-181.9" ty="-181.3"/>
                   </matrix>

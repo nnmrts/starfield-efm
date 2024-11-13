@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" itemID="67329ceb-000001f6" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.SelectQuickSlot_3" lastModified="1731463691">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" itemID="67329ceb-000001f6" linkageExportForAS="true" linkageClassName="Favorites_SelectQuickSlot" lastModified="1731484633">
   <timeline>
     <DOMTimeline name="SelectQuickSlot">
       <layers>
@@ -40,7 +40,7 @@
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text" name="Text_mc" selected="true" centerPoint3DX="-6" centerPoint3DY="3">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text" name="Text_mc" centerPoint3DX="-6" centerPoint3DY="3">
                   <matrix>
                     <Matrix tx="-181" ty="-10"/>
                   </matrix>

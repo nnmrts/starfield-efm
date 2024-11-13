@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" itemID="673293e7-000001d4" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.DamageTypeIcon_48" lastModified="1731464547">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" itemID="673293e7-000001d4" linkageExportForAS="true" linkageClassName="Favorites_DamageTypeIcon" lastModified="1731484624">
   <timeline>
     <DOMTimeline name="DamageTypeIcon">
       <layers>

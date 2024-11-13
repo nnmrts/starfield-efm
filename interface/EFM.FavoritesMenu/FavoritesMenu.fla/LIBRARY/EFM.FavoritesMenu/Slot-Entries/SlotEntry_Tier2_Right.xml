@@ -28,7 +28,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" name="SlotInfoSpacer_mc" selected="true" centerPoint3DY="-55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" name="SlotInfoSpacer_mc" centerPoint3DY="-55">
                   <matrix>
                     <Matrix ty="-55"/>
                   </matrix>
@@ -65,7 +65,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Horizontal" name="Catcher_mc" selected="true" centerPoint3DX="41">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Horizontal" name="Catcher_mc" centerPoint3DX="41">
                   <matrix>
                     <Matrix tx="9" ty="-37.5"/>
                   </matrix>
@@ -81,7 +81,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" selected="true" centerPoint3DX="90" centerPoint3DY="50">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" centerPoint3DX="90" centerPoint3DY="50">
                   <matrix>
                     <Matrix a="0.75" d="0.75" tx="40"/>
                   </matrix>
@@ -115,7 +115,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B7B7B7" alpha="0.2"/>

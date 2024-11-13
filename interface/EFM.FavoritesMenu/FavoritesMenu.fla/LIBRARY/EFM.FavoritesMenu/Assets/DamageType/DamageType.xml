@@ -27,7 +27,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" name="Icon_mc" selected="true" centerPoint3DX="26.25" centerPoint3DY="17.65">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" name="Icon_mc" centerPoint3DX="26.25" centerPoint3DY="17.65">
                   <matrix>
                     <Matrix a="0.747955322265625" d="0.7467041015625" tx="11.2" ty="2.55"/>
                   </matrix>

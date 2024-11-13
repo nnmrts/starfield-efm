@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" itemID="67329ceb-000001f6" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.SelectQuickSlot_3" lastModified="1731370789">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" itemID="67329ceb-000001f6" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.SelectQuickSlot_3" lastModified="1731463691">
   <timeline>
-    <DOMTimeline name="SelectQuickSlot" currentFrame="12">
+    <DOMTimeline name="SelectQuickSlot">
       <layers>
         <DOMLayer name="Labels Layer" color="#8CEE2C" locked="true">
           <frames>
@@ -15,7 +15,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#F66A8A" locked="true" current="true" isSelected="true">
+        <DOMLayer name="Script Layer" color="#F66A8A" locked="true">
           <frames>
             <DOMFrame index="0" duration="12" keyMode="9728">
               <elements/>
@@ -36,11 +36,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Text_mc" color="#2AD38D" locked="true" autoNamed="false">
+        <DOMLayer name="Text_mc" color="#2AD38D" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text" name="Text_mc" centerPoint3DX="-6" centerPoint3DY="3">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text" name="Text_mc" selected="true" centerPoint3DX="-6" centerPoint3DY="3">
                   <matrix>
                     <Matrix tx="-181" ty="-10"/>
                   </matrix>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" itemID="67329b07-000001e3" linkageExportForAS="true" linkageClassName="ItemIcon" lastModified="1731370467">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" itemID="67329b07-000001e3" linkageExportForAS="true" linkageClassName="ItemIcon" lastModified="1731464274">
   <timeline>
     <DOMTimeline name="ItemIcon">
       <layers>
@@ -55,7 +55,7 @@
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip" name="BoundClip_mc" selected="true" centerPoint3DX="-14.9" centerPoint3DY="-12.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip" name="BoundClip_mc" centerPoint3DX="-14.9" centerPoint3DY="-12.4">
                   <matrix>
                     <Matrix a="1.59994506835938" d="1.59994506835938" tx="-39.9" ty="-37.4"/>
                   </matrix>

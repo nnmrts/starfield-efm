@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageType" itemID="67329404-000001d5" linkageExportForAS="true" linkageClassName="DamageType" lastModified="1731368171">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageType" itemID="67329404-000001d5" linkageExportForAS="true" linkageClassName="DamageType" lastModified="1731464516">
   <timeline>
     <DOMTimeline name="DamageType">
       <layers>
-        <DOMLayer name="text_tf" color="#BDD3F1" locked="true" autoNamed="false">
+        <DOMLayer name="text_tf" color="#990000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -14,7 +14,7 @@
                     <DOMTextRun>
                       <characters>000</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="24.95" size="22" bitmapSize="440" face="$MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="24.95" size="22" bitmapSize="440" face="MAIN_Font_Bold*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -23,7 +23,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Icon_mc" color="#09BDC1" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Icon_mc" color="#009900" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

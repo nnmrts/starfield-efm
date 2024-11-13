@@ -20,7 +20,7 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>1</swcDefaultName>
     <oamDefaultName>1</oamDefaultName>
-    <flashFileName>../../fonts_en.swf</flashFileName>
+    <flashFileName>../../dist/interface/fonts_en.swf</flashFileName>
     <projectorWinFileName>fonts_en.exe</projectorWinFileName>
     <projectorMacFileName>fonts_en.app</projectorMacFileName>
     <htmlFileName>fonts_en.html</htmlFileName>

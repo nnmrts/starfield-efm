@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_ItemNameBg" itemID="6734057d-000001b6" lastModified="1731463718">
+  <timeline>
+    <DOMTimeline name="FavoriteAssigningInfoDisplay_ItemNameBg">
+      <layers>
+        <DOMLayer name="Shape" color="#894DBE" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#B7B7B7"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-3300 -350S2|3300 -350!3300 -350|3300 350!3300 350|-3300 350!-3300 350|-3300 -350"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

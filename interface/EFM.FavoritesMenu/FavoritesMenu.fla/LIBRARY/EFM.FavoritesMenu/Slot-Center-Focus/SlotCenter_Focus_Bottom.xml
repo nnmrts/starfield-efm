@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Center-Focus/SlotCenter_Focus_Bottom" itemID="67341329-000001f2" lastModified="1731466076">
+  <timeline>
+    <DOMTimeline name="SlotCenter_Focus_Bottom">
+      <layers>
+        <DOMLayer name="Graphic" color="#AE7BAB" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center-Focus/SlotCenter_Focus_Bottom_Graphic" selected="true" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

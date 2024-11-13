@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text" itemID="67329f0a-00000220" lastModified="1731370762">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text" itemID="67329f0a-00000220" lastModified="1731463695">
   <timeline>
     <DOMTimeline name="SelectQuickSlot_Text">
       <layers>
@@ -14,7 +14,7 @@
                     <DOMTextRun>
                       <characters>$SELECT A QUICKSLOT</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="13.6" bitmapSize="240" face="$MAIN_Font_Bold*" fillColor="#EDEDED"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="13.6" bitmapSize="240" face="MAIN_Font_Bold*" fillColor="#EDEDED"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

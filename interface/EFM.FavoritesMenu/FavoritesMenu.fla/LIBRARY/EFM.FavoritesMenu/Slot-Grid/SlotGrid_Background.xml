@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" itemID="6732a50b-00000221" lastModified="1731372299">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" itemID="6732a50b-00000221" lastModified="1731463142">
   <timeline>
     <DOMTimeline name="SlotGrid_Background">
       <layers>
-        <DOMLayer name="Shape" color="#009900" locked="true" outline="true" current="true" isSelected="true" useOutlineView="true" autoNamed="false">
+        <DOMLayer name="Shape" color="#009900" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

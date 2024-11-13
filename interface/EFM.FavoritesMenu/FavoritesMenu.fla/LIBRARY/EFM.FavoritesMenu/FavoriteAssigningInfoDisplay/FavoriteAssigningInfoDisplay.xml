@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay" itemID="67329cdc-000001f4" linkageExportForAS="true" linkageClassName="FavoriteAssigningInfoDisplay" lastModified="1731370671">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay" itemID="67329cdc-000001f4" linkageExportForAS="true" linkageClassName="FavoriteAssigningInfoDisplay" lastModified="1731463697">
   <timeline>
     <DOMTimeline name="FavoriteAssigningInfoDisplay">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 35" name="DamageTypeHolder_mc" selected="true" centerPoint3DX="78.2" centerPoint3DY="5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_DamageType" name="DamageTypeHolder_mc" selected="true" centerPoint3DX="78.2" centerPoint3DY="5">
                   <matrix>
                     <Matrix tx="78.2" ty="5"/>
                   </matrix>
@@ -25,7 +25,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 34" name="AmmoAmount_mc" selected="true" centerPoint3DX="23.95" centerPoint3DY="19.25">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_AmmoAmount" name="AmmoAmount_mc" selected="true" centerPoint3DX="23.95" centerPoint3DY="19.25">
                   <matrix>
                     <Matrix tx="-15" ty="6.25"/>
                   </matrix>
@@ -44,7 +44,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 32" name="AmmoType_mc" selected="true" centerPoint3DX="-43.4" centerPoint3DY="19.25">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_AmmoType" name="AmmoType_mc" selected="true" centerPoint3DX="-43.4" centerPoint3DY="19.25">
                   <matrix>
                     <Matrix tx="-165" ty="6.25"/>
                   </matrix>
@@ -63,7 +63,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 30" name="ItemName_mc" selected="true" centerPoint3DY="-20.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_ItemName" name="ItemName_mc" selected="true" centerPoint3DY="-20.35">
                   <matrix>
                     <Matrix tx="-300" ty="-35.35"/>
                   </matrix>
@@ -79,7 +79,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/Symbol 28" name="ItemNameBg_mc" selected="true" centerPoint3DX="165" centerPoint3DY="-5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_ItemNameBg" name="ItemNameBg_mc" selected="true" centerPoint3DX="165" centerPoint3DY="-5">
                   <matrix>
                     <Matrix a="0.999969482421875" ty="-22.5"/>
                   </matrix>

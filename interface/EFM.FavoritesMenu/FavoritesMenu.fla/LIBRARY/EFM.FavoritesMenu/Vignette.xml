@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Vignette" itemID="67329222-000001c1" lastModified="1731367458">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Vignette" itemID="67329222-000001c1" lastModified="1731463674">
   <timeline>
     <DOMTimeline name="Vignette">
       <layers>
-        <DOMLayer name="Layer 1" color="#5785BA" locked="true" current="true" isSelected="true">
+        <DOMLayer name="Shape" color="#5785BA" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet" itemID="67329b89-000001e9" linkageExportForAS="true" linkageClassName="Helmet" lastModified="1731369865">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet" itemID="67329b89-000001e9" linkageExportForAS="true" linkageClassName="Helmet" lastModified="1731464231">
   <timeline>
     <DOMTimeline name="ItemIcon_Art_Helmet">
       <layers>
-        <DOMLayer name="Layer 1" color="#5976C3" current="true" isSelected="true">
+        <DOMLayer name="Graphic" color="#5976C3" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet_Graphic" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet_Graphic" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

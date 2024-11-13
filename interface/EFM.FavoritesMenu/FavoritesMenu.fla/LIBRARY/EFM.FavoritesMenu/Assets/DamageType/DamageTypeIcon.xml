@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" itemID="673293e7-000001d4" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.DamageTypeIcon_48" lastModified="1731368513">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" itemID="673293e7-000001d4" linkageExportForAS="true" linkageClassName="FavoritesMenu_fla.DamageTypeIcon_48" lastModified="1731464547">
   <timeline>
-    <DOMTimeline name="DamageTypeIcon" currentFrame="1">
+    <DOMTimeline name="DamageTypeIcon">
       <layers>
-        <DOMLayer name="Labels Layer" color="#B93CFD" locked="true">
+        <DOMLayer name="Labels Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" name="physical" labelType="name" keyMode="9728">
               <elements/>
@@ -15,7 +15,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#9B42CE" locked="true">
+        <DOMLayer name="Script Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
@@ -30,7 +30,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_Physical" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_Physical" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -42,7 +42,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Art-Energy" color="#D4A0A9" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Art-Energy" color="#D4A0A9" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements/>
@@ -68,7 +68,7 @@
             </DOMFrame>
             <DOMFrame index="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_EM" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_EM" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

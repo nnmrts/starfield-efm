@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit" itemID="67329b70-000001e5" linkageExportForAS="true" linkageClassName="Spacesuit" lastModified="1731369840">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit" itemID="67329b70-000001e5" linkageExportForAS="true" linkageClassName="Spacesuit" lastModified="1731464183">
   <timeline>
     <DOMTimeline name="ItemIcon_Art_Spacesuit">
       <layers>
-        <DOMLayer name="Layer 1" color="#F6F39D" current="true" isSelected="true">
+        <DOMLayer name="Graphic" color="#F6F39D" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit_Graphic" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit_Graphic" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

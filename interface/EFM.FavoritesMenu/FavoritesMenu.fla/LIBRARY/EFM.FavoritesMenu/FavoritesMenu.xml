@@ -1,15 +1,15 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoritesMenu" itemID="673291e8-000001be" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731372259" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoritesMenu" itemID="673291e8-000001be" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731465499" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="FavoritesMenu">
       <layers>
-        <DOMLayer name="Comments Layer" color="#009999" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Comments Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="21" name="Layer depth order is important here!" labelType="comment" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Labels Layer" color="#98CB21" locked="true">
+        <DOMLayer name="Labels Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" name="Open" labelType="name" keyMode="9728">
               <elements/>
@@ -28,7 +28,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#BECFFA" locked="true">
+        <DOMLayer name="Script Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="12" keyMode="9728">
               <elements/>
@@ -68,7 +68,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay" name="ItemInfo_mc" selected="true" centerPoint3DX="300" centerPoint3DY="-293.9" isVisible="false">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay" name="ItemInfo_mc" centerPoint3DX="300" centerPoint3DY="-293.9" isVisible="false">
                   <matrix>
                     <Matrix ty="-330"/>
                   </matrix>
@@ -84,7 +84,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="AssignedItemIcon_mc" selected="true" centerPoint3DX="50" centerPoint3DY="50">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="AssignedItemIcon_mc" centerPoint3DX="50" centerPoint3DY="50">
                   <matrix>
                     <Matrix a="0.75" d="0.75"/>
                   </matrix>
@@ -104,7 +104,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" selected="true" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -116,7 +116,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -128,7 +128,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -140,7 +140,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -152,7 +152,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -164,7 +164,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -176,7 +176,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -188,7 +188,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -200,7 +200,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 116" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -212,11 +212,11 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Slot Ring Medium" color="#FF0000" parentLayerIndex="5" locked="true" outline="true" useOutlineView="true" autoNamed="false">
+        <DOMLayer name="Slot Ring Medium" color="#FF0000" parentLayerIndex="5" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" selected="true" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -228,7 +228,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -240,7 +240,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -252,7 +252,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -264,7 +264,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -276,7 +276,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -288,7 +288,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -300,7 +300,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -312,7 +312,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 114" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -328,7 +328,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -343,7 +343,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -358,7 +358,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" duration="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -373,7 +373,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -388,7 +388,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -403,7 +403,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -418,7 +418,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -433,7 +433,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -448,7 +448,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/Symbol 112" centerPoint3DX="127.95" centerPoint3DY="127.95">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Small" centerPoint3DX="127.95" centerPoint3DY="127.95">
                   <matrix>
                     <Matrix a="1.00033569335938" d="1.00033569335938"/>
                   </matrix>
@@ -468,7 +468,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" selected="true" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -483,7 +483,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -495,7 +495,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -510,7 +510,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -525,7 +525,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -537,7 +537,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -552,7 +552,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Top" name="Entry_8" centerPoint3DX="55.1" centerPoint3DY="3.8">
                   <matrix>
                     <Matrix ty="-39.95"/>
                   </matrix>
@@ -571,7 +571,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" selected="true" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -586,7 +586,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" selected="true" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -598,7 +598,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -613,7 +613,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -628,7 +628,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -640,7 +640,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -655,7 +655,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" name="Entry_2" centerPoint3DX="3.7" centerPoint3DY="55">
                   <matrix>
                     <Matrix tx="-40.05"/>
                   </matrix>
@@ -674,7 +674,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" selected="true" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -689,7 +689,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -701,7 +701,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -716,7 +716,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -731,7 +731,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -743,7 +743,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -758,7 +758,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Bottom" name="Entry_9" centerPoint3DX="55.05" centerPoint3DY="83.8">
                   <matrix>
                     <Matrix ty="40.05"/>
                   </matrix>
@@ -777,7 +777,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" selected="true" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -792,7 +792,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -804,7 +804,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -819,7 +819,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -834,7 +834,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -846,7 +846,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -861,7 +861,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Right" name="Entry_3" centerPoint3DX="83.75" centerPoint3DY="55.1">
                   <matrix>
                     <Matrix tx="40"/>
                   </matrix>
@@ -876,11 +876,11 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="CenterClip_mc" color="#E0FB44" locked="true" autoNamed="false">
+        <DOMLayer name="CenterClip_mc" color="#E0FB44" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -892,7 +892,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -901,7 +901,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -913,7 +913,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -922,7 +922,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -934,7 +934,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -946,7 +946,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -955,7 +955,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -967,7 +967,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/Center" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter" name="CenterClip_mc" centerPoint3DX="128.5" centerPoint3DY="128.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -984,7 +984,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" selected="true" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -999,7 +999,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1011,7 +1011,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1026,7 +1026,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1038,7 +1038,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1053,7 +1053,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1065,7 +1065,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1080,7 +1080,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1095,7 +1095,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1107,7 +1107,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1122,7 +1122,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Right" name="Entry_4" centerPoint3DX="161.5" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="120.8"/>
                   </matrix>
@@ -1141,7 +1141,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" selected="true" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1156,7 +1156,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1168,7 +1168,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1183,7 +1183,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1195,7 +1195,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1210,7 +1210,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1222,7 +1222,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1237,7 +1237,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1252,7 +1252,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1264,7 +1264,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1279,7 +1279,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Bottom" name="Entry_10" centerPoint3DX="48.05" centerPoint3DY="161.1">
                   <matrix>
                     <Matrix ty="120.65"/>
                   </matrix>
@@ -1298,7 +1298,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" selected="true" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1313,7 +1313,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1325,7 +1325,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1340,7 +1340,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1352,7 +1352,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1367,7 +1367,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1379,7 +1379,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1394,7 +1394,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1409,7 +1409,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1421,7 +1421,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1436,7 +1436,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Left" name="Entry_1" centerPoint3DX="-80.45" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-120.8"/>
                   </matrix>
@@ -1455,7 +1455,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" selected="true" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1470,7 +1470,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1482,7 +1482,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1497,7 +1497,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1509,7 +1509,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1524,7 +1524,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1536,7 +1536,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1551,7 +1551,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1566,7 +1566,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1578,7 +1578,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1593,7 +1593,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_Top" name="Entry_7" centerPoint3DX="45.45" centerPoint3DY="-80.15">
                   <matrix>
                     <Matrix ty="-120.65"/>
                   </matrix>
@@ -1612,7 +1612,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" selected="true" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1627,7 +1627,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1639,7 +1639,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1654,7 +1654,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1666,7 +1666,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1681,7 +1681,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1693,7 +1693,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1708,7 +1708,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1723,7 +1723,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1735,7 +1735,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1750,7 +1750,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Right" name="Entry_5" centerPoint3DX="236.4" centerPoint3DY="48.05">
                   <matrix>
                     <Matrix tx="195.8"/>
                   </matrix>
@@ -1769,7 +1769,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" selected="true" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1784,7 +1784,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1796,7 +1796,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1811,7 +1811,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1823,7 +1823,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1838,7 +1838,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1850,7 +1850,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1865,7 +1865,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1880,7 +1880,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1892,7 +1892,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1907,7 +1907,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" name="Entry_11" centerPoint3DX="48" centerPoint3DY="236.35">
                   <matrix>
                     <Matrix ty="195.75"/>
                   </matrix>
@@ -1926,7 +1926,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" selected="true" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -1941,7 +1941,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -1953,7 +1953,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -1968,7 +1968,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -1980,7 +1980,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -1995,7 +1995,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -2007,7 +2007,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -2022,7 +2022,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -2037,7 +2037,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -2049,7 +2049,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -2064,7 +2064,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Left" name="Entry_0" centerPoint3DX="-155.15" centerPoint3DY="48">
                   <matrix>
                     <Matrix tx="-195.75"/>
                   </matrix>
@@ -2083,7 +2083,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" selected="true" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2098,7 +2098,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2110,7 +2110,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2125,7 +2125,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2137,7 +2137,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2152,7 +2152,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2164,7 +2164,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2179,7 +2179,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2194,7 +2194,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2206,7 +2206,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2221,7 +2221,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" name="Entry_6" centerPoint3DX="48.05" centerPoint3DY="-151.4">
                   <matrix>
                     <Matrix ty="-195.65"/>
                   </matrix>
@@ -2241,7 +2241,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" selected="true" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2256,7 +2256,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2268,7 +2268,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2283,7 +2283,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2295,7 +2295,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2310,7 +2310,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2322,7 +2322,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2337,7 +2337,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2352,7 +2352,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2364,7 +2364,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2379,7 +2379,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" name="Entry_12" centerPoint3DX="141.05" centerPoint3DY="-73.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="138.3" ty="-138.3"/>
                   </matrix>
@@ -2398,7 +2398,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" selected="true" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2413,7 +2413,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2425,7 +2425,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2440,7 +2440,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2452,7 +2452,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2467,7 +2467,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2479,7 +2479,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2494,7 +2494,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2509,7 +2509,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2521,7 +2521,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2536,7 +2536,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopRight" name="Entry_13" centerPoint3DX="88.8" centerPoint3DY="-24.5">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="85.3" ty="-85.3"/>
                   </matrix>
@@ -2555,7 +2555,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" selected="true" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2570,7 +2570,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2582,7 +2582,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2597,7 +2597,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2609,7 +2609,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2624,7 +2624,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2636,7 +2636,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2651,7 +2651,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2666,7 +2666,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2678,7 +2678,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2693,7 +2693,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomRight" name="Entry_14" centerPoint3DX="73.05" centerPoint3DY="141.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="138.3" ty="138.3"/>
                   </matrix>
@@ -2712,7 +2712,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" selected="true" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2727,7 +2727,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2739,7 +2739,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2754,7 +2754,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2766,7 +2766,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2781,7 +2781,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2793,7 +2793,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2808,7 +2808,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2823,7 +2823,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2835,7 +2835,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2850,7 +2850,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomRight" name="Entry_15" centerPoint3DX="24.5" centerPoint3DY="88.8">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="0.707107543945312" c="-0.70709228515625" d="-0.70709228515625" tx="85.3" ty="85.3"/>
                   </matrix>
@@ -2869,7 +2869,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" selected="true" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2884,7 +2884,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2896,7 +2896,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2911,7 +2911,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2923,7 +2923,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2938,7 +2938,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2950,7 +2950,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2965,7 +2965,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2980,7 +2980,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -2992,7 +2992,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -3007,7 +3007,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" name="Entry_16" centerPoint3DX="-141.05" centerPoint3DY="73.05">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-138.3" ty="138.3"/>
                   </matrix>
@@ -3026,7 +3026,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" selected="true" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3041,7 +3041,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3053,7 +3053,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3068,7 +3068,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3080,7 +3080,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3095,7 +3095,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3107,7 +3107,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3122,7 +3122,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3137,7 +3137,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3149,7 +3149,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3164,7 +3164,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_BottomLeft" name="Entry_17" centerPoint3DX="-88.8" centerPoint3DY="24.5">
                   <matrix>
                     <Matrix a="-0.70709228515625" b="-0.70709228515625" c="0.707107543945312" d="-0.70709228515625" tx="-85.3" ty="85.3"/>
                   </matrix>
@@ -3183,7 +3183,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" selected="true" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3198,7 +3198,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3210,7 +3210,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3225,7 +3225,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3237,7 +3237,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="8" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3252,7 +3252,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="9" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3264,7 +3264,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3279,7 +3279,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3294,7 +3294,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3306,7 +3306,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3321,7 +3321,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopLeft" name="Entry_18" centerPoint3DX="-73.05" centerPoint3DY="-141.05">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-138.3" ty="-138.3"/>
                   </matrix>
@@ -3340,7 +3340,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" selected="true" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3355,7 +3355,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3367,7 +3367,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="4" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3382,7 +3382,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3394,7 +3394,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3409,7 +3409,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="7" duration="7" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3421,7 +3421,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="14" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3436,7 +3436,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="15" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3451,7 +3451,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="18" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3463,7 +3463,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3478,7 +3478,7 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entry/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier2_TopLeft" name="Entry_19" centerPoint3DX="-24.5" centerPoint3DY="-88.8">
                   <matrix>
                     <Matrix a="0.707107543945312" b="-0.70709228515625" c="0.707107543945312" d="0.707107543945312" tx="-85.3" ty="-85.3"/>
                   </matrix>
@@ -3497,7 +3497,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" selected="true" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -3561,7 +3561,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" name="SelectQuickslot_mc" selected="true" centerPoint3DX="175" centerPoint3DY="343" isVisible="false">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" name="SelectQuickslot_mc" centerPoint3DX="175" centerPoint3DY="343" isVisible="false">
                   <matrix>
                     <Matrix ty="330"/>
                   </matrix>
@@ -3592,7 +3592,7 @@ stop();
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Vignette" name="Vignette_mc" selected="true" centerPoint3DX="1280" centerPoint3DY="600">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Vignette" name="Vignette_mc" centerPoint3DX="1280" centerPoint3DY="600">
                   <matrix>
                     <Matrix a="1.50013732910156"/>
                   </matrix>

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet_Graphic" itemID="67329bca-000001ee" symbolType="graphic" lastModified="1731369930">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Helmet_Graphic" itemID="67329bca-000001ee" symbolType="graphic" lastModified="1731464381">
   <timeline>
     <DOMTimeline name="ItemIcon_Art_Helmet_Graphic">
       <layers>
-        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+        <DOMLayer name="Shape 1" color="#4F4FFF" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
@@ -13,15 +13,15 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!-1 -235[-191 -235 -288 -173!-288 -173[-395 -105 -395 45!-395 45[-395 197 -288 267!-288 267[-191 332 -1 332!-1 332[189 332 288 267!288 267[395 197 395 45!395 45[395 -105 288 -173!288 -173[191 -235 -1 -235!-168 17[-224 41 -273 32!-273
- 32[-322 22 -338 -15!-338 -15[-354 -51 -327 -94!-327 -94[-300 -137 -246 -161!-246 -161[-191 -185 -142 -174!-142 -174[-93 -166 -76 -129!-76 -129[-60 -93 -88 -50!-88 -50[-114 -7 -168 17"/>
+                    <Edge fillStyle0="1" edges="!-168 17[-224 41 -273 32!-273 32[-322 22 -338 -15!-338 -15[-354 -51 -327 -94!-327 -94[-300 -137 -246 -161!-246 -161[-191 -185 -142 -174!-142 -174[-93 -166 -76 -129!-76 -129[-60 -93 -88 -50!-88 -50[-114 -7 -168 17!-1 -235[-191 -235 -288
+ -173!-288 -173[-395 -105 -395 45!-395 45[-395 197 -288 267!-288 267[-191 332 -1 332!-1 332[189 332 288 267!288 267[395 197 395 45!395 45[395 -105 288 -173!288 -173[191 -235 -1 -235"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#4F4FFF">
+        <DOMLayer name="Shape 2" color="#FF0000" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>

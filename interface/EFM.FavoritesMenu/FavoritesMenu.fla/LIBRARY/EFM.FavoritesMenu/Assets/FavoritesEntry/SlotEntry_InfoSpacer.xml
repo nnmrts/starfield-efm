@@ -1,0 +1,15 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" itemID="67340115-000001ab" lastModified="1731464556">
+  <timeline>
+    <DOMTimeline name="SlotEntry_InfoSpacer">
+      <layers>
+        <DOMLayer name="EMPTY" color="#DB5497" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

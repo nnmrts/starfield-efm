@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Meds_Graphic" itemID="67329bec-000001ef" symbolType="graphic" lastModified="1731369964">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Meds_Graphic" itemID="67329bec-000001ef" symbolType="graphic" lastModified="1731464390">
   <timeline>
     <DOMTimeline name="ItemIcon_Art_Meds_Graphic">
       <layers>
-        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+        <DOMLayer name="Shape 1" color="#4F4FFF" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
@@ -13,16 +13,16 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!234 538|-234 538!-234 538[-262 538 -288 523!-288 523[-313 509 -328 485!-328 485|-584 55!-584 55[-600 30 -600 1!-600 1[-600 -30 -584 -55!-584 -55|-328 -485!-328 -485[-313 -509 -288 -523!-288 -523[-262 -538 -234 -538!-234 -538|234 -538
-!234 -538[295 -538 326 -485!326 -485|584 -55!584 -55[600 -30 600 1!600 1[600 30 584 55!584 55|326 485!326 485[295 538 234 538!-234 -490[-269 -490 -285 -461!-285 -461|-543 -31!-543 -31[-560 1 -543 31!-543 31|-285 461!-285 461[-269 490
- -234 490!-234 490|234 490!234 490[268 490 285 461!285 461|543 31!543 31[560 1 543 -31!543 -31|285 -461!285 -461[268 -490 234 -490!234 -490|-234 -490"/>
+                    <Edge fillStyle1="1" edges="!-234 -490[-269 -490 -285 -461!-285 -461|-543 -31!-543 -31[-560 1 -543 31!-543 31|-285 461!-285 461[-269 490 -234 490!-234 490|234 490!234 490[268 490 285 461!285 461|543 31!543 31[560 1 543 -31!543 -31|285 -461!285 -461[268 -490 234
+ -490!234 -490|-234 -490!234 538|-234 538!-234 538[-262 538 -288 523!-288 523[-313 509 -328 485!-328 485|-584 55!-584 55[-600 30 -600 1!-600 1[-600 -30 -584 -55!-584 -55|-328 -485!-328 -485[-313 -509 -288 -523!-288 -523[-262 -538 -234
+ -538!-234 -538|234 -538!234 -538[295 -538 326 -485!326 -485|584 -55!584 -55[600 -30 600 1!600 1[600 30 584 55!584 55|326 485!326 485[295 538 234 538"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#4F4FFF">
+        <DOMLayer name="Shape 2" color="#FF0000" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>

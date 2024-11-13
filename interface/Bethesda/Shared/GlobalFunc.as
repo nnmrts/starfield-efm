@@ -159,537 +159,536 @@ package Shared
          super();
       }
       
-      public static function Lerp(param1:Number, param2:Number, param3:Number) : Number
+      public static function Lerp(start:Number, end:Number, fraction:Number) : Number
       {
-         return param1 + param3 * (param2 - param1);
+         return start + fraction * (end - start);
       }
       
-      public static function VectorLerp(param1:Vector3D, param2:Vector3D, param3:Number) : Vector3D
+      public static function VectorLerp(startVec:Vector3D, endVec:Vector3D, fraction:Number) : Vector3D
       {
-         var _loc4_:Vector3D = param2.subtract(param1);
-         _loc4_.scaleBy(param3);
-         return param1.add(_loc4_);
+         var diff:Vector3D = endVec.subtract(startVec);
+         diff.scaleBy(fraction);
+         return startVec.add(diff);
       }
       
-      public static function MapLinearlyToRange(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Boolean) : Number
+      public static function MapLinearlyToRange(rangeStart:Number, rangeEnd:Number, inputValue:Number, inputMin:Number, inputMax:Number, clampResult:Boolean) : Number
       {
-         var _loc7_:Number = (param5 - param3) / (param4 - param3);
-         var _loc8_:Number = Lerp(param1,param2,_loc7_);
-         if(param6)
+         var mappedFraction:Number = (inputValue - inputMin) / (inputMax - inputMin);
+         var result:Number = Lerp(rangeStart, rangeEnd, mappedFraction);
+         if(clampResult)
          {
-            if(param1 < param2)
+            if(rangeStart < rangeEnd)
             {
-               _loc8_ = Clamp(_loc8_,param1,param2);
+               result = Clamp(result, rangeStart, rangeEnd);
             }
             else
             {
-               _loc8_ = Clamp(_loc8_,param2,param1);
+               result = Clamp(result, rangeEnd, rangeStart);
             }
          }
-         return _loc8_;
+         return result;
       }
       
-      public static function Clamp(param1:Number, param2:Number, param3:Number) : Number
+      public static function Clamp(value:Number, min:Number, max:Number) : Number
       {
-         var _loc4_:Number = param1;
-         if(param1 < param2)
+         var result:Number = value;
+         if(value < min)
          {
-            _loc4_ = param2;
+            result = min;
          }
-         else if(param1 > param3)
+         else if(value > max)
          {
-            _loc4_ = param3;
+            result = max;
          }
-         return _loc4_;
+         return result;
       }
       
-      public static function PadNumber(param1:Number, param2:uint) : String
+      public static function PadNumber(value:Number, width:uint) : String
       {
-         var _loc3_:String = "" + param1;
-         while(_loc3_.length < param2)
+         var result:String = "" + value;
+         while(result.length < width)
          {
-            _loc3_ = "0" + _loc3_;
+            result = "0" + result;
          }
-         return _loc3_;
+         return result;
       }
       
-      public static function FormatTimeString(param1:Number, param2:Boolean = false, param3:Boolean = false, param4:Boolean = false) : String
+      public static function FormatTimeString(timeInSeconds:Number, showHours:Boolean = false, showMinutes:Boolean = false, showSeconds:Boolean = false) : String
       {
-         var _loc5_:* = 0;
-         var _loc6_:Number = Math.round(param1);
-         var _loc7_:int = Math.floor(_loc6_ / 3600);
-         _loc5_ = _loc6_ % 3600;
-         var _loc8_:int = Math.floor(_loc5_ / 60);
-         _loc5_ = _loc6_ % 60;
-         var _loc9_:int = Math.round(_loc5_);
-         var _loc10_:Boolean = false;
-         var _loc11_:* = "";
-         if(param2 || _loc7_ > 0)
+         var remainingSeconds:* = 0;
+         var roundedTime:Number = Math.round(timeInSeconds);
+         var hours:int = Math.floor(roundedTime / 3600);
+         remainingSeconds = roundedTime % 3600;
+         var minutes:int = Math.floor(remainingSeconds / 60);
+         remainingSeconds = roundedTime % 60;
+         var seconds:int = Math.round(remainingSeconds);
+         var hasPrevious:Boolean = false;
+         var timeString:* = "";
+         if(showHours || hours > 0)
          {
-            _loc11_ = PadNumber(_loc7_,2);
-            _loc10_ = true;
+            timeString = PadNumber(hours,2);
+            hasPrevious = true;
          }
-         if(param3 || (_loc7_ > 0 || _loc8_ > 0))
+         if(showMinutes || (hours > 0 || minutes > 0))
          {
-            if(_loc10_)
+            if(hasPrevious)
             {
-               _loc11_ += ":";
+               timeString += ":";
             }
             else
             {
-               _loc10_ = true;
+               hasPrevious = true;
             }
-            _loc11_ += PadNumber(_loc8_,2);
+            timeString += PadNumber(minutes,2);
          }
-         if(param4 || (_loc7_ > 0 || _loc8_ > 0 || _loc9_ > 0))
+         if(showSeconds || (hours > 0 || minutes > 0 || seconds > 0))
          {
-            if(_loc10_)
+            if(hasPrevious)
             {
-               _loc11_ += ":";
+               timeString += ":";
             }
-            _loc11_ += PadNumber(_loc9_,2);
+            timeString += PadNumber(seconds,2);
          }
-         return _loc11_;
+         return timeString;
       }
       
-      public static function RoundDecimal(param1:Number, param2:Number) : Number
+      public static function RoundDecimal(value:Number, precision:Number) : Number
       {
-         var _loc3_:Number = Math.pow(10,param2);
-         return Math.round(_loc3_ * param1) / _loc3_;
+         var factor:Number = Math.pow(10,precision);
+         return Math.round(factor * value) / factor;
       }
       
-      public static function RoundDecimalToFixedString(param1:Number, param2:Number) : String
+      public static function RoundDecimalToFixedString(value:Number, precision:Number) : String
       {
-         var _loc3_:Number = RoundDecimal(param1,param2);
-         return _loc3_.toFixed(param2);
+         var roundedValue:Number = RoundDecimal(value,precision);
+         return roundedValue.toFixed(precision);
       }
       
-      public static function CloseToNumber(param1:Number, param2:Number, param3:Number = 0.001) : Boolean
+      public static function CloseToNumber(value1:Number, value2:Number, epsilon:Number = 0.001) : Boolean
       {
-         return Math.abs(param1 - param2) < param3;
+         return Math.abs(value1 - value2) < epsilon;
       }
       
       public static function MaintainTextFormat() : *
       {
-         TextField.prototype.SetText = function(param1:String, param2:Boolean = false, param3:Boolean = false):*
+         TextField.prototype.SetText = function(text:String, isHTML:Boolean = false, forceUpper:Boolean = false):*
          {
-            var _loc5_:Number = NaN;
-            var _loc6_:Boolean = false;
-            if(!param1 || param1 == "")
+            var letterSpacing:Number = NaN;
+            var useKerning:Boolean = false;
+            if(!text || text == "")
             {
-               param1 = " ";
+               text = " ";
             }
-            if(param3 && param1.charAt(0) != "$")
+            if(forceUpper && text.charAt(0) != "$")
             {
-               param1 = param1.toUpperCase();
+               text = text.toUpperCase();
             }
-            var _loc4_:TextFormat = this.getTextFormat();
-            if(param2)
+            var textFormat:TextFormat = this.getTextFormat();
+            if(isHTML)
             {
-               _loc5_ = Number(_loc4_.letterSpacing);
-               _loc6_ = Boolean(_loc4_.kerning);
-               this.htmlText = param1;
-               _loc4_ = this.getTextFormat();
-               _loc4_.letterSpacing = _loc5_;
-               _loc4_.kerning = _loc6_;
-               this.setTextFormat(_loc4_);
-               this.htmlText = param1;
+               letterSpacing = Number(textFormat.letterSpacing);
+               useKerning = Boolean(textFormat.kerning);
+               this.htmlText = text;
+               textFormat = this.getTextFormat();
+               textFormat.letterSpacing = letterSpacing;
+               textFormat.kerning = useKerning;
+               this.setTextFormat(textFormat);
+               this.htmlText = text;
             }
             else
             {
-               this.text = param1;
-               this.setTextFormat(_loc4_);
-               this.text = param1;
+               this.text = text;
+               this.setTextFormat(textFormat);
+               this.text = text;
             }
          };
       }
       
-      public static function FormatNumberToString(param1:Number, param2:uint = 0, param3:Boolean = false) : String
+      public static function FormatNumberToString(value:Number, precision:uint = 0, useScientific:Boolean = false) : String
       {
-         var _loc4_:String = null;
-         var _loc5_:Number = NaN;
-         var _loc6_:int = 0;
-         var _loc7_:Boolean = false;
-         var _loc8_:* = undefined;
-         var _loc9_:String = null;
-         var _loc10_:* = undefined;
-         var _loc11_:* = undefined;
-         var _loc12_:int = 0;
-         var _loc13_:String = null;
-         var _loc14_:String = null;
-         var _loc15_:int = 0;
-         var _loc16_:String = null;
-         var _loc17_:* = undefined;
-         if(param3)
+         var result:String = null;
+         var factor:Number = NaN;
+         var roundedValue:int = 0;
+         var hasDecimal:Boolean = false;
+         var decimalCount:* = undefined;
+         var valueString:String = null;
+         var charIndex:* = undefined;
+         var integerPart:String = null;
+         var decimalPart:String = null;
+         var lastNonZeroIndex:int = 0;
+         var finalDecimalPart:String = null;
+         var finalResult:String = null;
+         var decimalIndex:* = undefined;
+         if(useScientific)
          {
-            if(param2 == 0)
+            if(precision == 0)
             {
-               _loc4_ = int(Math.round(param1)).toString();
+               result = int(Math.round(value)).toString();
             }
-            else if(param1 == 0)
+            else if(value == 0)
             {
-               _loc4_ = "0";
+               result = "0";
             }
             else
             {
-               _loc5_ = Math.pow(10,param2);
-               _loc6_ = int(Math.round(param1 * _loc5_));
-               if(_loc6_ == 0)
+               factor = Math.pow(10,precision);
+               roundedValue = int(Math.round(value * factor));
+               if(roundedValue == 0)
                {
-                  _loc4_ = "0";
+                  result = "0";
                }
                else
                {
-                  _loc7_ = false;
-                  _loc8_ = 0;
-                  _loc9_ = param1.toString();
-                  _loc10_ = 0;
-                  while(_loc10_ < _loc9_.length)
+                  hasDecimal = false;
+                  decimalCount = 0;
+                  valueString = value.toString();
+                  charIndex = 0;
+                  while(charIndex < valueString.length)
                   {
-                     switch(_loc9_.charAt(_loc10_))
+                     switch(valueString.charAt(charIndex))
                      {
                         case ".":
-                           _loc7_ = true;
+                           hasDecimal = true;
                            break;
                         case "0":
-                           if(_loc7_)
+                           if(hasDecimal)
                            {
-                              _loc8_++;
+                              decimalCount++;
                            }
                            break;
                         default:
-                           _loc10_ = _loc9_.length;
+                           charIndex = valueString.length;
                            break;
                      }
-                     _loc10_++;
+                     charIndex++;
                   }
-                  _loc4_ = _loc6_.toString();
-                  _loc11_ = 0;
-                  while(_loc11_ < _loc8_)
+                  result = roundedValue.toString();
+                  decimalIndex = 0;
+                  while(decimalIndex < decimalCount)
                   {
-                     _loc4_ = "0" + _loc4_;
-                     _loc11_++;
+                     result = "0" + result;
+                     decimalIndex++;
                   }
-                  _loc12_ = _loc4_.length - param2;
-                  _loc13_ = _loc4_.substring(0,_loc12_);
-                  _loc14_ = _loc4_.substring(_loc12_,_loc4_.length);
-                  _loc15_ = _loc14_.length - 1;
-                  while(_loc15_ >= 0)
+                  lastNonZeroIndex = result.length - precision;
+                  integerPart = result.substring(0,lastNonZeroIndex);
+                  decimalPart = result.substring(lastNonZeroIndex,result.length);
+                  lastNonZeroIndex = decimalPart.length - 1;
+                  while(lastNonZeroIndex >= 0)
                   {
-                     if(_loc14_.charAt(_loc15_) != "0")
+                     if(decimalPart.charAt(lastNonZeroIndex) != "0")
                      {
                         break;
                      }
-                     _loc15_--;
+                     lastNonZeroIndex--;
                   }
-                  _loc16_ = _loc14_.substring(0,_loc15_ + 1);
-                  if(_loc16_.length > 0)
+                  finalDecimalPart = decimalPart.substring(0,lastNonZeroIndex + 1);
+                  if(finalDecimalPart.length > 0)
                   {
-                     _loc4_ = _loc13_ + "." + _loc16_;
+                     result = integerPart + "." + finalDecimalPart;
                   }
                   else
                   {
-                     _loc4_ = _loc13_;
+                     result = integerPart;
                   }
                }
             }
          }
          else
          {
-            _loc4_ = param1.toString();
-            _loc17_ = _loc4_.indexOf(".");
-            if(_loc17_ > -1)
+            result = value.toString();
+            decimalIndex = result.indexOf(".");
+            if(decimalIndex > -1)
             {
-               if(param2)
+               if(precision)
                {
-                  _loc4_ = _loc4_.substring(0,Math.min(_loc17_ + param2 + 1,_loc4_.length));
+                  result = result.substring(0,Math.min(decimalIndex + precision + 1,result.length));
                }
                else
                {
-                  _loc4_ = _loc4_.substring(0,_loc17_);
+                  result = result.substring(0,decimalIndex);
                }
             }
          }
-         return _loc4_;
+         return result;
       }
       
-      public static function ClearClipOfChildren(param1:DisplayObjectContainer) : void
+      public static function ClearClipOfChildren(container:DisplayObjectContainer) : void
       {
-         while(param1.numChildren > 0)
+         while(container.numChildren > 0)
          {
-            param1.removeChildAt(0);
+            container.removeChildAt(0);
          }
       }
       
-      public static function FormatDistanceToString(param1:Number) : String
+      public static function FormatDistanceToString(distance:Number) : String
       {
-         var _loc2_:* = "";
-         if(param1 < MaxMeterDisplay)
+         var result:* = "";
+         if(distance < MaxMeterDisplay)
          {
-            _loc2_ = FormatNumberToString(param1,MeterPrecision) + " M";
+            result = FormatNumberToString(distance,MeterPrecision) + " M";
          }
-         else if(param1 < MaxKilometerDisplay)
+         else if(distance < MaxKilometerDisplay)
          {
-            _loc2_ = FormatNumberToString(param1 / 1000,KilometerPrecision) + " KM";
+            result = FormatNumberToString(distance / 1000,KilometerPrecision) + " KM";
          }
-         else if(param1 < MaxLightSecondsDisplay)
+         else if(distance < MaxLightSecondsDisplay)
          {
-            _loc2_ = FormatNumberToString(param1 / MetersInLightSeconds,LightSecondPrecision) + " LS";
+            result = FormatNumberToString(distance / MetersInLightSeconds,LightSecondPrecision) + " LS";
          }
          else
          {
-            _loc2_ = FormatNumberToString(param1 / MetersInAU,AUPrecision) + " AU";
+            result = FormatNumberToString(distance / MetersInAU,AUPrecision) + " AU";
          }
-         return _loc2_;
+         return result;
       }
       
-      public static function SetText(param1:TextField, param2:String, param3:Boolean = false, param4:Boolean = false, param5:int = 0, param6:Boolean = false, param7:uint = 0, param8:Array = null, param9:uint = 0, param10:uint = 0) : *
+      public static function SetText(textField:TextField, text:String, isHTML:Boolean = false, forceUpper:Boolean = false, maxChars:int = 0, shrinkToFit:Boolean = false, padding:uint = 0, substitutions:Array = null, leading:uint = 0, maxLines:uint = 0) : *
       {
-         var _loc12_:Number = NaN;
-         var _loc13_:Boolean = false;
-         var _loc14_:* = undefined;
-         var _loc15_:* = undefined;
-         var _loc16_:* = undefined;
-         var _loc17_:Number = NaN;
-         var _loc18_:Number = NaN;
-         var _loc19_:Number = NaN;
-         if(!param2 || param2 == "")
+         var letterSpacing:Number = NaN;
+         var useKerning:Boolean = false;
+         var charIndex:* = undefined;
+         var charStart:* = 0;
+         var charBounds:* = undefined;
+         var originalX:Number = NaN;
+         var originalWidth:Number = NaN;
+         var finalWidth:Number = NaN;
+         if(!text || text == "")
          {
-            param2 = " ";
+            text = " ";
          }
-         if(param4 && param2.charAt(0) != "$")
+         if(forceUpper && text.charAt(0) != "$")
          {
-            param2 = param2.toUpperCase();
+            text = text.toUpperCase();
          }
-         var _loc11_:TextFormat = param1.getTextFormat();
-         if(param3)
+         var textFormat:TextFormat = textField.getTextFormat();
+         if(isHTML)
          {
-            _loc12_ = Number(_loc11_.letterSpacing);
-            _loc13_ = Boolean(_loc11_.kerning);
-            param1.htmlText = param2;
-            if(param8 != null)
+            letterSpacing = Number(textFormat.letterSpacing);
+            useKerning = Boolean(textFormat.kerning);
+            textField.htmlText = text;
+            if(substitutions != null)
             {
-               param1.htmlText = DoSubstitutions(param1.htmlText,param8);
+               textField.htmlText = DoSubstitutions(textField.htmlText,substitutions);
             }
-            _loc11_ = param1.getTextFormat();
-            _loc11_.letterSpacing = _loc12_;
-            _loc11_.kerning = _loc13_;
-            if(param9 != 0)
+            textFormat = textField.getTextFormat();
+            textFormat.letterSpacing = letterSpacing;
+            textFormat.kerning = useKerning;
+            if(leading != 0)
             {
-               _loc11_.leading = param9;
+               textFormat.leading = leading;
             }
-            param1.setTextFormat(_loc11_);
+            textField.setTextFormat(textFormat);
          }
          else
          {
-            param1.text = param2;
-            if(param8 != null)
+            textField.text = text;
+            if(substitutions != null)
             {
-               param1.text = DoSubstitutions(param1.text,param8);
+               textField.text = DoSubstitutions(textField.text,substitutions);
             }
          }
-         if(param10 > 0 && param1.numLines > param10)
+         if(maxLines > 0 && textField.numLines > maxLines)
          {
-            param1.text = param1.text.slice(0,param1.getLineOffset(param10) - 1) + "…";
+            textField.text = textField.text.slice(0,textField.getLineOffset(maxLines) - 1) + "…";
          }
-         if(param5 > 0)
+         if(maxChars > 0)
          {
-            if(param1.text.length > param5)
+            if(textField.text.length > maxChars)
             {
-               param1.text = param1.text.slice(0,param5 - 1) + "…";
+               textField.text = textField.text.slice(0,maxChars - 1) + "…";
             }
-            else if(param1.textWidth > param1.width && param1.wordWrap === false)
+            else if(textField.textWidth > textField.width && textField.wordWrap === false)
             {
-               _loc14_ = param1.length - 1;
-               _loc15_ = 0;
-               while(_loc15_ < param1.text.length)
+               charIndex = textField.length - 1;
+               charStart = 0;
+               while(charStart < textField.text.length)
                {
-                  _loc16_ = param1.getCharBoundaries(_loc15_);
-                  if(_loc16_.right > param1.x + param1.width)
+                  charBounds = textField.getCharBoundaries(charStart);
+                  if(charBounds.right > textField.x + textField.width)
                   {
-                     _loc14_ = _loc15_;
+                     charIndex = charStart;
                      break;
                   }
-                  _loc15_++;
+                  charStart++;
                }
-               param1.text = param1.text.slice(0,_loc14_ - 2) + "…";
+               textField.text = textField.text.slice(0,charIndex - 2) + "…";
             }
          }
-         if(param6)
+         if(shrinkToFit)
          {
-            _loc17_ = param1.x;
-            _loc18_ = param1.width;
-            _loc19_ = param1.textWidth + 2 * param7;
-            switch(_loc11_.align)
+            originalX = textField.x;
+            originalWidth = textField.width;
+            finalWidth = textField.textWidth + 2 * padding;
+            switch(textFormat.align)
             {
                case TextFormatAlign.RIGHT:
-                  param1.x += _loc18_ - (_loc19_ + param7);
+                  textField.x += originalWidth - (finalWidth + padding);
                   break;
                case TextFormatAlign.CENTER:
-                  param1.x += (_loc18_ - _loc19_) / 2;
+                  textField.x += (originalWidth - finalWidth) / 2;
             }
-            param1.width = _loc19_;
-            param1.height = param1.textHeight;
+            textField.width = finalWidth;
+            textField.height = textField.textHeight;
          }
       }
       
-      public static function SetTwoLineText(param1:TextField, param2:String, param3:int, param4:Boolean = false) : *
+      public static function SetTwoLineText(textField:TextField, text:String, maxCharsPerLine:int, forceUpper:Boolean = false) : *
       {
-         var _loc6_:int = 0;
-         var _loc7_:* = undefined;
-         var _loc5_:int = param3;
-         if(param2.length > param3)
+         var charIndex:int = 0;
+         var charStart:* = undefined;
+         var finalMaxChars:int = maxCharsPerLine;
+         if(text.length > maxCharsPerLine)
          {
-            _loc6_ = 0;
-            while(_loc6_ <= param3)
+            charIndex = 0;
+            while(charIndex <= maxCharsPerLine)
             {
-               if(param2.charAt(_loc6_) == " " || param2.charAt(_loc6_) == "-")
+               if(text.charAt(charIndex) == " " || text.charAt(charIndex) == "-")
                {
-                  _loc5_ = _loc6_ - 1;
+                  finalMaxChars = charIndex - 1;
                }
-               _loc6_++;
+               charIndex++;
             }
-            _loc7_ = _loc5_ + param3;
-            GlobalFunc.SetText(param1,param2,false,param4,_loc7_);
+            charStart = finalMaxChars + maxCharsPerLine;
+            GlobalFunc.SetText(textField,text,false,forceUpper,charStart);
          }
          else
          {
-            GlobalFunc.SetText(param1,param2,false,param4);
+            GlobalFunc.SetText(textField,text,false,forceUpper);
          }
       }
       
-      public static function TruncateSingleLineText(param1:TextField) : *
+      public static function TruncateSingleLineText(textField:TextField) : *
       {
-         var _loc2_:int = 0;
-         if(param1.text.length > 3)
+         var charIndex:int = 0;
+         if(textField.text.length > 3)
          {
-            _loc2_ = param1.getCharIndexAtPoint(param1.width,0);
-            if(_loc2_ > 0)
+            charIndex = textField.getCharIndexAtPoint(textField.width,0);
+            if(charIndex > 0)
             {
-               param1.replaceText(_loc2_ - 1,param1.length,"…");
+               textField.replaceText(charIndex - 1,textField.length,"…");
             }
          }
       }
       
-      public static function SetTruncatedMultilineText(param1:TextField, param2:String, param3:Boolean = false) : *
+      public static function SetTruncatedMultilineText(textField:TextField, text:String, forceUpper:Boolean = false) : *
       {
-         var _loc8_:* = null;
-         var _loc9_:int = 0;
-         var _loc10_:* = undefined;
-         var _loc4_:TextLineMetrics = param1.getLineMetrics(0);
-         var _loc5_:int = param1.height / _loc4_.height;
-         param1.text = "W";
-         var _loc6_:int = param1.width / param1.textWidth;
-         GlobalFunc.SetText(param1,param2,false,param3);
-         var _loc7_:int = Math.min(_loc5_,param1.numLines);
-         if(param1.numLines > _loc5_)
+         var finalText:* = null;
+         var charIndex:int = 0;
+         var charStart:* = undefined;
+         var lineMetrics:TextLineMetrics = textField.getLineMetrics(0);
+         var maxLines:int = textField.height / lineMetrics.height;
+         textField.text = "W";
+         var maxCharsPerLine:int = textField.width / textField.textWidth;
+         GlobalFunc.SetText(textField,text,false,forceUpper);
+         var numLines:int = Math.min(maxLines,textField.numLines);
+         if(textField.numLines > maxLines)
          {
-            _loc8_ = param2;
-            _loc9_ = param1.getLineOffset(_loc5_ - 1);
-            _loc10_ = _loc9_ + _loc6_ - 1;
-            if(_loc8_.charAt(_loc10_ - 1) == " ")
+            finalText = text;
+            charIndex = textField.getLineOffset(maxLines - 1);
+            charStart = charIndex + maxCharsPerLine - 1;
+            if(finalText.charAt(charStart - 1) == " ")
             {
-               _loc10_--;
+               charStart--;
             }
-            _loc8_ = _loc8_.substr(0,_loc10_) + "…";
-            GlobalFunc.SetText(param1,_loc8_,false,param3);
+            finalText = finalText.substr(0,charStart) + "…";
+            GlobalFunc.SetText(textField,finalText,false,forceUpper);
          }
       }
       
-      public static function DoSubstitutions(param1:String, param2:Array) : String
+      public static function DoSubstitutions(text:String, substitutions:Array) : String
       {
-         var _loc5_:RegExp = null;
-         var _loc3_:String = param1;
-         var _loc4_:int = 0;
-         while(_loc4_ < param2.length)
+         var regex:RegExp = null;
+         var result:String = text;
+         var index:int = 0;
+         while(index < substitutions.length)
          {
-            _loc5_ = new RegExp("{[" + _loc4_ + "]}","g");
-            _loc3_ = _loc3_.replace(_loc5_,param2[_loc4_]);
-            _loc4_++;
+            regex = new RegExp("{[" + index + "]}","g");
+            result = result.replace(regex,substitutions[index]);
+            index++;
          }
-         return _loc3_;
+         return result;
       }
       
-      public static function LockToSafeRect(param1:DisplayObject, param2:String, param3:Number = 0, param4:Number = 0, param5:Boolean = false) : *
+      public static function LockToSafeRect(displayObject:DisplayObject, position:String, offsetX:Number = 0, offsetY:Number = 0, useBounds:Boolean = false) : *
       {
-         var _loc13_:Error = null;
-         if(!param1)
+         var error:Error = null;
+         if(!displayObject)
          {
-            _loc13_ = new Error();
-            trace("GlobalFunc::LockToSafeRect -- called with a null or undefined display object\n" + _loc13_.getStackTrace());
+            error = new Error();
+            trace("GlobalFunc::LockToSafeRect -- called with a null or undefined display object\n" + error.getStackTrace());
             return;
          }
-         var _loc6_:Rectangle = Extensions.visibleRect;
-         var _loc7_:Point = new Point(_loc6_.x + param3,_loc6_.y + param4);
-         var _loc8_:Point = new Point(_loc6_.x + _loc6_.width - param3,_loc6_.y + _loc6_.height - param4);
-         var _loc9_:Point = param1.parent.globalToLocal(_loc7_);
-         var _loc10_:Point = param1.parent.globalToLocal(_loc8_);
-         var _loc11_:Point = Point.interpolate(_loc9_,_loc10_,0.5);
-         var _loc12_:Rectangle = param1.getBounds(param1.parent);
-         if(param2 == "T" || param2 == "TL" || param2 == "TR" || param2 == "TC")
+         var visibleRect:Rectangle = Extensions.visibleRect;
+         var topLeft:Point = new Point(visibleRect.x + offsetX,visibleRect.y + offsetY);
+         var bottomRight:Point = new Point(visibleRect.x + visibleRect.width - offsetX,visibleRect.y + visibleRect.height - offsetY);
+         var localTopLeft:Point = displayObject.parent.globalToLocal(topLeft);
+         var localBottomRight:Point = displayObject.parent.globalToLocal(bottomRight);
+         var localCenter:Point = Point.interpolate(localTopLeft,localBottomRight,0.5);
+         var bounds:Rectangle = displayObject.getBounds(displayObject.parent);
+         if(position == "T" || position == "TL" || position == "TR" || position == "TC")
          {
-            if(param5)
+            if(useBounds)
             {
-               param1.y = _loc9_.y + param1.y - _loc12_.y;
+               displayObject.y = localTopLeft.y + displayObject.y - bounds.y;
             }
             else
             {
-               param1.y = _loc9_.y;
+               displayObject.y = localTopLeft.y;
             }
          }
-         if(param2 == "CR" || param2 == "CC" || param2 == "CL")
+         if(position == "CR" || position == "CC" || position == "CL")
          {
-            if(param5)
+            if(useBounds)
             {
-               param1.y = _loc11_.y + param1.y - _loc12_.y - _loc12_.height / 2;
+               displayObject.y = localCenter.y + displayObject.y - bounds.y - bounds.height / 2;
             }
             else
             {
-               param1.y = _loc11_.y;
+               displayObject.y = localCenter.y;
             }
          }
-         if(param2 == "B" || param2 == "BL" || param2 == "BR" || param2 == "BC")
+         if(position == "B" || position == "BL" || position == "BR" || position == "BC")
          {
-            if(param5)
+            if(useBounds)
             {
-               param1.y = _loc10_.y - (_loc12_.height + _loc12_.y - param1.y);
+               displayObject.y = localBottomRight.y - (bounds.height + bounds.y - displayObject.y);
             }
             else
             {
-               param1.y = _loc10_.y;
+               displayObject.y = localBottomRight.y;
             }
          }
-         if(param2 == "L" || param2 == "TL" || param2 == "BL" || param2 == "CL")
+         if(position == "L" || position == "TL" || position == "BL" || position == "CL")
          {
-            if(param5)
+            if(useBounds)
             {
-               param1.x = _loc9_.x + param1.x - _loc12_.x;
+               displayObject.x = localTopLeft.x + displayObject.x - bounds.x;
             }
             else
             {
-               param1.x = _loc9_.x;
+               displayObject.x = localTopLeft.x;
             }
          }
-         if(param2 == "TC" || param2 == "CC" || param2 == "BC")
+         if(position == "TC" || position == "CC" || position == "BC")
          {
-            if(param5)
+            if(useBounds)
             {
-               param1.x = _loc11_.x + param1.x - _loc12_.x - _loc12_.width / 2;
+               displayObject.x = localCenter.x + displayObject.x - bounds.x - bounds.width / 2;
             }
             else
             {
-               param1.x = _loc11_.x;
+               displayObject.x = localCenter.x;
             }
          }
-         if(param2 == "R" || param2 == "TR" || param2 == "BR" || param2 == "CR")
+         if(position == "R" || position == "TR" || position == "BR" || position == "CR")
          {
-            if(param5)
+            if(useBounds)
             {
-               param1.x = _loc10_.x - (_loc12_.width + _loc12_.x - param1.x);
+               displayObject.x = localBottomRight.x - (bounds.width + bounds.x - displayObject.x);
             }
             else
             {
-               param1.x = _loc10_.x;
+               displayObject.x = localBottomRight.x;
             }
          }
       }
@@ -698,41 +697,41 @@ package Shared
       {
          MovieClip.prototype.getMovieClips = function():Array
          {
-            var _loc2_:* = undefined;
-            var _loc1_:* = new Array();
-            for(_loc2_ in this)
+            var key:* = undefined;
+            var result:Array = new Array();
+            for(key in this)
             {
-               if(this[_loc2_] is MovieClip && this[_loc2_] != this)
+               if(this[key] is MovieClip && this[key] != this)
                {
-                  _loc1_.push(this[_loc2_]);
+                  result.push(this[key]);
                }
             }
-            return _loc1_;
+            return result;
          };
          MovieClip.prototype.showMovieClips = function():*
          {
-            var _loc1_:* = undefined;
-            for(_loc1_ in this)
+            var key:* = undefined;
+            for(key in this)
             {
-               if(this[_loc1_] is MovieClip && this[_loc1_] != this)
+               if(this[key] is MovieClip && this[key] != this)
                {
-                  trace(this[_loc1_]);
-                  this[_loc1_].showMovieClips();
+                  trace(this[key]);
+                  this[key].showMovieClips();
                }
             }
          };
       }
       
-      public static function InspectObject(param1:Object, param2:Boolean = false, param3:Boolean = false) : void
+      public static function InspectObject(object:Object, recursive:Boolean = false, includeProperties:Boolean = false) : void
       {
-         var _loc4_:String = getQualifiedClassName(param1);
-         trace("Inspecting object with type " + _loc4_);
+         var className:String = getQualifiedClassName(object);
+         trace("Inspecting object with type " + className);
          trace("{");
-         InspectObjectHelper(param1,new Array(),param2,param3);
+         InspectObjectHelper(object,new Array(),recursive,includeProperties);
          trace("}");
       }
       
-      private static function InspectObjectHelper(param1:Object, param2:Array, param3:Boolean, param4:Boolean, param5:String = "\t") : void
+      private static function InspectObjectHelper(object:Object, seenObjects:Array, recursive:Boolean, includeProperties:Boolean, indent:String = "\t") : void
       {
          var typeDef:XML;
          var member:XML = null;
@@ -748,11 +747,11 @@ package Shared
          var value:Object = null;
          var subid:String = null;
          var subvalue:Object = null;
-         var aObject:Object = param1;
-         var aSeenObjects:Array = param2;
-         var abRecursive:Boolean = param3;
-         var abIncludeProperties:Boolean = param4;
-         var astrIndent:String = param5;
+         var aObject:Object = object;
+         var aSeenObjects:Array = seenObjects;
+         var abRecursive:Boolean = recursive;
+         var abIncludeProperties:Boolean = includeProperties;
+         var astrIndent:String = indent;
          if(aSeenObjects.indexOf(aObject) != -1)
          {
             return;
@@ -811,33 +810,33 @@ package Shared
          }
       }
       
-      public static function GetFullClipPath(param1:DisplayObject) : String
+      public static function GetFullClipPath(displayObject:DisplayObject) : String
       {
-         var _loc2_:DisplayObject = param1;
-         var _loc3_:String = "";
-         if(_loc2_ == null)
+         var currentObject:DisplayObject = displayObject;
+         var path:String = "";
+         if(currentObject == null)
          {
-            _loc3_ = "null";
+            path = "null";
          }
          else
          {
-            _loc3_ = _loc2_.name;
-            _loc2_ = _loc2_.parent;
-            while(_loc2_ != null && !(_loc2_ is Stage))
+            path = currentObject.name;
+            currentObject = currentObject.parent;
+            while(currentObject != null && !(currentObject is Stage))
             {
-               _loc3_ = _loc2_.name + "." + _loc3_;
-               _loc2_ = _loc2_.parent;
+               path = currentObject.name + "." + path;
+               currentObject = currentObject.parent;
             }
          }
-         return _loc3_;
+         return path;
       }
       
-      public static function FrameLabelExists(param1:MovieClip, param2:String) : Boolean
+      public static function FrameLabelExists(movieClip:MovieClip, label:String) : Boolean
       {
-         var _loc3_:FrameLabel = null;
-         for each(_loc3_ in param1.currentLabels)
+         var frameLabel:FrameLabel = null;
+         for each(frameLabel in movieClip.currentLabels)
          {
-            if(_loc3_.name == param2)
+            if(frameLabel.name == label)
             {
                return true;
             }
@@ -847,15 +846,15 @@ package Shared
       
       public static function AddReverseFunctions() : *
       {
-         MovieClip.prototype.PlayReverseCallback = function(param1:Event):*
+         MovieClip.prototype.PlayReverseCallback = function(event:Event):*
          {
-            if(param1.currentTarget.currentFrame > 1)
+            if(event.currentTarget.currentFrame > 1)
             {
-               param1.currentTarget.gotoAndStop(param1.currentTarget.currentFrame - 1);
+               event.currentTarget.gotoAndStop(event.currentTarget.currentFrame - 1);
             }
             else
             {
-               param1.currentTarget.removeEventListener(Event.ENTER_FRAME,param1.currentTarget.PlayReverseCallback);
+               event.currentTarget.removeEventListener(Event.ENTER_FRAME,event.currentTarget.PlayReverseCallback);
             }
          };
          MovieClip.prototype.PlayReverse = function():*
@@ -870,24 +869,24 @@ package Shared
                this.gotoAndStop(1);
             }
          };
-         MovieClip.prototype.PlayForward = function(param1:String):*
+         MovieClip.prototype.PlayForward = function(frameLabel:String):*
          {
             delete this.onEnterFrame;
-            this.gotoAndPlay(param1);
+            this.gotoAndPlay(frameLabel);
          };
-         MovieClip.prototype.PlayForward = function(param1:Number):*
+         MovieClip.prototype.PlayForward = function(frameNumber:Number):*
          {
             delete this.onEnterFrame;
-            this.gotoAndPlay(param1);
+            this.gotoAndPlay(frameNumber);
          };
       }
       
-      public static function PlayMenuSound(param1:String, param2:String = "", param3:Number = 0) : *
+      public static function PlayMenuSound(soundID:String, rtpcName:String = "", rtpcValue:Number = 0) : *
       {
          BSUIDataManager.dispatchEvent(new CustomEvent(GlobalFunc.PLAY_MENU_SOUND,{
-            "sSoundID":param1,
-            "sRTPCName":param2,
-            "fRTPCValue":param3
+            "sSoundID":soundID,
+            "sRTPCName":rtpcName,
+            "fRTPCValue":rtpcValue
          }));
       }
       
@@ -896,17 +895,17 @@ package Shared
          BSUIDataManager.dispatchEvent(new Event(GlobalFunc.START_GAME_RENDER));
       }
       
-      public static function UserEvent(param1:String, param2:String) : *
+      public static function UserEvent(menuName:String, eventID:String) : *
       {
          BSUIDataManager.dispatchEvent(new CustomEvent(GlobalFunc.USER_EVENT,{
-            "menuName":param1,
-            "eventID":param2
+            "menuName":menuName,
+            "eventID":eventID
          }));
       }
       
-      public static function CloseMenu(param1:String) : *
+      public static function CloseMenu(menuName:String) : *
       {
-         BSUIDataManager.dispatchEvent(new CustomEvent(GlobalFunc.CLOSE_MENU,{"menuName":param1}));
+         BSUIDataManager.dispatchEvent(new CustomEvent(GlobalFunc.CLOSE_MENU,{"menuName":menuName}));
       }
       
       public static function CloseAllMenus() : *
@@ -914,157 +913,157 @@ package Shared
          BSUIDataManager.dispatchEvent(new Event(GlobalFunc.CLOSE_ALL_MENUS));
       }
       
-      public static function StringTrim(param1:String) : String
+      public static function StringTrim(text:String) : String
       {
-         var _loc5_:String = null;
-         var _loc2_:Number = 0;
-         var _loc3_:Number = 0;
-         var _loc4_:Number = param1.length;
-         while(param1.charAt(_loc2_) == " " || param1.charAt(_loc2_) == "\n" || param1.charAt(_loc2_) == "\r" || param1.charAt(_loc2_) == "\t")
+         var trimmedText:String = null;
+         var startIndex:Number = 0;
+         var endIndex:Number = 0;
+         var textLength:Number = text.length;
+         while(text.charAt(startIndex) == " " || text.charAt(startIndex) == "\n" || text.charAt(startIndex) == "\r" || text.charAt(startIndex) == "\t")
          {
-            _loc2_++;
+            startIndex++;
          }
-         _loc5_ = param1.substring(_loc2_);
-         _loc3_ = _loc5_.length - 1;
-         while(_loc5_.charAt(_loc3_) == " " || _loc5_.charAt(_loc3_) == "\n" || _loc5_.charAt(_loc3_) == "\r" || _loc5_.charAt(_loc3_) == "\t")
+         trimmedText = text.substring(startIndex);
+         endIndex = trimmedText.length - 1;
+         while(trimmedText.charAt(endIndex) == " " || trimmedText.charAt(endIndex) == "\n" || trimmedText.charAt(endIndex) == "\r" || trimmedText.charAt(endIndex) == "\t")
          {
-            _loc3_--;
+            endIndex--;
          }
-         return _loc5_.substring(0,_loc3_ + 1);
+         return trimmedText.substring(0,endIndex + 1);
       }
       
-      public static function GetTextFieldFontSize(param1:TextField) : Number
+      public static function GetTextFieldFontSize(textField:TextField) : Number
       {
-         return GetFontSize(param1.getTextFormat());
+         return GetFontSize(textField.getTextFormat());
       }
       
-      public static function GetFontSize(param1:TextFormat) : Number
+      public static function GetFontSize(textFormat:TextFormat) : Number
       {
-         var _loc2_:Number = 12;
-         var _loc3_:Object = param1.size;
-         return _loc3_ != null ? _loc3_ as Number : _loc2_;
+         var defaultSize:Number = 12;
+         var fontSize:Object = textFormat.size;
+         return fontSize != null ? fontSize as Number : defaultSize;
       }
       
-      public static function BSASSERT(param1:Boolean, param2:String) : void
+      public static function BSASSERT(condition:Boolean, message:String) : void
       {
-         var _loc3_:String = null;
-         if(!param1)
+         var stackTrace:String = null;
+         if(!condition)
          {
-            _loc3_ = new Error().getStackTrace();
-            fscommand("BSASSERT",param2 + "\nCallstack:\n" + _loc3_);
+            stackTrace = new Error().getStackTrace();
+            fscommand("BSASSERT",message + "\nCallstack:\n" + stackTrace);
          }
       }
       
-      public static function TraceWarning(param1:String) : void
+      public static function TraceWarning(message:String) : void
       {
-         var _loc2_:String = new Error().getStackTrace();
-         trace("WARNING: " + param1 + _loc2_.substr(_loc2_.indexOf("\n")));
+         var stackTrace:String = new Error().getStackTrace();
+         trace("WARNING: " + message + stackTrace.substr(stackTrace.indexOf("\n")));
       }
       
-      public static function BinarySearchUpperBound(param1:*, param2:Array, param3:String = null) : Object
+      public static function BinarySearchUpperBound(target:*, array:Array, property:String = null) : Object
       {
-         var _loc7_:int = 0;
-         var _loc8_:* = undefined;
-         var _loc9_:* = undefined;
-         var _loc4_:int = 0;
-         var _loc5_:int = int(param2.length - 1);
-         var _loc6_:* = param1;
-         if(param3 != null && Boolean(param1.hasOwnProperty(param3)))
+         var mid:int = 0;
+         var midValue:* = undefined;
+         var midProperty:* = undefined;
+         var low:int = 0;
+         var high:int = int(array.length - 1);
+         var targetValue:* = target;
+         if(property != null && Boolean(target.hasOwnProperty(property)))
          {
-            _loc6_ = param1[param3];
+            targetValue = target[property];
          }
-         while(_loc4_ <= _loc5_)
+         while(low <= high)
          {
-            _loc7_ = (_loc4_ + _loc5_) / 2;
-            _loc9_ = _loc8_ = param2[_loc7_];
-            if(param3 != null)
+            mid = (low + high) / 2;
+            midProperty = midValue = array[mid];
+            if(property != null)
             {
-               _loc9_ = _loc8_[param3];
+               midProperty = midValue[property];
             }
-            if(_loc9_ < _loc6_)
+            if(midProperty < targetValue)
             {
-               _loc4_ = _loc7_ + 1;
+               low = mid + 1;
             }
             else
             {
-               if(_loc9_ <= _loc6_)
+               if(midProperty <= targetValue)
                {
                   return {
                      "found":true,
-                     "index":_loc7_
+                     "index":mid
                   };
                }
-               _loc5_ = _loc7_ - 1;
+               high = mid - 1;
             }
          }
          return {
             "found":false,
-            "index":_loc4_
+            "index":low
          };
       }
       
-      public static function CloneObject(param1:Object) : Object
+      public static function CloneObject(object:Object) : Object
       {
-         var _loc2_:Object = null;
-         var _loc5_:* = undefined;
-         var _loc3_:String = getQualifiedClassName(param1);
-         var _loc4_:Class = getDefinitionByName(_loc3_) as Class;
-         if(_loc3_ !== "Array" && typeof param1 != "object")
+         var clone:Object = null;
+         var key:* = undefined;
+         var className:String = getQualifiedClassName(object);
+         var classReference:Class = getDefinitionByName(className) as Class;
+         if(className !== "Array" && typeof object != "object")
          {
-            _loc2_ = param1;
+            clone = object;
          }
          else
          {
-            _loc2_ = new _loc4_();
-            for(_loc5_ in param1)
+            clone = new classReference();
+            for(key in object)
             {
-               _loc2_[_loc5_] = CloneObject(param1[_loc5_]);
+               clone[key] = CloneObject(object[key]);
             }
          }
-         return _loc2_;
+         return clone;
       }
       
-      public static function FindObjectWithProperty(param1:String, param2:*, param3:Array) : Object
+      public static function FindObjectWithProperty(propertyName:String, propertyValue:*, array:Array) : Object
       {
-         var _loc4_:uint = 0;
-         var _loc6_:* = undefined;
-         var _loc5_:uint = param3.length;
-         _loc4_ = 0;
-         while(_loc4_ < _loc5_)
+         var index:uint = 0;
+         var element:* = undefined;
+         var length:uint = array.length;
+         index = 0;
+         while(index < length)
          {
-            _loc6_ = param3[_loc4_];
-            if(_loc6_[param1] == param2)
+            element = array[index];
+            if(element[propertyName] == propertyValue)
             {
-               return _loc6_;
+               return element;
             }
-            _loc4_++;
+            index++;
          }
          return null;
       }
       
-      public static function FindIndexWithProperty(param1:String, param2:*, param3:Array) : int
+      public static function FindIndexWithProperty(propertyName:String, propertyValue:*, array:Array) : int
       {
-         var _loc4_:uint = 0;
-         var _loc6_:* = undefined;
-         var _loc5_:uint = param3.length;
-         _loc4_ = 0;
-         while(_loc4_ < _loc5_)
+         var index:uint = 0;
+         var element:* = undefined;
+         var length:uint = array.length;
+         index = 0;
+         while(index < length)
          {
-            _loc6_ = param3[_loc4_];
-            if(_loc6_[param1] == param2)
+            element = array[index];
+            if(element[propertyName] == propertyValue)
             {
-               return _loc4_;
+               return index;
             }
-            _loc4_++;
+            index++;
          }
          return -1;
       }
       
-      public static function HasFireForgetEvent(param1:Object, param2:String) : Boolean
+      public static function HasFireForgetEvent(dataObject:Object, eventString:String) : Boolean
       {
          var obj:Object = null;
-         var aDataObject:Object = param1;
-         var asEventString:String = param2;
+         var aDataObject:Object = dataObject;
+         var asEventString:String = eventString;
          var result:Boolean = false;
          try
          {
@@ -1088,56 +1087,55 @@ package Shared
          return result;
       }
       
-      public static function DebugDrawCircle(param1:MovieClip, param2:Point, param3:uint = 16777215, param4:Number = 5) : *
+      public static function DebugDrawCircle(container:MovieClip, center:Point, color:uint = 16777215, radius:Number = 5) : *
       {
-         var _loc5_:Shape = new Shape();
-         _loc5_.graphics.beginFill(param3,1);
-         _loc5_.graphics.lineStyle(2,0);
-         _loc5_.graphics.drawCircle(param2.x,param2.y,param4);
-         _loc5_.graphics.endFill();
-         param1.addChild(_loc5_);
+         var circle:Shape = new Shape();
+         circle.graphics.beginFill(color,1);
+         circle.graphics.lineStyle(2,0);
+         circle.graphics.drawCircle(center.x,center.y,radius);
+         circle.graphics.endFill();
+         container.addChild(circle);
       }
       
-      public static function GetQuestTimeRemainingString(param1:int) : String
+      public static function GetQuestTimeRemainingString(minutesRemaining:int) : String
       {
-         var _loc2_:String = "";
-         var _loc3_:* = 0;
-         var _loc4_:Number = Math.floor(param1 / MINUTES_PER_DAY);
-         _loc3_ = param1 % MINUTES_PER_DAY;
-         var _loc5_:Number = Math.floor(_loc3_ / MINUTES_PER_HOUR);
-         _loc3_ %= MINUTES_PER_HOUR;
-         var _loc6_:Number = Math.floor(_loc3_);
-         if(_loc4_ > 0)
+         var result:String = "";
+         var remainingMinutes:* = 0;
+         var days:Number = Math.floor(minutesRemaining / MINUTES_PER_DAY);
+         remainingMinutes = minutesRemaining % MINUTES_PER_DAY;
+         var hours:Number = Math.floor(remainingMinutes / MINUTES_PER_HOUR);
+         remainingMinutes %= MINUTES_PER_HOUR;
+         var minutes:Number = Math.floor(remainingMinutes);
+         if(days > 0)
          {
-            _loc2_ = GlobalFunc.PadNumber(_loc4_,2) + " " + (_loc4_ == 1 ? "$$DAY" : "$$DAYS") + " : " + GlobalFunc.PadNumber(_loc5_,2) + " " + (_loc5_ == 1 ? "$$HOUR" : "$$HOURS");
+            result = GlobalFunc.PadNumber(days,2) + " " + (days == 1 ? "$$DAY" : "$$DAYS") + " : " + GlobalFunc.PadNumber(hours,2) + " " + (hours == 1 ? "$$HOUR" : "$$HOURS");
          }
-         else if(_loc5_ >= 2)
+         else if(hours >= 2)
          {
-            _loc2_ = GlobalFunc.PadNumber(_loc5_,2) + " " + (_loc5_ == 1 ? "$$HOUR" : "$$HOURS");
+            result = GlobalFunc.PadNumber(hours,2) + " " + (hours == 1 ? "$$HOUR" : "$$HOURS");
          }
          else
          {
-            _loc2_ = GlobalFunc.PadNumber(_loc5_,2) + " " + (_loc5_ == 1 ? "$$HOUR" : "$$HOURS") + " : " + GlobalFunc.PadNumber(_loc6_,2) + " " + (_loc6_ == 1 ? "$$MINUTE" : "$$MINUTES");
+            result = GlobalFunc.PadNumber(hours,2) + " " + (hours == 1 ? "$$HOUR" : "$$HOURS") + " : " + GlobalFunc.PadNumber(minutes,2) + " " + (minutes == 1 ? "$$MINUTE" : "$$MINUTES");
          }
-         return _loc2_;
+         return result;
       }
       
-      public static function ConvertScreenPercentsToLocalPoint(param1:Number, param2:Number, param3:DisplayObjectContainer) : Point
+      public static function ConvertScreenPercentsToLocalPoint(percentX:Number, percentY:Number, container:DisplayObjectContainer) : Point
       {
-         var _loc4_:Rectangle = null;
-         var _loc5_:* = undefined;
-         var _loc6_:* = undefined;
-         _loc4_ = Extensions.visibleRect;
-         _loc5_ = param1 * _loc4_.width + _loc4_.x;
-         _loc6_ = (1 - param2) * _loc4_.height + _loc4_.y;
-         var _loc7_:Point = new Point(_loc5_,_loc6_);
-         return param3.globalToLocal(_loc7_);
+         var visibleRect:Rectangle = null;
+         var globalX:* = undefined;
+         var globalY:* = undefined;
+         visibleRect = Extensions.visibleRect;
+         globalX = percentX * visibleRect.width + visibleRect.x;
+         globalY = (1 - percentY) * visibleRect.height + visibleRect.y;
+         var globalPoint:Point = new Point(globalX,globalY);
+         return container.globalToLocal(globalPoint);
       }
       
-      public static function GetRectangleCenter(param1:Rectangle) : Point
+      public static function GetRectangleCenter(rectangle:Rectangle) : Point
       {
-         return new Point((param1.topLeft.x + param1.bottomRight.x) / 2,(param1.topLeft.y + param1.bottomRight.y) / 2);
+         return new Point((rectangle.topLeft.x + rectangle.bottomRight.x) / 2,(rectangle.topLeft.y + rectangle.bottomRight.y) / 2);
       }
    }
 }
-

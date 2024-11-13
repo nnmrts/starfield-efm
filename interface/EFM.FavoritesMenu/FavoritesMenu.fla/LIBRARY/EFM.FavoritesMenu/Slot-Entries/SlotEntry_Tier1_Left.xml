@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" itemID="67329d67-0000020b" linkageExportForAS="true" linkageClassName="Tier1_Left" lastModified="1731464985">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier1_Left" itemID="67329d67-0000020b" linkageExportForAS="true" linkageClassName="Tier1_Left" lastModified="1731505330">
   <timeline>
     <DOMTimeline name="SlotEntry_Tier1_Left">
       <layers>
@@ -12,13 +12,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#B5F5B0" locked="true">
+        <DOMLayer name="Script Layer" color="#B5F5B0" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[
-                  stop(); 
-                ]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -61,7 +59,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Catcher_mc" color="#5586F0" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Catcher_mc" color="#5586F0" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>

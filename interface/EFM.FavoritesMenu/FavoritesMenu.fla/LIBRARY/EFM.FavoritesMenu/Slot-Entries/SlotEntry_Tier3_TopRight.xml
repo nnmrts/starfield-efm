@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" itemID="67329da1-00000216" linkageExportForAS="true" linkageClassName="Tier3_TopRight" lastModified="1731461507">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_TopRight" itemID="67329da1-00000216" linkageExportForAS="true" linkageClassName="Tier3_TopRight" lastModified="1731504303">
   <timeline>
     <DOMTimeline name="SlotEntry_Tier3_TopRight">
       <layers>
@@ -12,13 +12,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#29F9D9" locked="true">
+        <DOMLayer name="Script Layer" color="#29F9D9" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[
-                  stop(); 
-                ]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -56,11 +54,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Icon_mc" color="#2BD7AD" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Icon_mc" color="#2BD7AD" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" selected="true" centerPoint3DX="50" centerPoint3DY="10">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
                   <matrix>
                     <Matrix a="0.75" d="0.75" ty="-40"/>
                   </matrix>

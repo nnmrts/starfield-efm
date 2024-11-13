@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" itemID="67329ceb-000001f6" linkageExportForAS="true" linkageClassName="Favorites_SelectQuickSlot" lastModified="1731484633">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot" itemID="67329ceb-000001f6" linkageExportForAS="true" linkageClassName="Favorites_SelectQuickSlot" lastModified="1731504891">
   <timeline>
     <DOMTimeline name="SelectQuickSlot">
       <layers>
-        <DOMLayer name="Labels Layer" color="#8CEE2C" locked="true">
+        <DOMLayer name="Labels Layer" color="#8CEE2C" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" name="Open" labelType="name" keyMode="9728">
               <elements/>
@@ -22,21 +22,19 @@
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Text_mc" color="#2AD38D" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Text_mc" color="#2AD38D" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>

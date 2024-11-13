@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" itemID="67329d95-00000213" linkageExportForAS="true" linkageClassName="Tier3_Bottom" lastModified="1731461600">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Bottom" itemID="67329d95-00000213" linkageExportForAS="true" linkageClassName="Tier3_Bottom" lastModified="1731504289">
   <timeline>
     <DOMTimeline name="SlotEntry_Tier3_Bottom">
       <layers>
@@ -12,13 +12,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#88E458" locked="true">
+        <DOMLayer name="Script Layer" color="#88E458" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[
-                  stop(); 
-                ]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -111,7 +109,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background Border" color="#81DFB5" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background Border" color="#81DFB5" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>

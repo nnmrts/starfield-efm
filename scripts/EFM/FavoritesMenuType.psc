@@ -16,7 +16,7 @@ Function RegisterForCassiopeia()
 	CassiopeiaPapyrusExtender.RegisterForNativeEvent(SelfName, FavoritesMenu_AssignQuickkey)
 EndFunction
 
-Function UnRegisterForCassiopeia()
+Function UnregisterForCassiopeia()
 	CassiopeiaPapyrusExtender.UnregisterForNativeEvent(SelfName, InventoryMenu_ToggleFavorite)
 	CassiopeiaPapyrusExtender.UnregisterForNativeEvent(SelfName, PowersMenu_FavoritePower)
 	CassiopeiaPapyrusExtender.UnregisterForNativeEvent(SelfName, FavoritesMenu_UseQuickkey)

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" itemID="67329d9d-00000215" linkageExportForAS="true" linkageClassName="Tier3_Top" lastModified="1731461550">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_Top" itemID="67329d9d-00000215" linkageExportForAS="true" linkageClassName="Tier3_Top" lastModified="1731504298">
   <timeline>
     <DOMTimeline name="SlotEntry_Tier3_Top">
       <layers>
@@ -12,13 +12,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#29F9D9" locked="true">
+        <DOMLayer name="Script Layer" color="#29F9D9" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[
-                  stop(); 
-                ]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -40,7 +38,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Quickkey_tf" color="#EABEC0" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Quickkey_tf" color="#EABEC0" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>

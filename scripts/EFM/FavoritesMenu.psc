@@ -38,7 +38,9 @@ EndEvent
 Event OnQuestShutdown()
 	Debug.Trace(self+".OnQuestShutdown()")
 	UnregisterForMenuOpenCloseEvent(Name)
-	UnRegisterForCassiopeia()
+	UnregisterForRemoteEvent(Player, "OnItemEquipped")
+	UnregisterForRemoteEvent(Player, "OnItemUnequipped")
+	UnregisterForCassiopeia()
 EndEvent
 
 
@@ -46,16 +48,27 @@ EndEvent
 ;---------------------------------------------
 
 Event OnGameEvent(string eventName)
-    Debug.Trace("EFM:FavoriteMenu.OnGameEvent(eventName="+eventName+")")
+    Debug.Trace(self+".OnGameEvent(eventName="+eventName+")")
     SetDebugText("EVENT::" + eventName)
 
-	If (eventName == InventoryMenu_ToggleFavorite)
+	If (eventName == FavoritesMenu_AssignQuickkey)
+		SetDebugText("AssignQuickkey")
+
+	ElseIf (eventName == FavoritesMenu_UseQuickkey)
+		SetDebugText("UseQuickkey")
+
+	ElseIf (eventName == InventoryMenu_ToggleFavorite)
 		Weapon weap = Player.GetEquippedWeapon(9) ; 9:Gun
-		SetDebugText("WEAPON::" + weap)
+		If (weap)
+			Player.MarkItemAsFavorite(weap, aiSlot=3)
+			SetDebugText("ToggleFavorite::WEAPON::" + weap)
+		EndIf
 
 	ElseIf (eventName == PowersMenu_FavoritePower)
 		Spell power = Player.GetEquippedSpell(2) ; 2:Other
-		SetDebugText("POWER::" + power)
+		If (power)
+			SetDebugText("FavoritePower::POWER::" + power)
+		EndIf
 	EndIf
 EndEvent
 
@@ -114,14 +127,14 @@ string Property Name Hidden
 EndProperty
 
 string Property DebugText Hidden
-	{Represents a debug textfield on the root favorites menu stage root.}
+	{Represents a debug textfield on the favorites menu stage root.}
 	string Function Get()
 		return "root1.DebugText_tf.text"
 	EndFunction
 EndProperty
 
 string Property Command Hidden
-	{Represents a string property on the favorites menu.}
+	{Represents a string property on the favorites menu `IMenu` AS3 class.}
 	string Function Get()
 		return "root1.Menu_mc.Command"
 	EndFunction

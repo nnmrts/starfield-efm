@@ -16,25 +16,23 @@ package
 	public class FavoritesEntry extends BSDisplayObject
 	{
 		public static const MOUSE_OVER:String = "FavoritesEntry::mouse_over";
-
 		public static const MOUSE_LEAVE:String = "FavoritesEntry::mouse_leave";
-
 		public static const CLICK:String = "FavoritesEntry::mouse_click";
 
 		public var Icon_mc:ImageFixture;
-
 		public var Quickkey_tf:TextField;
-
 		public var SlotInfoSpacer_mc:MovieClip;
-
 		public var Catcher_mc:MovieClip;
 
 		private var _EntryIndex:uint;
+		public function get entryIndex():uint { return this._EntryIndex; }
 
 		private var OrigTextColor:uint;
 
+
 		public function FavoritesEntry()
 		{
+			trace("FavoritesEntry::constructor");
 			try
 			{
 				super();
@@ -53,13 +51,14 @@ package
 			}
 			catch (e:Error)
 			{
-				// trace("FavoritesEntry.constructor TRACE ---------");
-				// trace(e.getStackTrace());
+				trace("FavoritesEntry::constructor TRACE ---------");
+				trace(e.getStackTrace());
 			}
 		}
 
 		override protected function OnControlMapChanged(param1:Object):void
 		{
+			trace("FavoritesEntry::OnControlMapChanged: " + param1);
 			try
 			{
 				var _loc3_:Object = null;
@@ -77,44 +76,33 @@ package
 			}
 			catch (e:Error)
 			{
-				// trace("FavoritesEntry.OnControlMapChanged TRACE ---------");
-				// trace(e.getStackTrace());
-				// GlobalFunc.InspectObject(param1, true, true);
-			}
-		}
-
-		public function get entryIndex():uint
-		{
-			try
-			{
-				return this._EntryIndex;
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesEntry.get entryIndex TRACE ---------");
-				trace(e.getStackTrace());
-				return 0;
-			}
-			return 0;
-		}
-
-		public function set selected(param1:Boolean):void
-		{
-			try
-			{
-				gotoAndStop(param1 ? "Selected" : "Unselected");
-				this.Quickkey_tf.textColor = param1 ? 0 : this.OrigTextColor;
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesEntry.set selected TRACE ---------");
+				trace("FavoritesEntry::OnControlMapChanged TRACE ---------");
 				trace(e.getStackTrace());
 				GlobalFunc.InspectObject(param1, true, true);
 			}
 		}
 
+
+		public function set selected(value:Boolean):void
+		{
+			trace("FavoritesEntry::selected.set(): " + value);
+			try
+			{
+				gotoAndStop(value ? "Selected" : "Unselected");
+				this.Quickkey_tf.textColor = value ? 0 : this.OrigTextColor;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesEntry::selected.set()  TRACE ---------");
+				trace(e.getStackTrace());
+				GlobalFunc.InspectObject(value, true, true);
+			}
+		}
+
+
 		public function LoadIcon(param1:Object):void
 		{
+			trace("FavoritesEntry::LoadIcon: " + param1);
 			try
 			{
 				this.Icon_mc.Unload();
@@ -144,7 +132,7 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.LoadIcon TRACE ---------");
+				trace("FavoritesEntry::LoadIcon() TRACE ---------");
 				trace(e.getStackTrace());
 				GlobalFunc.InspectObject(param1, true, true);
 			}
@@ -152,6 +140,7 @@ package
 
 		public function onIconLoadAttemptComplete():void
 		{
+			trace("FavoritesEntry::onIconLoadAttemptComplete");
 			try
 			{
 				this.Icon_mc.mouseEnabled = false;
@@ -159,51 +148,56 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.onIconLoadAttemptComplete TRACE ---------");
+				trace("FavoritesEntry::onIconLoadAttemptComplete TRACE ---------");
 				trace(e.getStackTrace());
 			}
 		}
 
-		public function onMousePress(param1:MouseEvent):void
+		public function onMousePress(event:MouseEvent):void
 		{
+			trace("FavoritesEntry::onMousePress: " + event);
 			try
 			{
 				dispatchEvent(new Event(CLICK, true, true));
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.onMousePress TRACE ---------");
+				trace("FavoritesEntry::onMousePress TRACE ---------");
 				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				GlobalFunc.InspectObject(event, true, true);
 			}
 		}
 
-		public function onMouseOver(param1:MouseEvent):void
+		public function onMouseOver(event:MouseEvent):void
 		{
+			trace("FavoritesEntry::onMouseOver: " + event);
 			try
 			{
 				dispatchEvent(new Event(MOUSE_OVER, true, true));
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.onMouseOver TRACE ---------");
+				trace("FavoritesEntry::onMouseOver TRACE ---------");
 				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				GlobalFunc.InspectObject(event, true, true);
 			}
 		}
 
-		public function onMouseLeave(param1:MouseEvent):void
+		public function onMouseLeave(event:MouseEvent):void
 		{
+			trace("FavoritesEntry::onMouseLeave: " + event);
 			try
 			{
 				dispatchEvent(new Event(MOUSE_LEAVE, true, true));
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry.onMouseLeave TRACE ---------");
+				trace("FavoritesEntry::onMouseLeave TRACE ---------");
 				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				GlobalFunc.InspectObject(event, true, true);
 			}
 		}
+
+
 	}
 }

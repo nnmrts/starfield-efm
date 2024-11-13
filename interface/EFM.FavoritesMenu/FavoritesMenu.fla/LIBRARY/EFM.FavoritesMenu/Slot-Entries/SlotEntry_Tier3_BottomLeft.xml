@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" itemID="67329db0-0000021a" linkageExportForAS="true" linkageClassName="Tier3_BottomLeft" lastModified="1731461559">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Entries/SlotEntry_Tier3_BottomLeft" itemID="67329db0-0000021a" linkageExportForAS="true" linkageClassName="Tier3_BottomLeft" lastModified="1731504320">
   <timeline>
     <DOMTimeline name="SlotEntry_Tier3_BottomLeft">
       <layers>
@@ -12,13 +12,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#29F9D9" locked="true">
+        <DOMLayer name="Script Layer" color="#29F9D9" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[
-                  stop(); 
-                ]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -28,7 +26,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" name="SlotInfoSpacer_mc" selected="true" centerPoint3DX="55.15" centerPoint3DY="-87.55">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer" name="SlotInfoSpacer_mc" centerPoint3DX="55.15" centerPoint3DY="-87.55">
                   <matrix>
                     <Matrix tx="55.15" ty="-87.55"/>
                   </matrix>
@@ -44,7 +42,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Vertical" name="Catcher_mc" selected="true" centerPoint3DY="-40">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Vertical" name="Catcher_mc" centerPoint3DY="-40">
                   <matrix>
                     <Matrix tx="-37.5" ty="-72"/>
                   </matrix>
@@ -60,7 +58,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" selected="true" centerPoint3DX="50" centerPoint3DY="10">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" name="Icon_mc" centerPoint3DX="50" centerPoint3DY="10">
                   <matrix>
                     <Matrix a="0.75" d="0.75" ty="-40"/>
                   </matrix>
@@ -94,7 +92,7 @@
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B7B7B7" alpha="0.2"/>
@@ -109,11 +107,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#CF4B92" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#CF4B92" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor alpha="0.6"/>

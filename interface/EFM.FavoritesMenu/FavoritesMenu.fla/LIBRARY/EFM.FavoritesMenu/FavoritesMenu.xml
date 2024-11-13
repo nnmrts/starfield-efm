@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoritesMenu" itemID="673291e8-000001be" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731465499" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoritesMenu" itemID="673291e8-000001be" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731504793" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="FavoritesMenu">
       <layers>
-        <DOMLayer name="Comments Layer" color="#000000" locked="true" autoNamed="false">
+        <DOMLayer name="Comments Layer" color="#000000" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="21" name="Layer depth order is important here!" labelType="comment" keyMode="9728">
               <elements/>
@@ -35,8 +35,7 @@
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -45,9 +44,8 @@
             </DOMFrame>
             <DOMFrame index="17" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
-stop();
-]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim", true, true));
+stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -56,9 +54,8 @@ stop();
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim",true,true));
-stop();
-]]></script>
+                <script><![CDATA[dispatchEvent(new Event("onFinishedClosingAnim", true, true));
+stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -104,7 +101,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="8" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" selected="true" centerPoint3DX="276" centerPoint3DY="276">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Large" centerPoint3DX="276" centerPoint3DY="276">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -216,7 +213,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" selected="true" centerPoint3DX="200.5" centerPoint3DY="200.5">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Ring/SlotRing_Medium" centerPoint3DX="200.5" centerPoint3DY="200.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -876,7 +873,7 @@ stop();
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="CenterClip_mc" color="#E0FB44" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="CenterClip_mc" color="#E0FB44" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -3497,7 +3494,7 @@ stop();
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" selected="true" centerPoint3DX="279" centerPoint3DY="279">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" centerPoint3DX="279" centerPoint3DY="279">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -3579,6 +3576,68 @@ stop();
                   </matrix>
                   <transformationPoint>
                     <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Buttons" color="#FF800A" locked="true" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="ExitButton_mc" color="#00FF00" parentLayerIndex="35" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
                   </transformationPoint>
                   <color>
                     <Color alphaMultiplier="0"/>

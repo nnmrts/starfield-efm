@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Center/SlotCenter" itemID="673406f1-000001ba" linkageExportForAS="true" linkageClassName="Favorites_Center" lastModified="1731484599" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Center/SlotCenter" itemID="673406f1-000001ba" linkageExportForAS="true" linkageClassName="Favorites_Center" lastModified="1731505495" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="SlotCenter">
       <layers>
-        <DOMLayer name="Labels Layer" color="#6FD5D8" locked="true">
+        <DOMLayer name="Labels Layer" color="#6FD5D8" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" name="Inventory" labelType="name" keyMode="9728">
               <elements/>
@@ -16,15 +16,13 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -82,7 +80,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#9933CC" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" itemID="67329b07-000001e3" linkageExportForAS="true" linkageClassName="ItemIcon" lastModified="1731464274">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" itemID="67329b07-000001e3" linkageExportForAS="true" linkageClassName="ItemIcon" lastModified="1731504959">
   <timeline>
     <DOMTimeline name="ItemIcon">
       <layers>
-        <DOMLayer name="Labels Layer" color="#0397E6" locked="true">
+        <DOMLayer name="Labels Layer" color="#0397E6" locked="true" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" name="Open" labelType="name" keyMode="9728">
               <elements/>
@@ -22,25 +22,23 @@
             </DOMFrame>
             <DOMFrame index="2" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[stop();
-]]></script>
+                <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="BoundClip_mc" color="#5CA6A5" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="BoundClip_mc" color="#5CA6A5" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip" name="BoundClip_mc" selected="true" centerPoint3DX="-5" isVisible="false">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip" name="BoundClip_mc" centerPoint3DX="-5" isVisible="false">
                   <matrix>
                     <Matrix a="1.199951171875" d="1.199951171875" tx="-30" ty="-25"/>
                   </matrix>

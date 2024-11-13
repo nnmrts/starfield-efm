@@ -9,28 +9,12 @@
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
+	import flash.events.MouseEvent;
 	import flash.ui.Keyboard;
 	import flash.utils.getTimer;
 
 	public class FavoritesMenu extends IMenu
 	{
-
-		// Papyrus
-		//---------------------------------------------
-
-		private var CommandString:String;
-		public function get Command():String
-		{
-			return CommandString;
-		}
-		public function set Command(value:String):void
-		{
-			if (CommandString != value)
-			{
-				CommandString = value;
-				OnCommand(CommandString);
-			}
-		}
 
 		// Stage
 		//---------------------------------------------
@@ -198,12 +182,16 @@
 		];
 
 
+		// FavoritesMenu
+		//---------------------------------------------
+
 		public function FavoritesMenu()
 		{
-			trace("FavoritesMenu", "");
+			trace("FavoritesMenu::constructor");
 			super();
 			try
 			{
+				addEventListener(MouseEvent.CLICK, onExitMouseClick);
 				addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDownHandler);
 				addEventListener(KeyboardEvent.KEY_UP, this.onKeyUpHandler);
 				addEventListener(FavoritesEntry.CLICK, this.SelectItem);
@@ -215,13 +203,14 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu constructor TRACE ---------");
+				trace("FavoritesMenu::constructor TRACE ---------");
 				trace(e.getStackTrace());
 			}
 		}
 
 		override public function onAddedToStage():void
 		{
+			trace("FavoritesMenu::onAddedToStage");
 			super.onAddedToStage();
 			try
 			{
@@ -234,14 +223,50 @@
 			}
 		}
 
+		private function StartClosingMenu():void
+		{
+			trace("FavoritesMenu::StartClosingMenu");
+			// TODO: This is temporarily disabled for debug purposes!
+			try
+			{
+				// gotoAndPlay("Close");
+				// addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.StartClosingMenu TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+		private function onCloseAnimFinished():void
+		{
+			trace("FavoritesMenu::onCloseAnimFinished");
+			try
+			{
+				removeEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
+				GlobalFunc.CloseMenu("FavoritesMenu");
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onCloseAnimFinished TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+
+		// Data
+		//---------------------------------------------
+
 		private function OnCommand(command:String):void
 		{
-			trace("Command: " + command);
+			trace("FavoritesMenu::OnCommand: " + command);
 			MovieClip(root).DebugText_tf.text = command;
 		}
 
 		private function onDataUpdate(clientDataEvent:FromClientDataEvent):void
 		{
+			trace("FavoritesMenu::onDataUpdate");
 			try
 			{
 				var index:uint = 0;
@@ -276,21 +301,206 @@
 			}
 			catch (e:Error)
 			{
-				// trace("FavoritesMenu.onDataUpdate TRACE ---------");
+				// trace("FavoritesMenu::onDataUpdate TRACE ---------");
 				// trace(e.getStackTrace());
 				// GlobalFunc.InspectObject(clientDataEvent, true, true);
 			}
 		}
 
+
+		// Input
+		//---------------------------------------------
+
+		public function ProcessUserEvent(controlName:String, isHandled:Boolean):Boolean
+		{
+			trace("FavoritesMenu::ProcessUserEvent(controlName="+controlName+", isHandled="+isHandled+")");
+			var favEntryID:Number = NaN;
+			var handled:Boolean = false;
+			try
+			{
+				if (!isHandled)
+				{
+					handled = true;
+					switch (controlName)
+					{
+						case "Cancel":
+						case "Quickkeys":
+						case "YButton":
+							this.StartClosingMenu();
+							handled = true;
+							break;
+						default:
+							favEntryID = Number(controlName.substr(8));
+							if (favEntryID >= 1 && favEntryID <= FS_NONE)
+							{
+								this.selectedIndex = favEntryID - 1;
+								this.SelectItem();
+							}
+							else
+							{
+								handled = false;
+							}
+					}
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu::ProcessUserEvent TRACE ---------");
+				trace(e.getStackTrace());
+			}
+			return handled;
+		}
+
+
+		public function onKeyDownHandler(event:KeyboardEvent):*
+		{
+			trace("FavoritesMenu::onKeyDownHandler: " + event);
+			try
+			{
+				switch (event.keyCode)
+				{
+					case Keyboard.UP:
+						this.selectedIndex = this._UpDirectory[this.selectedIndex];
+						break;
+					case Keyboard.DOWN:
+						this.selectedIndex = this._DownDirectory[this.selectedIndex];
+						break;
+					case Keyboard.LEFT:
+						this.selectedIndex = this._LeftDirectory[this.selectedIndex];
+						break;
+					case Keyboard.RIGHT:
+						this.selectedIndex = this._RightDirectory[this.selectedIndex];
+						break;
+					default:
+						this.selectedIndex = 0;
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu::onKeyDownHandler TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+		public function onKeyUpHandler(event:KeyboardEvent):*
+		{
+			trace("FavoritesMenu::onKeyUpHandler: " + event);
+			try
+			{
+				switch (event.keyCode)
+				{
+					case Keyboard.ENTER:
+						if (this.selectedIndex != FS_NONE)
+						{
+							this.SelectItem();
+							event.stopPropagation();
+						}
+				}
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu::onKeyUpHandler TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+
+		private function SelectItem():void
+		{
+			trace("FavoritesMenu::SelectItem");
+			try
+			{
+				if (this.isAssigningItem())
+				{
+					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_AssignQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
+				}
+				else
+				{
+					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
+				}
+				this.StartClosingMenu();
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu::SelectItem TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+
+		private function onSelectionChange():void
+		{
+			trace("FavoritesMenu::onSelectionChange");
+			try
+			{
+				this.ItemInfo_mc.UpdateDisplay(this.selectedEntry);
+				this.ItemInfo_mc.visible = true;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu.onSelectionChange TRACE ---------");
+				trace(e.getStackTrace());
+				GlobalFunc.InspectObject(this.selectedEntry, true, true);
+			}
+		}
+
+
+		// public var count:uint = 0;
+		private function onFavEntryMouseover(event:Event):void
+		{
+			trace("FavoritesMenu::onFavEntryMouseover: " + event);
+			// trace("count: " + String(count));
+
+			try
+			{
+				this.selectedIndex = event.target.entryIndex;
+				this.OverEntry = true;
+
+				// count++;
+				// BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": count}));
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu::onFavEntryMouseover TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+		private function onFavEntryMouseleave(event:Event):void
+		{
+			trace("FavoritesMenu::onFavEntryMouseleave: " + event);
+			try
+			{
+				this.OverEntry = false;
+			}
+			catch (e:Error)
+			{
+				trace("FavoritesMenu::onFavEntryMouseleave TRACE ---------");
+				trace(e.getStackTrace());
+			}
+		}
+
+
+		private function onExitMouseClick(event:Event)
+		{
+			trace("FavoritesMenu::onExitMouseClick(): " + event);
+			GlobalFunc.CloseMenu("FavoritesMenu");
+		}
+
+
+		// Other
+		//---------------------------------------------
+
 		public function isAssigningItem():Boolean
 		{
+			trace("FavoritesMenu::isAssigningItem()");
 			try
 			{
 				return this.AssignedItem != null && this.AssignedItem.sName.length != 0;
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.isAssigningItem TRACE ---------");
+				trace("FavoritesMenu::isAssigningItem TRACE ---------");
 				trace(e.getStackTrace());
 				return false;
 			}
@@ -298,23 +508,48 @@
 			return false;
 		}
 
-		public function get assignedItem():Object
+
+		public function GetEntryClip(entryID:uint):FavoritesEntry
 		{
+			trace("FavoritesMenu::GetEntryClip(): " + entryID);
+			var favEntry:FavoritesEntry = null;
 			try
 			{
-				return this.AssignedItem;
+				favEntry = getChildByName("Entry_" + entryID) as FavoritesEntry;
+				if (favEntry == null)
+				{
+					GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + entryID + "'!");
+				}
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.get assignedItem TRACE ---------");
+				trace("FavoritesMenu::GetEntryClip TRACE ---------");
 				trace(e.getStackTrace());
-				return null;
 			}
-			return null;
+			return favEntry;
 		}
 
+
+		// Properties
+		//---------------------------------------------
+
+		private var CommandString:String;
+		public function get Command():String { return CommandString; }
+		public function set Command(value:String):void
+		{
+			trace("FavoritesMenu::Command.set(): " + value);
+			if (CommandString != value)
+			{
+				CommandString = value;
+				OnCommand(CommandString);
+			}
+		}
+
+
+		public function get assignedItem():Object { return this.AssignedItem; }
 		public function set assignedItem(item:Object):void
 		{
+			trace("FavoritesMenu::assignedItem.set(): " + item.toString());
 			try
 			{
 				this.AssignedItem = item;
@@ -340,11 +575,12 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.set assignedItem TRACE ---------");
+				trace("FavoritesMenu::assignedItem.set() TRACE ---------");
 				trace(e.getStackTrace());
 				GlobalFunc.InspectObject(item, true, true);
 			}
 		}
+
 
 		public function get selectedIndex():uint
 		{
@@ -354,15 +590,15 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.get selectedIndex TRACE ---------");
+				trace("FavoritesMenu::selectedIndex.get() TRACE ---------");
 				trace(e.getStackTrace());
 				return FS_NONE;
 			}
 			return FS_NONE;
 		}
-
 		public function set selectedIndex(value:uint):void
 		{
+			trace("FavoritesMenu::selectedIndex.set(): " + value);
 			try
 			{
 				if (value != this._SelectedIndex)
@@ -382,10 +618,11 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.set selectedIndex TRACE ---------");
+				trace("FavoritesMenu::selectedIndex.set()  TRACE ---------");
 				trace(e.getStackTrace());
 			}
 		}
+
 
 		public function get selectedEntry():Object
 		{
@@ -395,12 +632,13 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.get selectedEntry TRACE ---------");
+				trace("FavoritesMenu::selectedEntry.get() TRACE ---------");
 				trace(e.getStackTrace());
 				return null;
 			}
 			return null;
 		}
+
 
 		public function get selectionSound():String
 		{
@@ -433,219 +671,12 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.get selectionSound TRACE ---------");
+				trace("FavoritesMenu::selectionSound.get() TRACE ---------");
 				trace(e.getStackTrace());
 			}
 			return value;
 		}
 
-		public function GetEntryClip(entryID:uint):FavoritesEntry
-		{
-			var favEntry:FavoritesEntry = null;
-			try
-			{
-				favEntry = getChildByName("Entry_" + entryID) as FavoritesEntry;
-				if (favEntry == null)
-				{
-					GlobalFunc.TraceWarning("Could not find the entry 'Entry_" + entryID + "'!");
-				}
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.GetEntryClip TRACE ---------");
-				trace(e.getStackTrace());
-			}
-			return favEntry;
-		}
 
-		public function ProcessUserEvent(controlName:String, isHandled:Boolean):Boolean
-		{
-			var favEntryID:Number = NaN;
-			var handled:Boolean = false;
-			trace("CONTROL NAME --------");
-			trace(controlName);
-			try
-			{
-				if (!isHandled)
-				{
-					handled = true;
-					switch (controlName)
-					{
-						case "Cancel":
-						case "Quickkeys":
-						case "YButton":
-							this.StartClosingMenu();
-							handled = true;
-							break;
-						default:
-							favEntryID = Number(controlName.substr(8));
-							if (favEntryID >= 1 && favEntryID <= FS_NONE)
-							{
-								this.selectedIndex = favEntryID - 1;
-								this.SelectItem();
-							}
-							else
-							{
-								handled = false;
-							}
-					}
-				}
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.ProcessUserEvent TRACE ---------");
-				trace(e.getStackTrace());
-			}
-			return handled;
-		}
-
-		private function StartClosingMenu():void
-		{
-			try
-			{
-				// gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
-				// addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.StartClosingMenu TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
-
-		private function onCloseAnimFinished():void
-		{
-			try
-			{
-				removeEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished);
-				GlobalFunc.CloseMenu("FavoritesMenu");
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.onCloseAnimFinished TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
-
-		private function onSelectionChange():void
-		{
-			try
-			{
-				this.ItemInfo_mc.UpdateDisplay(this.selectedEntry);
-				this.ItemInfo_mc.visible = true;
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.onSelectionChange TRACE ---------");
-				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(this.selectedEntry, true, true);
-			}
-		}
-
-		public function onKeyDownHandler(event:KeyboardEvent):*
-		{
-			try
-			{
-				switch (event.keyCode)
-				{
-					case Keyboard.UP:
-						this.selectedIndex = this._UpDirectory[this.selectedIndex];
-						break;
-					case Keyboard.DOWN:
-						this.selectedIndex = this._DownDirectory[this.selectedIndex];
-						break;
-					case Keyboard.LEFT:
-						this.selectedIndex = this._LeftDirectory[this.selectedIndex];
-						break;
-					case Keyboard.RIGHT:
-						this.selectedIndex = this._RightDirectory[this.selectedIndex];
-						break;
-					default:
-						this.selectedIndex = 0;
-				}
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.onKeyDownHandler TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
-
-		public function onKeyUpHandler(event:KeyboardEvent):*
-		{
-			try
-			{
-				switch (event.keyCode)
-				{
-					case Keyboard.ENTER:
-						if (this.selectedIndex != FS_NONE)
-						{
-							this.SelectItem();
-							event.stopPropagation();
-						}
-				}
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.onKeyUpHandler TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
-
-		private function SelectItem():void
-		{
-			try
-			{
-				if (this.isAssigningItem())
-				{
-					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_AssignQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
-				}
-				else
-				{
-					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
-				}
-				this.StartClosingMenu();
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.SelectItem TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
-
-		public var count:uint = 0;
-
-		private function onFavEntryMouseover(event:Event):void
-		{
-			trace("count: " + String(count));
-
-			try
-			{
-				this.selectedIndex = event.target.entryIndex;
-				this.OverEntry = true;
-
-				count++;
-
-				BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": count}));
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.onFavEntryMouseover TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
-
-		private function onFavEntryMouseleave(event:Event):void
-		{
-			try
-			{
-				this.OverEntry = false;
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu.onFavEntryMouseleave TRACE ---------");
-				trace(e.getStackTrace());
-			}
-		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿package
+package
 {
 	import Components.ImageFixture;
 	import Shared.AS3.Data.BSUIDataManager;
@@ -231,6 +231,9 @@
 				FS_RIGHT_1
 			];
 
+		private var replacing:Boolean = false;
+		private var replacingIndex = 0;
+
 		public function FavoritesMenu()
 		{
 			super();
@@ -280,7 +283,16 @@
 				var favEntryData:Object = null;
 				var favEntry:FavoritesEntry = null;
 
+				var replacedItem:Object = null;
+
+				if (this.replacing)
+				{
+					// saving for later
+					replacedItem = this.FavoritesInfoA[0];
+				}
+
 				this.FavoritesInfoA = clientDataEvent.data.aFavoriteItems;
+
 				if (!this.IsDataInitialized)
 				{
 					this.assignedItem = clientDataEvent.data.ItemToBeAssigned;
@@ -304,13 +316,40 @@
 					}
 					index++;
 				}
+
+				if (this.replacing)
+				{
+					// switch back
+
+					// item 0 to slot n
+					this.FavoritesInfoA[this.replacingIndex] = this.FavoritesInfoA[0];
+					favEntryData = this.FavoritesInfoA[this.replacingIndex];
+					favEntry = this.GetEntryClip(this.replacingIndex);
+					if (favEntry != null)
+					{
+						favEntry.LoadIcon(favEntryData);
+					}
+
+					// saved item to slot 0
+					this.FavoritesInfoA[0] = replacedItem;
+					favEntryData = this.FavoritesInfoA[0];
+					favEntry = this.GetEntryClip(0);
+					if (favEntry != null)
+					{
+						favEntry.LoadIcon(favEntryData);
+					}
+
+					this.replacing = false;
+					this.replacingIndex = 0;
+				}
+
 				this.IsDataInitialized = true;
 			}
 			catch (e:Error)
 			{
-				// trace("FavoritesMenu.onDataUpdate TRACE ---------");
-				// trace(e.getStackTrace());
-				// GlobalFunc.InspectObject(clientDataEvent, true, true);
+				trace("FavoritesMenu.onDataUpdate TRACE ---------");
+				trace(e.getStackTrace());
+				GlobalFunc.InspectObject(clientDataEvent, true, true);
 			}
 		}
 
@@ -535,8 +574,8 @@
 		{
 			try
 			{
-				// gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
-				// addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
+				gotoAndPlay("Close"); // TODO: <<<----------------------------------------------------------------------------------
+				addEventListener(this.TIMELINE_EVENT_CLOSE_ANIM_DONE, this.onCloseAnimFinished); // TODO: <<<----------------------------------------------------------------------------------
 			}
 			catch (e:Error)
 			{
@@ -613,7 +652,7 @@
 						if (this.selectedIndex != FS_NONE)
 						{
 							this.SelectItem();
-							event.stopPropagation();
+							// event.stopPropagation();
 						}
 				}
 			}
@@ -630,6 +669,15 @@
 			{
 				if (this.isAssigningItem())
 				{
+					if (this.selectedIndex > 11)
+					{
+						// just place the item to slot 0
+
+						this.replacingIndex = this.selectedIndex;
+						this.replacing = true;
+						this.selectedIndex = 0;
+					}
+
 					BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_AssignQuickkey", {"uQuickkeyIndex": this.selectedIndex}));
 				}
 				else
@@ -645,20 +693,14 @@
 			}
 		}
 
-		public var count:uint = 0;
-
 		private function onFavEntryMouseover(event:Event):void
 		{
-			trace("count: " + String(count));
 
 			try
 			{
 				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
 
-				count++;
-
-				BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": count}));
 			}
 			catch (e:Error)
 			{

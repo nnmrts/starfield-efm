@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Vertical" itemID="67340ed2-000001ea" lastModified="1731464914">
+  <timeline>
+    <DOMTimeline name="SlotEntry_Catcher_BoundClip_Vertical">
+      <layers>
+        <DOMLayer name="Bounding Graphic" color="#C2D25C" locked="true" outline="true" current="true" isSelected="true" useOutlineView="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/BoundClipBox" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.171875" d="0.85333251953125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

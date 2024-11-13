@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Slot-Grid/SlotGrid_Background" itemID="6732a50b-00000221" lastModified="1731463142">
+  <timeline>
+    <DOMTimeline name="SlotGrid_Background">
+      <layers>
+        <DOMLayer name="Shape" color="#009900" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!1018 1018S2|880 1142!880 1142|880 5518!880 5518[453 5580 0 5580!0 5580[-453 5580 -880 5518!-880 5518|-880 1142!-880 1142|-1019 1018!-1019 1018[-1086 951 -1142 880!-1142 880|-5517 880!-5517 880[-5580 453 -5580 0!-5580 0[-5580 -453 -5517
+ -880!-5517 -880|-1142 -880!-1142 -880[-1086 -952 -1019 -1019!-1019 -1019[-952 -1086 -880 -1142!-880 -1142|-880 -5517!-880 -5517[-453 -5580 0 -5580!0 -5580[453 -5580 880 -5517!880 -5517|880 -1142!880 -1142[951 -1086 1018 -1019!1018 -1019
+[1085 -952 1142 -880!1142 -880|5518 -880!5518 -880[5580 -453 5580 0!5580 0[5580 453 5518 880!5518 880|1142 880!1142 880[1085 951 1018 1018"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

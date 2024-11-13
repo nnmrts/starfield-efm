@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon_Art_Energy" itemID="673295f9-000001dd" symbolType="graphic" lastModified="1731464418">
+  <timeline>
+    <DOMTimeline name="DamageTypeIcon_Art_Energy">
+      <layers>
+        <DOMLayer name="Shape" color="#00FFFF" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#BDBFC1"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!75 0S1|-160 365!-160 365|-69 365!-69 365|-69 600!-69 600|160 241!160 241|75 241!75 241|75 0!33 141|33 279!33 279|88 279!88 279|-27 459!-27 459|-27 326!-27 326|-86 326!-86 326|33 141"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

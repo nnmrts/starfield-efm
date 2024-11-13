@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/DamageType/DamageType" itemID="67329404-000001d5" linkageExportForAS="true" linkageClassName="DamageType" lastModified="1731464516">
+  <timeline>
+    <DOMTimeline name="DamageType">
+      <layers>
+        <DOMLayer name="text_tf" color="#990000" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="text_tf" selected="true" width="61.75" height="25.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="31.4" ty="3.25"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>000</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="24.95" size="22" bitmapSize="440" face="MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Icon_mc" color="#009900" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon" name="Icon_mc" selected="true" centerPoint3DX="26.25" centerPoint3DY="17.65">
+                  <matrix>
+                    <Matrix a="0.747955322265625" d="0.7467041015625" tx="11.2" ty="2.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

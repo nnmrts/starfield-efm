@@ -8,10 +8,10 @@ package Shared.AS3.Events
 
 		public var params:Object;
 
-		public function CustomEvent(param1:String, param2:Object, param3:Boolean = false, param4:Boolean = false)
+		public function CustomEvent(eventType:String, parameters:Object, bubbling:Boolean = false, cancelable:Boolean = false)
 		{
-			super(param1, param3, param4);
-			this.params = param2;
+			super(eventType, bubbling, cancelable);
+			this.params = parameters;
 		}
 
 		override public function clone():Event

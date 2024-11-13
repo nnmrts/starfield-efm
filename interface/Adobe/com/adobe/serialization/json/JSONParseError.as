@@ -6,12 +6,12 @@ package com.adobe.serialization.json
 
 		private var _text:String;
 
-		public function JSONParseError(param1:String = "", param2:int = 0, param3:String = "")
+		public function JSONParseError(message:String = "", errorLocation:int = 0, errorText:String = "")
 		{
-			super(param1);
+			super(message);
 			name = "JSONParseError";
-			this._location = param2;
-			this._text = param3;
+			this._location = errorLocation;
+			this._text = errorText;
 		}
 
 		public function get location():int

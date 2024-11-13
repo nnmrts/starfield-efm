@@ -12,45 +12,45 @@ package Shared.AS3.Data
 			super();
 		}
 
-		override public function Watch(param1:String, param2:Boolean, param3:UIDataFromClient = null):UIDataFromClient
+		override public function Watch(providerName:String, dispatchImmediately:Boolean, existingClient:UIDataFromClient = null):UIDataFromClient
 		{
-			var _loc4_:UIDataFromClient = new UIDataFromClient(new Object());
-			var _loc5_:TestProviderLoader = new TestProviderLoader(param1, _loc4_);
-			_loc5_.addEventListener(Event.COMPLETE, this.onLoadComplete);
-			_loc5_.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailedPrimaryLocation);
-			_loc5_.load(new URLRequest("Providers/" + param1 + ".json"));
-			_loc4_.isTest = true;
-			return _loc4_;
+			var fromClient:UIDataFromClient = new UIDataFromClient(new Object());
+			var loader:TestProviderLoader = new TestProviderLoader(providerName, fromClient);
+			loader.addEventListener(Event.COMPLETE, this.onLoadComplete);
+			loader.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailedPrimaryLocation);
+			loader.load(new URLRequest("Providers/" + providerName + ".json"));
+			fromClient.isTest = true;
+			return fromClient;
 		}
 
-		internal function onLoadComplete(param1:Event):void
+		internal function onLoadComplete(event:Event):void
 		{
-			var _loc6_:String = null;
-			var _loc2_:TestProviderLoader = param1.target as TestProviderLoader;
-			var _loc3_:UIDataFromClient = _loc2_.fromClient;
-			var _loc4_:Object = new JSONDecoder(_loc2_.data, true).getValue();
-			var _loc5_:Object = _loc3_.data;
-			for (_loc6_ in _loc4_)
+			var key:String = null;
+			var loader:TestProviderLoader = event.target as TestProviderLoader;
+			var fromClient:UIDataFromClient = loader.fromClient;
+			var jsonData:Object = new JSONDecoder(loader.data, true).getValue();
+			var clientData:Object = fromClient.data;
+			for (key in jsonData)
 			{
-				_loc5_[_loc6_] = _loc4_[_loc6_];
+				clientData[key] = jsonData[key];
 			}
-			_loc2_.fromClient.SetReady(true);
+			loader.fromClient.SetReady(true);
 		}
 
-		internal function onLoadFailedPrimaryLocation(param1:IOErrorEvent):*
+		internal function onLoadFailedPrimaryLocation(errorEvent:IOErrorEvent):*
 		{
-			var _loc2_:TestProviderLoader = param1.target as TestProviderLoader;
-			var _loc3_:* = new TestProviderLoader(_loc2_.providerName, _loc2_.fromClient);
-			_loc3_.addEventListener(Event.COMPLETE, this.onLoadComplete);
-			_loc3_.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
-			_loc3_.load(new URLRequest("../Interface/Providers/" + _loc2_.providerName + ".json"));
+			var failedLoader:TestProviderLoader = errorEvent.target as TestProviderLoader;
+			var newLoader:TestProviderLoader = new TestProviderLoader(failedLoader.providerName, failedLoader.fromClient);
+			newLoader.addEventListener(Event.COMPLETE, this.onLoadComplete);
+			newLoader.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
+			newLoader.load(new URLRequest("../Interface/Providers/" + failedLoader.providerName + ".json"));
 		}
 
-		internal function onLoadFailed(param1:IOErrorEvent):*
+		internal function onLoadFailed(errorEvent:IOErrorEvent):*
 		{
-			var _loc2_:TestProviderLoader = TestProviderLoader(param1.target);
-			var _loc3_:String = _loc2_.providerName;
-			trace("WARNING - UIDataShuttleTestConnector.onLoadFailed - TEST PROVIDER: " + _loc3_ + " NOT FOUND");
+			var loader:TestProviderLoader = TestProviderLoader(errorEvent.target);
+			var providerName:String = loader.providerName;
+			trace("WARNING - UIDataShuttleTestConnector.onLoadFailed - TEST PROVIDER: " + providerName + " NOT FOUND");
 		}
 	}
 }

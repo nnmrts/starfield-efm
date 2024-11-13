@@ -23,13 +23,13 @@ package Shared.Components.ContentLoaders
 			return this._SymbolInstance;
 		}
 
-		public function LoadSymbol(param1:String, param2:String = ""):void
+		public function LoadSymbol(symbolName:String, swfPath:String = ""):void
 		{
-			if (this._SymbolName != param1)
+			if (this._SymbolName != symbolName)
 			{
 				this.Unload();
-				this._SymbolName = param1;
-				this.LoadSymbolHelper(param2);
+				this._SymbolName = symbolName;
+				this.LoadSymbolHelper(swfPath);
 			}
 			else if (_OnLoadAttemptComplete != null)
 			{
@@ -43,16 +43,16 @@ package Shared.Components.ContentLoaders
 			this.destroySymbol();
 		}
 
-		override protected function onLoadFailed(param1:Event):void
+		override protected function onLoadFailed(event:Event):void
 		{
 			trace("WARNING: SymbolLoaderClip:onLoadFailed | " + this._SymbolName);
-			super.onLoadFailed(param1);
+			super.onLoadFailed(event);
 		}
 
-		override protected function onLoaded(param1:Event):void
+		override protected function onLoaded(event:Event):void
 		{
 			this.LoadSymbolHelper();
-			super.onLoaded(param1);
+			super.onLoaded(event);
 		}
 
 		private function destroySymbol():void
@@ -61,18 +61,19 @@ package Shared.Components.ContentLoaders
 			this._SymbolName = "";
 		}
 
-		private function LoadSymbolHelper(param1:String = ""):void
+		private function LoadSymbolHelper(swfPath:String = ""):void
 		{
-			var _loc3_:URLRequest = null;
-			var _loc4_:LoaderContext = null;
-			var _loc2_:Boolean = this.SymbolSetup();
-			if (!_loc2_)
+			var request:URLRequest = null;
+			var loaderContext:LoaderContext = null;
+			var symbolLoaded:Boolean = this.SymbolSetup();
+
+			if (!symbolLoaded)
 			{
-				if (param1 != "")
+				if (swfPath != "")
 				{
-					_loc3_ = new URLRequest(param1 + ".swf");
-					_loc4_ = new LoaderContext(false, ApplicationDomain.currentDomain);
-					super.Load(_loc3_, _loc4_);
+					request = new URLRequest(swfPath + ".swf");
+					loaderContext = new LoaderContext(false, ApplicationDomain.currentDomain);
+					super.Load(request, loaderContext);
 				}
 				else
 				{
@@ -89,13 +90,13 @@ package Shared.Components.ContentLoaders
 
 		private function SymbolSetup():Boolean
 		{
-			var _loc1_:Class = null;
+			var symbolClass:Class = null;
 			if (this._SymbolName != "" && ApplicationDomain.currentDomain.hasDefinition(this._SymbolName))
 			{
-				_loc1_ = getDefinitionByName(this._SymbolName) as Class;
-				if (_loc1_ != null)
+				symbolClass = getDefinitionByName(this._SymbolName) as Class;
+				if (symbolClass != null)
 				{
-					this._SymbolInstance = new _loc1_();
+					this._SymbolInstance = new symbolClass();
 					if (this._SymbolInstance != null)
 					{
 						this._SymbolInstance.name = "SymbolInstance";

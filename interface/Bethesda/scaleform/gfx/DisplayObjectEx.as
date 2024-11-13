@@ -9,29 +9,29 @@ package scaleform.gfx
 			super();
 		}
 
-		public static function disableBatching(param1:DisplayObject, param2:Boolean):void
+		public static function disableBatching(displayObj:DisplayObject, disabled:Boolean):void
 		{
 		}
 
-		public static function isBatchingDisabled(param1:DisplayObject):Boolean
+		public static function isBatchingDisabled(displayObj:DisplayObject):Boolean
 		{
 			return false;
 		}
 
-		public static function setRendererString(param1:DisplayObject, param2:String):void
+		public static function setRendererString(displayObj:DisplayObject, rendererStr:String):void
 		{
 		}
 
-		public static function getRendererString(param1:DisplayObject):String
+		public static function getRendererString(displayObj:DisplayObject):String
 		{
 			return null;
 		}
 
-		public static function setRendererFloat(param1:DisplayObject, param2:Number):void
+		public static function setRendererFloat(displayObj:DisplayObject, rendererValue:Number):void
 		{
 		}
 
-		public static function getRendererFloat(param1:DisplayObject):Number
+		public static function getRendererFloat(displayObj:DisplayObject):Number
 		{
 			return Number.NaN;
 		}

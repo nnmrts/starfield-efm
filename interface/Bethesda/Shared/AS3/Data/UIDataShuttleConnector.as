@@ -13,39 +13,39 @@ package Shared.AS3.Data
 
 		public function AttachToDataManager():Boolean
 		{
-			var _loc1_:UIDataShuttleConnector = BSUIDataManager.ConnectDataShuttleConnector(this);
-			return _loc1_ == this;
+			var connector:UIDataShuttleConnector = BSUIDataManager.ConnectDataShuttleConnector(this);
+			return connector == this;
 		}
 
-		public function Watch(param1:String, param2:Boolean, param3:UIDataFromClient = null):UIDataFromClient
+		public function Watch(providerName:String, dispatchImmediately:Boolean, existingClient:UIDataFromClient = null):UIDataFromClient
 		{
-			var _loc6_:String = null;
-			var _loc4_:Object = new Object();
-			var _loc5_:UIDataFromClient = param3;
-			if (!_loc5_)
+			var propertyName:String = null;
+			var payload:Object = new Object();
+			var fromClient:UIDataFromClient = existingClient;
+			if (!fromClient)
 			{
-				_loc5_ = new UIDataFromClient(_loc4_);
+				fromClient = new UIDataFromClient(payload);
 			}
 			else
 			{
-				_loc4_ = _loc5_.data;
-				for (_loc6_ in _loc4_)
+				payload = fromClient.data;
+				for (propertyName in payload)
 				{
-					_loc4_[_loc6_] = undefined;
+					payload[propertyName] = undefined;
 				}
 			}
-			if (this._Watch(param1, _loc4_))
+			if (this._Watch(providerName, payload))
 			{
-				_loc5_.isTest = false;
-				_loc5_.SetReady(param2);
-				return _loc5_;
+				fromClient.isTest = false;
+				fromClient.SetReady(dispatchImmediately);
+				return fromClient;
 			}
 			return null;
 		}
 
-		public function onFlush(...rest):void
+		public function onFlush(...providers):void
 		{
-			BSUIDataManager.Flush(rest);
+			BSUIDataManager.Flush(providers);
 		}
 	}
 }

@@ -6,10 +6,10 @@ package Shared.AS3.Data
 	{
 		private var m_FromClient:UIDataFromClient;
 
-		public function FromClientDataEvent(param1:UIDataFromClient)
+		public function FromClientDataEvent(fromClient:UIDataFromClient)
 		{
 			super(Event.CHANGE);
-			this.m_FromClient = param1;
+			this.m_FromClient = fromClient;
 		}
 
 		public function get fromClient():Object

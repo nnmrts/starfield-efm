@@ -9,20 +9,20 @@ package scaleform.gfx
 			super();
 		}
 
-		public static function setHitTestDisable(param1:InteractiveObject, param2:Boolean):void
+		public static function setHitTestDisable(object:InteractiveObject, disabled:Boolean):void
 		{
 		}
 
-		public static function getHitTestDisable(param1:InteractiveObject):Boolean
+		public static function getHitTestDisable(object:InteractiveObject):Boolean
 		{
 			return false;
 		}
 
-		public static function setTopmostLevel(param1:InteractiveObject, param2:Boolean):void
+		public static function setTopmostLevel(object:InteractiveObject, topmost:Boolean):void
 		{
 		}
 
-		public static function getTopmostLevel(param1:InteractiveObject):Boolean
+		public static function getTopmostLevel(object:InteractiveObject):Boolean
 		{
 			return false;
 		}

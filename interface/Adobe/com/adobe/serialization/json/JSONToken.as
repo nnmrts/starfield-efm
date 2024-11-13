@@ -8,17 +8,17 @@ package com.adobe.serialization.json
 
 		public var value:Object;
 
-		public function JSONToken(param1:int = -1, param2:Object = null)
+		public function JSONToken(tokenType:int = -1, tokenValue:Object = null)
 		{
 			super();
-			this.type = param1;
-			this.value = param2;
+			this.type = tokenType;
+			this.value = tokenValue;
 		}
 
-		internal static function create(param1:int = -1, param2:Object = null):JSONToken
+		internal static function create(tokenType:int = -1, tokenValue:Object = null):JSONToken
 		{
-			token.type = param1;
-			token.value = param2;
+			token.type = tokenType;
+			token.value = tokenValue;
 			return token;
 		}
 	}

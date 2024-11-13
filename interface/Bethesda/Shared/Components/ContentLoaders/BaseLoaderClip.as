@@ -56,29 +56,29 @@ package Shared.Components.ContentLoaders
 			addEventListener(Event.REMOVED_FROM_STAGE, this.onRemoveFromStageEvent);
 		}
 
-		public function set errorClassName(param1:String):void
+		public function set errorClassName(newClassName:String):void
 		{
-			var _loc2_:Boolean = false;
-			if (this._ErrorClassName != param1)
+			var wasVisible:Boolean = false;
+			if (this._ErrorClassName != newClassName)
 			{
-				this._ErrorClassName = param1;
-				_loc2_ = this.ErrorClip_mc != null && this.ErrorClip_mc.visible;
+				this._ErrorClassName = newClassName;
+				wasVisible = this.ErrorClip_mc != null && this.ErrorClip_mc.visible;
 				this.RemoveDisplayObject(this.ErrorClip_mc);
 				this.ErrorClip_mc = this.RecreateClipFromClass(this._ErrorClassName, "ErrorClip_mc");
-				this.ErrorClip_mc.visible = _loc2_;
+				this.ErrorClip_mc.visible = wasVisible;
 			}
 		}
 
-		public function set loadingClassName(param1:String):void
+		public function set loadingClassName(newClassName:String):void
 		{
-			var _loc2_:Boolean = false;
-			if (this._LoadingClassName != param1)
+			var wasVisible:Boolean = false;
+			if (this._LoadingClassName != newClassName)
 			{
-				this._LoadingClassName = param1;
-				_loc2_ = this.LoadingClip_mc != null && this.LoadingClip_mc.visible;
+				this._LoadingClassName = newClassName;
+				wasVisible = this.LoadingClip_mc != null && this.LoadingClip_mc.visible;
 				this.RemoveDisplayObject(this.LoadingClip_mc);
 				this.LoadingClip_mc = this.RecreateClipFromClass(this._LoadingClassName, "LoadingClip_mc");
-				this.LoadingClip_mc.visible = _loc2_;
+				this.LoadingClip_mc.visible = wasVisible;
 			}
 		}
 
@@ -177,12 +177,12 @@ package Shared.Components.ContentLoaders
 			return this._Loader;
 		}
 
-		protected function Load(param1:URLRequest, param2:LoaderContext = null):void
+		protected function Load(request:URLRequest, context:LoaderContext = null):void
 		{
 			this.ShowLoading();
 			this._Loader.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onLoaded);
 			this._Loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
-			this._Loader.load(param1, param2);
+			this._Loader.load(request, context);
 		}
 
 		public function Unload():void
@@ -192,7 +192,7 @@ package Shared.Components.ContentLoaders
 			this.HideLoading();
 		}
 
-		protected function onLoadFailed(param1:Event):void
+		protected function onLoadFailed(event:Event):void
 		{
 			this._Loader.contentLoaderInfo.removeEventListener(Event.COMPLETE, this.onLoaded);
 			this._Loader.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
@@ -204,7 +204,7 @@ package Shared.Components.ContentLoaders
 			}
 		}
 
-		protected function onLoaded(param1:Event):void
+		protected function onLoaded(event:Event):void
 		{
 			this.HideLoading();
 			this._Loader.contentLoaderInfo.removeEventListener(Event.COMPLETE, this.onLoaded);
@@ -266,27 +266,27 @@ package Shared.Components.ContentLoaders
 			}
 		}
 
-		private function RecreateClipFromClass(param1:String, param2:String = ""):MovieClip
+		private function RecreateClipFromClass(className:String, clipName:String = ""):MovieClip
 		{
-			var _loc4_:Class = null;
-			var _loc3_:MovieClip = null;
-			if (param1 != "" && ApplicationDomain.currentDomain.hasDefinition(param1))
+			var clipClass:Class = null;
+			var newClip:MovieClip = null;
+			if (className != "" && ApplicationDomain.currentDomain.hasDefinition(className))
 			{
-				_loc4_ = getDefinitionByName(param1) as Class;
-				if (_loc4_ != null)
+				clipClass = getDefinitionByName(className) as Class;
+				if (clipClass != null)
 				{
-					_loc3_ = new _loc4_();
-					if (_loc3_ != null)
+					newClip = new clipClass();
+					if (newClip != null)
 					{
-						_loc3_.name = param2;
-						this.AddDisplayObject(_loc3_);
+						newClip.name = clipName;
+						this.AddDisplayObject(newClip);
 					}
 				}
 			}
-			return _loc3_;
+			return newClip;
 		}
 
-		private function onRemoveFromStageEvent(param1:Event):void
+		private function onRemoveFromStageEvent(event:Event):void
 		{
 			removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemoveFromStageEvent);
 			this._Loader.contentLoaderInfo.removeEventListener(Event.COMPLETE, this.onLoaded);
@@ -294,92 +294,92 @@ package Shared.Components.ContentLoaders
 			this.Unload();
 		}
 
-		protected function AddDisplayObject(param1:DisplayObject):void
+		protected function AddDisplayObject(displayObject:DisplayObject):void
 		{
-			var _loc2_:* = undefined;
-			var _loc3_:Number = NaN;
-			var _loc4_:Number = NaN;
-			var _loc5_:Number = NaN;
-			var _loc6_:MovieClip = null;
-			var _loc7_:Point = null;
-			var _loc8_:Point = null;
-			var _loc9_:Point = null;
-			if (param1 != null)
+			var targetForSizing:DisplayObject = undefined;
+			var widthRatio:Number = NaN;
+			var heightRatio:Number = NaN;
+			var scale:Number = NaN;
+			var targetMovieClip:MovieClip = null;
+			var targetCenter:Point = null;
+			var boundCenter:Point = null;
+			var centerOffset:Point = null;
+			if (displayObject != null)
 			{
-				this.addChild(param1);
-				param1.alpha = this.ClipAlpha;
+				this.addChild(displayObject);
+				displayObject.alpha = this.ClipAlpha;
 				if (this.BoundClip_mc != null)
 				{
-					_loc2_ = param1;
+					targetForSizing = displayObject;
 					if (this.ClipSizer.length > 0)
 					{
-						_loc6_ = param1 as MovieClip;
-						if (_loc6_ == null)
+						targetMovieClip = displayObject as MovieClip;
+						if (targetMovieClip == null)
 						{
-							GlobalFunc.TraceWarning("Only movie clips can be resized using a sizer chid. " + param1.name + " is not a movie clip.");
+							GlobalFunc.TraceWarning("Only movie clips can be resized using a sizer chid. " + displayObject.name + " is not a movie clip.");
 						}
 						else
 						{
-							_loc2_ = _loc6_.getChildByName(this.ClipSizer) as DisplayObject;
-							if (_loc2_ == null)
+							targetForSizing = targetMovieClip.getChildByName(this.ClipSizer) as DisplayObject;
+							if (targetForSizing == null)
 							{
-								GlobalFunc.TraceWarning(param1.name + " does not have a sizer child clip with name " + this.ClipSizer + ".");
-								_loc2_ = param1;
+								GlobalFunc.TraceWarning(displayObject.name + " does not have a sizer child clip with name " + this.ClipSizer + ".");
+								targetForSizing = displayObject;
 							}
 						}
 					}
-					_loc3_ = this.BoundClip_mc.width / _loc2_.width;
-					_loc4_ = this.BoundClip_mc.height / _loc2_.height;
-					_loc5_ = Math.min(_loc3_, _loc4_);
-					param1.scaleX = _loc5_;
-					param1.scaleY = _loc5_;
+					widthRatio = this.BoundClip_mc.width / targetForSizing.width;
+					heightRatio = this.BoundClip_mc.height / targetForSizing.height;
+					scale = Math.min(widthRatio, heightRatio);
+					displayObject.scaleX = scale;
+					displayObject.scaleY = scale;
 					if (this.CenterClip)
 					{
-						_loc7_ = GlobalFunc.GetRectangleCenter(_loc2_.getBounds(this));
-						_loc8_ = GlobalFunc.GetRectangleCenter(this.BoundClip_mc.getBounds(this));
-						_loc9_ = _loc8_.subtract(_loc7_);
-						param1.x = _loc9_.x;
-						param1.y = _loc9_.y;
+						targetCenter = GlobalFunc.GetRectangleCenter(targetForSizing.getBounds(this));
+						boundCenter = GlobalFunc.GetRectangleCenter(this.BoundClip_mc.getBounds(this));
+						centerOffset = boundCenter.subtract(targetCenter);
+						displayObject.x = centerOffset.x;
+						displayObject.y = centerOffset.y;
 					}
 					else
 					{
-						param1.x = this.BoundClip_mc.x;
-						param1.y = this.BoundClip_mc.y;
+						displayObject.x = this.BoundClip_mc.x;
+						displayObject.y = this.BoundClip_mc.y;
 					}
 				}
 				else
 				{
-					param1.scaleX = this.ClipScale;
-					param1.scaleY = this.ClipScale;
+					displayObject.scaleX = this.ClipScale;
+					displayObject.scaleY = this.ClipScale;
 					if (this.ClipWidth != 0)
 					{
-						param1.width = this.ClipWidth;
+						displayObject.width = this.ClipWidth;
 					}
 					if (this.ClipHeight != 0)
 					{
-						param1.height = this.ClipHeight;
+						displayObject.height = this.ClipHeight;
 					}
 					if (this.CenterClip)
 					{
-						param1.x -= this.ClipWidth / 2;
-						param1.y -= this.ClipHeight / 2;
+						displayObject.x -= this.ClipWidth / 2;
+						displayObject.y -= this.ClipHeight / 2;
 					}
-					param1.x += this.ClipXOffset;
-					param1.y += this.ClipYOffset;
+					displayObject.x += this.ClipXOffset;
+					displayObject.y += this.ClipYOffset;
 				}
 			}
 		}
 
-		protected function RemoveDisplayObject(param1:DisplayObject):void
+		protected function RemoveDisplayObject(displayObject:DisplayObject):void
 		{
-			if (param1 != null)
+			if (displayObject != null)
 			{
-				this.removeChild(param1);
-				if (param1.loaderInfo != null)
+				this.removeChild(displayObject);
+				if (displayObject.loaderInfo != null)
 				{
-					param1.loaderInfo.loader.unload();
+					displayObject.loaderInfo.loader.unload();
 				}
-				param1 = null;
+				displayObject = null;
 			}
 		}
 	}

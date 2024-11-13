@@ -46,10 +46,10 @@ package Shared.AS3
 			stage.removeEventListener(FocusEvent.MOUSE_FOCUS_CHANGE, this.onMouseFocusEvent);
 		}
 
-		public function SetSafeRect(param1:Number, param2:Number):*
+		public function SetSafeRect(safeRectX:Number, safeRectY:Number):*
 		{
-			this.safeX = param1;
-			this.safeY = param2;
+			this.safeX = safeRectX;
+			this.safeY = safeRectY;
 			this.onSetSafeRect();
 		}
 
@@ -57,23 +57,23 @@ package Shared.AS3
 		{
 		}
 
-		private function onFocusLostEvent(param1:FocusEvent):*
+		private function onFocusLostEvent(event:FocusEvent):*
 		{
 			if (this._bRestoreLostFocus)
 			{
 				this._bRestoreLostFocus = false;
-				stage.focus = param1.target as InteractiveObject;
+				stage.focus = event.target as InteractiveObject;
 			}
-			this.onFocusLost(param1);
+			this.onFocusLost(event);
 		}
 
-		public function onFocusLost(param1:FocusEvent):*
+		public function onFocusLost(event:FocusEvent):*
 		{
 		}
 
-		protected function onMouseFocusEvent(param1:FocusEvent):*
+		protected function onMouseFocusEvent(event:FocusEvent):*
 		{
-			if (param1.target == null || !(param1.target is InteractiveObject))
+			if (event.target == null || !(event.target is InteractiveObject))
 			{
 				stage.focus = null;
 			}
@@ -83,23 +83,23 @@ package Shared.AS3
 			}
 		}
 
-		public function ShrinkFontToFit(param1:TextField, param2:int):*
+		public function ShrinkFontToFit(textField:TextField, maxVisibleLines:int):*
 		{
-			var _loc5_:int = 0;
-			var _loc3_:TextFormat = param1.getTextFormat();
-			if (this.textFieldSizeMap[param1] == null)
+			var currentSize:int = 0;
+			var textFormat:TextFormat = textField.getTextFormat();
+			if (this.textFieldSizeMap[textField] == null)
 			{
-				this.textFieldSizeMap[param1] = _loc3_.size;
+				this.textFieldSizeMap[textField] = textFormat.size;
 			}
-			_loc3_.size = this.textFieldSizeMap[param1];
-			param1.setTextFormat(_loc3_);
-			var _loc4_:int = param1.maxScrollV;
-			while (_loc4_ > param2 && _loc3_.size > 4)
+			textFormat.size = this.textFieldSizeMap[textField];
+			textField.setTextFormat(textFormat);
+			var scrollLines:int = textField.maxScrollV;
+			while (scrollLines > maxVisibleLines && textFormat.size > 4)
 			{
-				_loc5_ = _loc3_.size as int;
-				_loc3_.size = _loc5_ - 1;
-				param1.setTextFormat(_loc3_);
-				_loc4_ = param1.maxScrollV;
+				currentSize = textFormat.size as int;
+				textFormat.size = currentSize - 1;
+				textField.setTextFormat(textFormat);
+				scrollLines = textField.maxScrollV;
 			}
 		}
 	}

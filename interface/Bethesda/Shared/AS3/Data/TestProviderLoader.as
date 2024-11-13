@@ -9,17 +9,17 @@ package Shared.AS3.Data
 
 		private var m_FromClient:UIDataFromClient;
 
-		public function TestProviderLoader(param1:String, param2:UIDataFromClient)
+		public function TestProviderLoader(providerName:String, fromClient:UIDataFromClient)
 		{
 			super();
 			data = new Object();
-			this.m_ProviderName = param1;
-			this.m_FromClient = param2;
+			this.m_ProviderName = providerName;
+			this.m_FromClient = fromClient;
 		}
 
-		override public function load(param1:URLRequest):void
+		override public function load(request:URLRequest):void
 		{
-			super.load(param1);
+			super.load(request);
 		}
 
 		public function get providerName():String

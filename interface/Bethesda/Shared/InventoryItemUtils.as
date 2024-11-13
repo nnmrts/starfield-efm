@@ -114,9 +114,9 @@ package Shared
 			super();
 		}
 
-		public static function GetTypeName(param1:int):String
+		public static function GetTypeName(itemType:int):String
 		{
-			switch (param1)
+			switch (itemType)
 			{
 				case IIT_WEAPON:
 					return TYPE_NAME_WEAPON;
@@ -130,9 +130,9 @@ package Shared
 			}
 		}
 
-		public static function GetElementalLocString(param1:int):String
+		public static function GetElementalLocString(elementType:int):String
 		{
-			switch (param1)
+			switch (elementType)
 			{
 				case ET_PHYSICAL:
 					return "$ABBREVIATED_PHYSICAL";
@@ -147,9 +147,9 @@ package Shared
 			}
 		}
 
-		public static function GetElementalLabel(param1:int):String
+		public static function GetElementalLabel(elementType:int):String
 		{
-			switch (param1)
+			switch (elementType)
 			{
 				case ET_PHYSICAL:
 					return "physical";
@@ -162,9 +162,9 @@ package Shared
 			}
 		}
 
-		public static function GetElementByItemCardSortOrder(param1:int):int
+		public static function GetElementByItemCardSortOrder(sortOrder:int):int
 		{
-			switch (param1)
+			switch (sortOrder)
 			{
 				case 0:
 					return ET_PHYSICAL;
@@ -177,9 +177,9 @@ package Shared
 			}
 		}
 
-		public static function GetElementItemCardSortOrder(param1:int):int
+		public static function GetElementItemCardSortOrder(elementType:int):int
 		{
-			switch (param1)
+			switch (elementType)
 			{
 				case ET_PHYSICAL:
 					return 0;
@@ -192,214 +192,214 @@ package Shared
 			}
 		}
 
-		public static function GetFrameLabelFromRarity(param1:int):String
+		public static function GetFrameLabelFromRarity(rarity:int):String
 		{
-			var _loc2_:String = "";
-			switch (param1)
+			var frameLabel:String = "";
+			switch (rarity)
 			{
 				case InventoryItemUtils.RARITY_RARE:
-					_loc2_ = "Rare";
+					frameLabel = "Rare";
 					break;
 				case InventoryItemUtils.RARITY_EPIC:
-					_loc2_ = "Epic";
+					frameLabel = "Epic";
 					break;
 				case InventoryItemUtils.RARITY_LEGENDARY:
-					_loc2_ = "Legendary";
+					frameLabel = "Legendary";
 					break;
 				default:
-					_loc2_ = "Normal";
+					frameLabel = "Normal";
 			}
-			return _loc2_;
+			return frameLabel;
 		}
 
-		public static function CreateCompareArrayForElemStats(param1:Object, param2:Object):Array
+		public static function CreateCompareArrayForElemStats(currentStats:Object, comparisonStats:Object):Array
 		{
-			var _loc5_:* = undefined;
-			var _loc6_:* = undefined;
-			var _loc3_:Array = new Array();
-			var _loc4_:uint = 0;
-			while (_loc4_ < InventoryItemUtils.ET_COUNT)
+			var currentStat:* = undefined;
+			var comparisonStat:* = undefined;
+			var resultArray:Array = new Array();
+			var elementIndex:uint = 0;
+			while (elementIndex < InventoryItemUtils.ET_COUNT)
 			{
-				_loc3_[_loc4_] = 0;
-				_loc4_++;
+				resultArray[elementIndex] = 0;
+				elementIndex++;
 			}
-			for each (_loc5_ in param1.aElementalStats)
+			for each (currentStat in currentStats.aElementalStats)
 			{
-				_loc3_[GetElementItemCardSortOrder(_loc5_.iElementalType)] = _loc5_.fValue;
+				resultArray[GetElementItemCardSortOrder(currentStat.iElementalType)] = currentStat.fValue;
 			}
-			if (param2 != null)
+			if (comparisonStats != null)
 			{
-				for each (_loc6_ in param2.aElementalStats)
+				for each (comparisonStat in comparisonStats.aElementalStats)
 				{
-					_loc3_[GetElementItemCardSortOrder(_loc6_.iElementalType)] = _loc3_[GetElementItemCardSortOrder(_loc6_.iElementalType)] - _loc6_.fValue;
+					resultArray[GetElementItemCardSortOrder(comparisonStat.iElementalType)] = resultArray[GetElementItemCardSortOrder(comparisonStat.iElementalType)] - comparisonStat.fValue;
 				}
 			}
-			return _loc3_;
+			return resultArray;
 		}
 
-		public static function RetrieveModsToDisplay(param1:Array):Array
+		public static function RetrieveModsToDisplay(mods:Array):Array
 		{
-			var _loc3_:* = undefined;
-			var _loc2_:Array = new Array();
-			if (param1 != null)
+			var mod:* = undefined;
+			var displayMods:Array = new Array();
+			if (mods != null)
 			{
-				for each (_loc3_ in param1)
+				for each (mod in mods)
 				{
-					_loc2_.push(_loc3_);
+					displayMods.push(mod);
 				}
 			}
-			return _loc2_;
+			return displayMods;
 		}
 
-		public static function GetNonLegendaryModCount(param1:Array):uint
+		public static function GetNonLegendaryModCount(mods:Array):uint
 		{
-			var _loc3_:* = undefined;
-			var _loc2_:uint = 0;
-			if (param1 != null)
+			var mod:* = undefined;
+			var count:uint = 0;
+			if (mods != null)
 			{
-				for each (_loc3_ in param1)
+				for each (mod in mods)
 				{
-					if (!_loc3_.bLegendary)
+					if (!mod.bLegendary)
 					{
-						_loc2_++;
+						count++;
 					}
 				}
 			}
-			return _loc2_;
+			return count;
 		}
 
-		public static function BuildModDescriptionString(param1:Array, param2:TextField = null):String
+		public static function BuildModDescriptionString(mods:Array, textField:TextField = null):String
 		{
-			var _loc6_:* = undefined;
-			var _loc7_:int = 0;
-			var _loc8_:String = null;
-			var _loc9_:* = undefined;
-			var _loc10_:Number = NaN;
-			var _loc11_:int = 0;
-			var _loc12_:int = 0;
-			var _loc3_:* = "";
-			var _loc4_:Array = new Array();
-			if (param1 != null)
+			var mod:* = undefined;
+			var modIndex:int = 0;
+			var additionalText:String = null;
+			var lineMetrics:* = undefined;
+			var lineHeight:Number = NaN;
+			var maxVisibleLines:int = 0;
+			var remainingMods:int = 0;
+			var legendaryDesc:String = "";
+			var standardMods:Array = new Array();
+			if (mods != null)
 			{
-				for each (_loc6_ in param1)
+				for each (mod in mods)
 				{
-					if (_loc6_.bLegendary)
+					if (mod.bLegendary)
 					{
-						if (_loc3_.length > 0)
+						if (legendaryDesc.length > 0)
 						{
-							_loc3_ += "\n\n";
+							legendaryDesc += "\n\n";
 						}
-						_loc3_ += _loc6_.sName;
-						_loc3_ += ": " + _loc6_.sDescription;
+						legendaryDesc += mod.sName;
+						legendaryDesc += ": " + mod.sDescription;
 					}
 					else
 					{
-						_loc4_.push("• " + _loc6_.sName);
+						standardMods.push("• " + mod.sName);
 					}
 				}
 			}
-			var _loc5_:* = _loc3_;
-			if (_loc4_.length > 0)
+			var fullDescription:String = legendaryDesc;
+			if (standardMods.length > 0)
 			{
-				if (_loc3_.length > 0)
+				if (legendaryDesc.length > 0)
 				{
-					_loc5_ += "\n\n";
+					fullDescription += "\n\n";
 				}
-				_loc7_ = 0;
-				if (param2)
+				modIndex = 0;
+				if (textField)
 				{
-					GlobalFunc.SetText(param2, "$Additional");
-					_loc8_ = param2.text;
-					GlobalFunc.SetText(param2, _loc5_);
-					_loc9_ = param2.getLineMetrics(0);
-					_loc10_ = (param2.height - param2.textHeight) / _loc9_.height;
-					_loc11_ = (param2.height - param2.textHeight) / _loc9_.height;
-					if (_loc11_ < _loc4_.length)
+					GlobalFunc.SetText(textField, "$Additional");
+					additionalText = textField.text;
+					GlobalFunc.SetText(textField, fullDescription);
+					lineMetrics = textField.getLineMetrics(0);
+					lineHeight = (textField.height - textField.textHeight) / lineMetrics.height;
+					maxVisibleLines = (textField.height - textField.textHeight) / lineMetrics.height;
+					if (maxVisibleLines < standardMods.length)
 					{
-						_loc11_--;
+						maxVisibleLines--;
 					}
-					_loc7_ = 0;
-					while (_loc7_ < _loc4_.length && _loc7_ < _loc11_)
+					modIndex = 0;
+					while (modIndex < standardMods.length && modIndex < maxVisibleLines)
 					{
-						if (_loc7_ > 0)
+						if (modIndex > 0)
 						{
-							_loc5_ += "\n";
+							fullDescription += "\n";
 						}
-						_loc5_ += _loc4_[_loc7_];
-						_loc7_++;
+						fullDescription += standardMods[modIndex];
+						modIndex++;
 					}
-					_loc12_ = _loc4_.length - _loc7_;
-					if (_loc12_ == 1)
+					remainingMods = standardMods.length - modIndex;
+					if (remainingMods == 1)
 					{
-						_loc5_ += "\n- 1 " + _loc8_ + " $$Mod";
+						fullDescription += "\n- 1 " + additionalText + " $$Mod";
 					}
-					else if (_loc12_ > 0)
+					else if (remainingMods > 0)
 					{
-						_loc5_ += "\n- " + String(_loc12_) + " " + _loc8_ + " $$Mods";
+						fullDescription += "\n- " + String(remainingMods) + " " + additionalText + " $$Mods";
 					}
 				}
 				else
 				{
-					_loc7_ = 0;
-					while (_loc7_ < _loc4_.length)
+					modIndex = 0;
+					while (modIndex < standardMods.length)
 					{
-						if (_loc7_ > 0)
+						if (modIndex > 0)
 						{
-							_loc5_ += "\n";
+							fullDescription += "\n";
 						}
-						_loc5_ += _loc4_[_loc7_];
-						_loc7_++;
+						fullDescription += standardMods[modIndex];
+						modIndex++;
 					}
 				}
 			}
-			return _loc5_;
+			return fullDescription;
 		}
 
-		public static function ArrangeContainerTitleText(param1:TextField, param2:MovieClip, param3:Array, param4:uint):*
+		public static function ArrangeContainerTitleText(titleText:TextField, buttonClip:MovieClip, textLabels:Array, selectedIndex:uint):*
 		{
-			var _loc7_:uint = 0;
-			if (param1.parent != param2.parent)
+			var i:uint = 0;
+			if (titleText.parent != buttonClip.parent)
 			{
 				GlobalFunc.TraceWarning("ArrangeContainerTitleText: aText and aButton do not have the same parent and may not align correctly");
 			}
-			var _loc5_:Array = new Array();
-			var _loc6_:uint = uint.MAX_VALUE;
-			_loc7_ = 0;
-			while (_loc7_ < param3.length)
+			var displayLabels:Array = new Array();
+			var selectedPosition:uint = uint.MAX_VALUE;
+			i = 0;
+			while (i < textLabels.length)
 			{
-				if (param3[_loc7_] != "")
+				if (textLabels[i] != "")
 				{
-					GlobalFunc.SetText(param1, param3[_loc7_]);
-					if (param4 == _loc7_)
+					GlobalFunc.SetText(titleText, textLabels[i]);
+					if (selectedIndex == i)
 					{
-						_loc6_ = _loc5_.length;
+						selectedPosition = displayLabels.length;
 					}
-					_loc5_.push(param1.text);
+					displayLabels.push(titleText.text);
 				}
-				_loc7_++;
+				i++;
 			}
-			var _loc8_:* = "";
-			_loc7_ = 0;
-			while (_loc7_ < _loc5_.length)
+			var finalText:String = "";
+			i = 0;
+			while (i < displayLabels.length)
 			{
-				if (_loc7_ == _loc6_)
+				if (i == selectedPosition)
 				{
-					_loc8_ += "<font color=\"" + SELECTED_TAB + "\">";
+					finalText += "<font color=\"" + SELECTED_TAB + "\">";
 				}
-				_loc8_ += _loc5_[_loc7_].toUpperCase();
-				if (_loc7_ == _loc6_)
+				finalText += displayLabels[i].toUpperCase();
+				if (i == selectedPosition)
 				{
-					_loc8_ += "</font>";
+					finalText += "</font>";
 				}
-				if (_loc7_ < _loc5_.length - 1)
+				if (i < displayLabels.length - 1)
 				{
-					_loc8_ += " | ";
+					finalText += " | ";
 				}
-				_loc7_++;
+				i++;
 			}
-			GlobalFunc.SetText(param1, _loc8_, true);
-			param2.visible = _loc5_.length > 1;
-			param2.x = param1.x + param1.textWidth + INVENTORY_TITLE_BUTTON_SPACING;
+			GlobalFunc.SetText(titleText, finalText, true);
+			buttonClip.visible = displayLabels.length > 1;
+			buttonClip.x = titleText.x + titleText.textWidth + INVENTORY_TITLE_BUTTON_SPACING;
 		}
 	}
 }

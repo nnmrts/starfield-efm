@@ -60,9 +60,9 @@ package Components
 			}
 		}
 
-		public function set fixtureType(param1:int):void
+		public function set fixtureType(newType:int):void
 		{
-			this._FixtureType = param1;
+			this._FixtureType = newType;
 		}
 
 		public function get fixtureType():int
@@ -80,104 +80,104 @@ package Components
 			return this._SymbolLoader.symbolInstance;
 		}
 
-		public function set centerClip(param1:Boolean):void
+		public function set centerClip(isCentered:Boolean):void
 		{
-			this._ImageLoader.centerClip = param1;
-			this._SymbolLoader.centerClip = param1;
+			this._ImageLoader.centerClip = isCentered;
+			this._SymbolLoader.centerClip = isCentered;
 		}
 
-		public function set clipSizer(param1:String):void
+		public function set clipSizer(sizerName:String):void
 		{
-			this._SymbolLoader.clipSizer = param1;
+			this._SymbolLoader.clipSizer = sizerName;
 		}
 
-		public function set clipAlpha(param1:Number):void
+		public function set clipAlpha(alphaValue:Number):void
 		{
-			this._ImageLoader.clipAlpha = param1;
-			this._SymbolLoader.clipAlpha = param1;
+			this._ImageLoader.clipAlpha = alphaValue;
+			this._SymbolLoader.clipAlpha = alphaValue;
 		}
 
-		public function set clipScale(param1:Number):void
+		public function set clipScale(scaleValue:Number):void
 		{
-			this._ImageLoader.clipScale = param1;
-			this._SymbolLoader.clipScale = param1;
+			this._ImageLoader.clipScale = scaleValue;
+			this._SymbolLoader.clipScale = scaleValue;
 		}
 
-		public function set clipRotation(param1:Number):void
+		public function set clipRotation(rotationValue:Number):void
 		{
-			this._ImageLoader.clipRotation = param1;
-			this._SymbolLoader.clipRotation = param1;
+			this._ImageLoader.clipRotation = rotationValue;
+			this._SymbolLoader.clipRotation = rotationValue;
 		}
 
-		public function set clipWidth(param1:Number):void
+		public function set clipWidth(widthValue:Number):void
 		{
-			this._ImageLoader.clipWidth = param1;
-			this._SymbolLoader.clipWidth = param1;
+			this._ImageLoader.clipWidth = widthValue;
+			this._SymbolLoader.clipWidth = widthValue;
 		}
 
-		public function set clipHeight(param1:Number):void
+		public function set clipHeight(heightValue:Number):void
 		{
-			this._ImageLoader.clipHeight = param1;
-			this._SymbolLoader.clipHeight = param1;
+			this._ImageLoader.clipHeight = heightValue;
+			this._SymbolLoader.clipHeight = heightValue;
 		}
 
-		public function set clipYOffset(param1:Number):void
+		public function set clipYOffset(yOffset:Number):void
 		{
-			this._ImageLoader.clipYOffset = param1;
-			this._SymbolLoader.clipYOffset = param1;
+			this._ImageLoader.clipYOffset = yOffset;
+			this._SymbolLoader.clipYOffset = yOffset;
 		}
 
-		public function set clipXOffset(param1:Number):void
+		public function set clipXOffset(xOffset:Number):void
 		{
-			this._ImageLoader.clipXOffset = param1;
-			this._SymbolLoader.clipXOffset = param1;
+			this._ImageLoader.clipXOffset = xOffset;
+			this._SymbolLoader.clipXOffset = xOffset;
 		}
 
-		public function set onLoadAttemptComplete(param1:Function):void
+		public function set onLoadAttemptComplete(callback:Function):void
 		{
-			this._ImageLoader.onLoadAttemptComplete = param1;
-			this._SymbolLoader.onLoadAttemptComplete = param1;
+			this._ImageLoader.onLoadAttemptComplete = callback;
+			this._SymbolLoader.onLoadAttemptComplete = callback;
 		}
 
-		public function set errorClassName(param1:String):void
+		public function set errorClassName(className:String):void
 		{
-			this._ImageLoader.errorClassName = param1;
-			this._SymbolLoader.errorClassName = param1;
+			this._ImageLoader.errorClassName = className;
+			this._SymbolLoader.errorClassName = className;
 		}
 
-		public function set loadingClassName(param1:String):void
+		public function set loadingClassName(className:String):void
 		{
-			this._ImageLoader.loadingClassName = param1;
-			this._SymbolLoader.loadingClassName = param1;
+			this._ImageLoader.loadingClassName = className;
+			this._SymbolLoader.loadingClassName = className;
 		}
 
-		public function LoadImageFixtureFromUIData(param1:Object, param2:String):void
+		public function LoadImageFixtureFromUIData(fixtureData:Object, bufferName:String):void
 		{
-			this.fixtureType = param1.iFixtureType;
-			switch (param1.iFixtureType)
+			this.fixtureType = fixtureData.iFixtureType;
+			switch (fixtureData.iFixtureType)
 			{
 				case FT_INTERNAL:
-					this.LoadInternal(param1.sDirectory + param1.sImageName, param2);
+					this.LoadInternal(fixtureData.sDirectory + fixtureData.sImageName, bufferName);
 					break;
 				case FT_EXTERNAL:
-					this.LoadExternal(param1.sDirectory + param1.sImageName, param2);
+					this.LoadExternal(fixtureData.sDirectory + fixtureData.sImageName, bufferName);
 					break;
 				case FT_SYMBOL:
-					this.LoadSymbol(param1.sImageName, param1.sDirectory);
+					this.LoadSymbol(fixtureData.sImageName, fixtureData.sDirectory);
 					break;
 				default:
 					trace("ImageFixture::LoadImageFixtureFromUIData: Fixture type is invalid, cannot load.");
 			}
 		}
 
-		public function LoadSymbol(param1:String, param2:String = ""):void
+		public function LoadSymbol(symbolName:String, directory:String = ""):void
 		{
-			if (this._ImageName != param1 || this._State != SWF_LOADED)
+			if (this._ImageName != symbolName || this._State != SWF_LOADED)
 			{
 				this.Unload();
-				this._ImageName = param1;
+				this._ImageName = symbolName;
 				this._State = SWF_LOADED;
-				this._SymbolLoader.LoadSymbol(param1, param2);
+				this._SymbolLoader.LoadSymbol(symbolName, directory);
 			}
 			else if (this._SymbolLoader.onLoadAttemptComplete != null)
 			{
@@ -185,14 +185,14 @@ package Components
 			}
 		}
 
-		public function LoadInternal(param1:String, param2:String):void
+		public function LoadInternal(imagePath:String, bufferName:String):void
 		{
-			if (this._ImageName != param1 || this._State != IN_LOADED)
+			if (this._ImageName != imagePath || this._State != IN_LOADED)
 			{
 				this.Unload();
-				this._ImageName = param1;
+				this._ImageName = imagePath;
 				this._State = IN_LOADED;
-				this._BufferName = param2;
+				this._BufferName = bufferName;
 				this.LoadBitmap();
 			}
 			else if (this._ImageLoader.onLoadAttemptComplete != null)
@@ -201,14 +201,14 @@ package Components
 			}
 		}
 
-		public function LoadExternal(param1:String, param2:String):void
+		public function LoadExternal(imagePath:String, bufferName:String):void
 		{
-			if (this._ImageName != param1 || this._State != EX_LOADED)
+			if (this._ImageName != imagePath || this._State != EX_LOADED)
 			{
 				this.Unload();
-				this._ImageName = param1;
+				this._ImageName = imagePath;
 				this._State = EX_LOADED;
-				this._BufferName = param2;
+				this._BufferName = bufferName;
 				this.LoadBitmap();
 			}
 			else if (this._ImageLoader.onLoadAttemptComplete != null)
@@ -228,11 +228,16 @@ package Components
 
 		private function LoadBitmap():void
 		{
-			BSUIDataManager.dispatchEvent(new CustomEvent(REQUEST_IMAGE, {
+			BSUIDataManager.dispatchEvent(
+					new CustomEvent(
+						REQUEST_IMAGE,
+						{
 							"imageName": this._ImageName,
 							"isExternal": this._State == EX_LOADED,
 							"bufferName": this._BufferName
-						}));
+						}
+					)
+				);
 			this._RequestSent = true;
 			this._ImageLoader.LoadImage(this._ImageName);
 		}
@@ -242,11 +247,16 @@ package Components
 			this._ImageLoader.Unload();
 			if (this._RequestSent)
 			{
-				BSUIDataManager.dispatchEvent(new CustomEvent(UNREGISTER_IMAGE, {
+				BSUIDataManager.dispatchEvent(
+						new CustomEvent(
+							UNREGISTER_IMAGE,
+							{
 								"imageName": this._ImageName,
 								"isExternal": this._State == EX_LOADED,
 								"bufferName": this._BufferName
-							}));
+							}
+						)
+					);
 				this._RequestSent = false;
 			}
 		}

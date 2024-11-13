@@ -20,15 +20,15 @@ package Shared.Components.ContentLoaders
 			return this._ImageInstance;
 		}
 
-		public function LoadImage(param1:String):void
+		public function LoadImage(imagePath:String):void
 		{
-			var _loc2_:URLRequest = null;
-			if (this._ImageName != param1)
+			var imageRequest:URLRequest = null;
+			if (this._ImageName != imagePath)
 			{
 				this.Unload();
-				this._ImageName = param1;
-				_loc2_ = new URLRequest("img://" + this._ImageName);
-				super.Load(_loc2_);
+				this._ImageName = imagePath;
+				imageRequest = new URLRequest("img://" + this._ImageName);
+				super.Load(imageRequest);
 			}
 			else if (_OnLoadAttemptComplete != null)
 			{
@@ -42,22 +42,22 @@ package Shared.Components.ContentLoaders
 			this.destroyImage();
 		}
 
-		override protected function onLoadFailed(param1:Event):void
+		override protected function onLoadFailed(event:Event):void
 		{
 			trace("WARNING: ImageLoaderClip:onLoadFailed | " + this._ImageName);
-			super.onLoadFailed(param1);
+			super.onLoadFailed(event);
 		}
 
-		override protected function onLoaded(param1:Event):void
+		override protected function onLoaded(event:Event):void
 		{
-			this._ImageInstance = param1.target.content;
+			this._ImageInstance = event.target.content;
 			if (this._ImageInstance != null)
 			{
 				this._ImageInstance.name = "ImageInstance";
 				this._ImageInstance.smoothing = true;
 			}
 			AddDisplayObject(this._ImageInstance);
-			super.onLoaded(param1);
+			super.onLoaded(event);
 		}
 
 		private function destroyImage():void

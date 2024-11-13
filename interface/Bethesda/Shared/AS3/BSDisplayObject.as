@@ -77,7 +77,7 @@ package Shared.AS3
 			this._bIsDirty = false;
 		}
 
-		final private function onLoadedInitEvent(param1:Event):void
+		final private function onLoadedInitEvent(event:Event):void
 		{
 			if (loaderInfo is LoaderInfo)
 			{
@@ -86,9 +86,9 @@ package Shared.AS3
 			this.onLoadedInit();
 		}
 
-		final private function onAddedToStageEvent(param1:Event):void
+		final private function onAddedToStageEvent(event:Event):void
 		{
-			var arEvent:Event = param1;
+			var addedEvent:Event = event;
 			removeEventListener(Event.ADDED_TO_STAGE, this.onAddedToStageEvent);
 			this.onAddedToStage();
 			if (this.bIsDirty)
@@ -96,17 +96,17 @@ package Shared.AS3
 				this.requestRedraw();
 			}
 			addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStageEvent);
-			BSUIDataManager.Subscribe("ControlMapData", function(param1:FromClientDataEvent):*
+			BSUIDataManager.Subscribe("ControlMapData", function(controlData:FromClientDataEvent):*
 				{
-					OnControlMapChanged(param1.data);
+					OnControlMapChanged(controlData.data);
 				});
-			BSUIDataManager.Subscribe("PlatformData", function(param1:FromClientDataEvent):*
+			BSUIDataManager.Subscribe("PlatformData", function(platformData:FromClientDataEvent):*
 				{
-					OnPlatformChanged(param1.data);
+					OnPlatformChanged(platformData.data);
 				});
 		}
 
-		final private function onRemovedFromStageEvent(param1:Event):void
+		final private function onRemovedFromStageEvent(event:Event):void
 		{
 			removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStageEvent);
 			if (stage)
@@ -117,7 +117,7 @@ package Shared.AS3
 			addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStageEvent);
 		}
 
-		final private function onRenderEvent(param1:Event):void
+		final private function onRenderEvent(event:Event):void
 		{
 			this.renderObject();
 		}
@@ -152,20 +152,20 @@ package Shared.AS3
 		{
 		}
 
-		protected function OnControlMapChanged(param1:Object):void
+		protected function OnControlMapChanged(controlData:Object):void
 		{
-			if (this._uiController != param1.uiController)
+			if (this._uiController != controlData.uiController)
 			{
-				this._uiController = param1.uiController;
+				this._uiController = controlData.uiController;
 				this.SetIsDirty();
 			}
 		}
 
-		protected function OnPlatformChanged(param1:Object):void
+		protected function OnPlatformChanged(platformData:Object):void
 		{
-			if (this._uiPlatform != param1.uPlatform)
+			if (this._uiPlatform != platformData.uPlatform)
 			{
-				this._uiPlatform = param1.uPlatform;
+				this._uiPlatform = platformData.uPlatform;
 				this.SetIsDirty();
 			}
 		}
@@ -191,24 +191,24 @@ package Shared.AS3
 		{
 		}
 
-		override public function addChild(param1:DisplayObject):DisplayObject
+		override public function addChild(child:DisplayObject):DisplayObject
 		{
-			var _loc2_:DisplayObject = super.addChild(param1);
+			var addedChild:DisplayObject = super.addChild(child);
 			if (this.onAddChild is Function)
 			{
-				this.onAddChild(param1, getQualifiedClassName(param1));
+				this.onAddChild(child, getQualifiedClassName(child));
 			}
-			return _loc2_;
+			return addedChild;
 		}
 
-		override public function removeChild(param1:DisplayObject):DisplayObject
+		override public function removeChild(child:DisplayObject):DisplayObject
 		{
-			var _loc2_:DisplayObject = super.removeChild(param1);
+			var removedChild:DisplayObject = super.removeChild(child);
 			if (this.onRemoveChild is Function)
 			{
-				this.onRemoveChild(param1, getQualifiedClassName(param1));
+				this.onRemoveChild(child, getQualifiedClassName(child));
 			}
-			return _loc2_;
+			return removedChild;
 		}
 	}
 }

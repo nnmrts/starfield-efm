@@ -33,142 +33,142 @@ package Shared.AS3.Data
 			return _instance;
 		}
 
-		public static function ConnectDataShuttleConnector(param1:UIDataShuttleConnector):UIDataShuttleConnector
+		public static function ConnectDataShuttleConnector(connector:UIDataShuttleConnector):UIDataShuttleConnector
 		{
-			var _loc3_:UIDataFromClient = null;
-			var _loc4_:String = null;
-			var _loc5_:Array = null;
-			var _loc2_:BSUIDataManager = GetInstance();
-			if (_loc2_.m_DataShuttleConnector == null)
+			var fromClient:UIDataFromClient = null;
+			var providerName:String = null;
+			var providers:Array = null;
+			var instance:BSUIDataManager = GetInstance();
+			if (instance.m_DataShuttleConnector == null)
 			{
-				_loc2_.m_DataShuttleConnector = param1;
-				_loc3_ = null;
-				_loc5_ = new Array();
-				for (_loc4_ in _loc2_.m_Providers)
+				instance.m_DataShuttleConnector = connector;
+				fromClient = null;
+				providers = new Array();
+				for (providerName in instance.m_Providers)
 				{
-					_loc3_ = _loc2_.m_Providers[_loc4_];
-					param1.Watch(_loc4_, false, _loc3_);
+					fromClient = instance.m_Providers[providerName];
+					connector.Watch(providerName, false, fromClient);
 				}
-				for (_loc4_ in _loc2_.m_Providers)
+				for (providerName in instance.m_Providers)
 				{
-					_loc3_ = _loc2_.m_Providers[_loc4_];
-					if (!_loc3_.isTest)
+					fromClient = instance.m_Providers[providerName];
+					if (!fromClient.isTest)
 					{
-						_loc3_.DispatchChange();
+						fromClient.DispatchChange();
 					}
 				}
 			}
-			return _loc2_.m_DataShuttleConnector;
+			return instance.m_DataShuttleConnector;
 		}
 
-		public static function InitDataManager(param1:BSUIEventDispatcherBackend):void
+		public static function InitDataManager(backend:BSUIEventDispatcherBackend):void
 		{
-			GetInstance().eventDispatcherBackend = param1;
+			GetInstance().eventDispatcherBackend = backend;
 		}
 
-		public static function Subscribe(param1:String, param2:Function, param3:Boolean = false):Function
+		public static function Subscribe(providerName:String, callback:Function, enableTestMode:Boolean = false):Function
 		{
-			var _loc4_:Boolean = GetInstance().DoesProviderExist(param1);
-			var _loc5_:UIDataFromClient = BSUIDataManager.GetDataFromClient(param1, true, param3);
-			if (_loc5_ != null)
+			var providerExists:Boolean = GetInstance().DoesProviderExist(providerName);
+			var fromClient:UIDataFromClient = BSUIDataManager.GetDataFromClient(providerName, true, enableTestMode);
+			if (fromClient != null)
 			{
-				_loc5_.addEventListener(Event.CHANGE, param2);
-				if (_loc4_ && _loc5_.dataReady)
+				fromClient.addEventListener(Event.CHANGE, callback);
+				if (providerExists && fromClient.dataReady)
 				{
-					param2(new FromClientDataEvent(_loc5_));
+					callback(new FromClientDataEvent(fromClient));
 				}
-				return param2;
+				return callback;
 			}
-			throw Error("Couldn't subscribe to data provider: " + param1);
+			throw Error("Couldn't subscribe to data provider: " + providerName);
 		}
 
-		public static function Flush(param1:Array):*
+		public static function Flush(providerNames:Array):*
 		{
-			var _loc5_:UIDataFromClient = null;
-			var _loc2_:Number = param1.length;
-			var _loc3_:BSUIDataManager = GetInstance();
-			var _loc4_:uint = 0;
-			while (_loc4_ < _loc2_)
+			var provider:UIDataFromClient = null;
+			var count:Number = providerNames.length;
+			var instance:BSUIDataManager = GetInstance();
+			var i:uint = 0;
+			while (i < count)
 			{
-				_loc5_ = _loc3_.m_Providers[param1[_loc4_]];
-				_loc5_.DispatchChange();
-				_loc4_++;
-			}
-		}
-
-		public static function Unsubscribe(param1:String, param2:Function, param3:Boolean = false):void
-		{
-			var _loc4_:UIDataFromClient = BSUIDataManager.GetDataFromClient(param1, true, param3);
-			if (_loc4_ != null)
-			{
-				_loc4_.removeEventListener(Event.CHANGE, param2);
+				provider = instance.m_Providers[providerNames[i]];
+				provider.DispatchChange();
+				i++;
 			}
 		}
 
-		public static function GetDataFromClient(param1:String, param2:Boolean = true, param3:Boolean = false):UIDataFromClient
+		public static function Unsubscribe(providerName:String, callback:Function, enableTestMode:Boolean = false):void
 		{
-			var _loc5_:UIDataShuttleConnector = null;
-			var _loc6_:UIDataShuttleTestConnector = null;
-			var _loc7_:UIDataFromClient = null;
-			var _loc4_:BSUIDataManager = GetInstance();
-			if (!_loc4_.DoesProviderExist(param1) && param2)
+			var fromClient:UIDataFromClient = BSUIDataManager.GetDataFromClient(providerName, true, enableTestMode);
+			if (fromClient != null)
 			{
-				_loc5_ = _loc4_.m_DataShuttleConnector;
-				_loc6_ = _loc4_.m_TestConnector;
-				_loc7_ = null;
-				if (_loc5_)
+				fromClient.removeEventListener(Event.CHANGE, callback);
+			}
+		}
+
+		public static function GetDataFromClient(providerName:String, createIfMissing:Boolean = true, enableTestMode:Boolean = false):UIDataFromClient
+		{
+			var connector:UIDataShuttleConnector = null;
+			var testConnector:UIDataShuttleTestConnector = null;
+			var fromClient:UIDataFromClient = null;
+			var instance:BSUIDataManager = GetInstance();
+			if (!instance.DoesProviderExist(providerName) && createIfMissing)
+			{
+				connector = instance.m_DataShuttleConnector;
+				testConnector = instance.m_TestConnector;
+				fromClient = null;
+				if (connector)
 				{
-					_loc7_ = _loc5_.Watch(param1, true);
+					fromClient = connector.Watch(providerName, true);
 				}
-				if (!_loc7_)
+				if (!fromClient)
 				{
-					if (param3)
+					if (enableTestMode)
 					{
-						_loc7_ = _loc6_.Watch(param1, true);
+						fromClient = testConnector.Watch(providerName, true);
 					}
 					else
 					{
-						_loc7_ = new UIDataFromClient(new Object());
+						fromClient = new UIDataFromClient(new Object());
 					}
 				}
-				_loc4_.m_Providers[param1] = _loc7_;
+				instance.m_Providers[providerName] = fromClient;
 			}
-			return _loc4_.m_Providers[param1];
+			return instance.m_Providers[providerName];
 		}
 
-		public static function addEventListener(param1:String, param2:Function, param3:Boolean = false, param4:int = 0, param5:Boolean = false):void
+		public static function addEventListener(eventName:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void
 		{
-			GetInstance().addEventListener(param1, param2, param3, param4, param5);
+			GetInstance().addEventListener(eventName, listener, useCapture, priority, useWeakReference);
 		}
 
-		public static function removeEventListener(param1:String, param2:Function, param3:Boolean = false):void
+		public static function removeEventListener(eventName:String, listener:Function, useCapture:Boolean = false):void
 		{
-			GetInstance().removeEventListener(param1, param2, param3);
+			GetInstance().removeEventListener(eventName, listener, useCapture);
 		}
 
-		public static function dispatchEvent(param1:Event):Boolean
+		public static function dispatchEvent(event:Event):Boolean
 		{
-			return GetInstance().dispatchEvent(param1);
+			return GetInstance().dispatchEvent(event);
 		}
 
-		public static function dispatchCustomEvent(param1:String, param2:Object = null):Boolean
+		public static function dispatchCustomEvent(eventName:String, eventData:Object = null):Boolean
 		{
-			return dispatchEvent(new CustomEvent(param1, param2));
+			return dispatchEvent(new CustomEvent(eventName, eventData));
 		}
 
-		public static function hasEventListener(param1:String):Boolean
+		public static function hasEventListener(eventName:String):Boolean
 		{
-			return GetInstance().hasEventListener(param1);
+			return GetInstance().hasEventListener(eventName);
 		}
 
-		public static function willTrigger(param1:String):Boolean
+		public static function willTrigger(eventName:String):Boolean
 		{
-			return GetInstance().willTrigger(param1);
+			return GetInstance().willTrigger(eventName);
 		}
 
-		private function DoesProviderExist(param1:String):Boolean
+		private function DoesProviderExist(providerName:String):Boolean
 		{
-			return this.m_Providers[param1] != null;
+			return this.m_Providers[providerName] != null;
 		}
 	}
 }

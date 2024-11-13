@@ -645,12 +645,20 @@
 			}
 		}
 
+		public var count:uint = 0;
+
 		private function onFavEntryMouseover(event:Event):void
 		{
+			trace("count: " + String(count));
+
 			try
 			{
 				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
+
+				count++;
+
+				BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": count}));
 			}
 			catch (e:Error)
 			{

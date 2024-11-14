@@ -42,3 +42,4 @@ parse-logs.js
 !/dist/*/.gitkeep
 !/dist/interface/favoritesmenu Report.txt
 !/dist/interface/fonts_en Report.txt
+/settings.psd1

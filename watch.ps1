@@ -1,14 +1,21 @@
-$WatchDirectory = "G:\Bethesda\SF1\Projects\nnmrts\starfield-efm\dist"
-$global:DeployDirectory = "C:\Program Files (x86)\Steam\steamapps\common\Starfield\Data"
-
-if (-not (Test-Path -Path $WatchDirectory))
-{
-	Write-Warning "Cannot watch the '$WatchDirectory' directory, does not exist."
+# Get the user configuration settings.
+$settingsPath = [IO.Path]::Combine($(Get-Location), "settings.psd1")
+if (-not (Test-Path -Path $settingsPath)) {
+	Write-Warning "Missing your user defined at '$settingsPath'."
 	return
 }
-elseif (-not (Test-Path -Path $DeployDirectory))
+$global:AppConfig = Import-PowerShellDataFile -Path $settingsPath
+
+
+# Test the parameter arguments.
+if (-not (Test-Path -Path $AppConfig.WatchDirectory))
 {
-	Write-Warning "Cannot deploy the '$DeployDirectory' directory, does not exist."
+	Write-Warning "Cannot watch the '$($AppConfig.WatchDirectory)' directory, does not exist."
+	return
+}
+elseif (-not (Test-Path -Path $AppConfig.DeployDirectory))
+{
+	Write-Warning "Cannot deploy the '$($AppConfig.DeployDirectory)' directory, does not exist."
 	return
 }
 else
@@ -16,16 +23,17 @@ else
 	Write-Host
 	Write-Host "FILE WATCHER - Extended Favorites Menu (EFM)"
 	Write-Host "======================================================================"
-	Write-Host "- Watching directory: $WatchDirectory"
-	Write-Host "- Deployment directory: $DeployDirectory"
+	Write-Host "- Watching directory: $($AppConfig.WatchDirectory)"
+	Write-Host "- Deployment directory: $($AppConfig.DeployDirectory)"
 	Write-Host
 	Write-Host "Press CTRL+C or exit your shell to terminate this watch process."
 	Write-Host "[$(Get-Date)] Beginning file watch now :)"
 	Write-Host
 }
 
+# Create a file watcher instance
 $watcher = New-Object System.IO.FileSystemWatcher
-$watcher.Path = $WatchDirectory
+$watcher.Path = $AppConfig.WatchDirectory
 $watcher.EnableRaisingEvents = $true
 $watcher.IncludeSubdirectories = $true
 
@@ -35,11 +43,11 @@ $action = {
 	$name = $event.SourceEventArgs.Name
 	$changetype = $event.SourceEventArgs.ChangeType
 	$timeStamp = Get-Date
-	$message = "[$timeStamp] Copying $changeType file '$name' to '$global:DeployDirectory'"
+	$message = "[$timeStamp] Copying $changeType file '$name' to '$($global:AppConfig.DeployDirectory)'"
 	try
 	{
-		$destination = [System.IO.Path]::Combine($global:DeployDirectory, $name)
-		$folder = [System.IO.Path]::GetDirectoryName($destination)
+		$destination = [IO.Path]::Combine($global:AppConfig.DeployDirectory, $name)
+		$folder = [IO.Path]::GetDirectoryName($destination)
 		if (-not (Test-Path -Path $folder -PathType Container)) {
 			New-Item -Path $folder -ItemType Directory
 		}

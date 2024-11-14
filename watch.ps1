@@ -1,11 +1,11 @@
 # Get the user configuration settings.
 $settingsPath = [IO.Path]::Combine($(Get-Location), "settings.psd1")
 if (-not (Test-Path -Path $settingsPath)) {
-	Write-Warning "Missing your user defined at '$settingsPath'."
+	Write-Warning "Missing your user defined configuration file at '$settingsPath'."
+	Write-Warning "Read the 'settings.default.psd1' file for more information."
 	return
 }
 $global:AppConfig = Import-PowerShellDataFile -Path $settingsPath
-
 
 # Test the parameter arguments.
 if (-not (Test-Path -Path $AppConfig.WatchDirectory))
@@ -32,10 +32,13 @@ else
 }
 
 # Create a file watcher instance
+# https://stackoverflow.com/questions/1764809/filesystemwatcher-changed-event-is-raised-twice
+# https://learn.microsoft.com/en-us/dotnet/api/system.io.notifyfilters?view=net-8.0
 $watcher = New-Object System.IO.FileSystemWatcher
 $watcher.Path = $AppConfig.WatchDirectory
 $watcher.EnableRaisingEvents = $true
 $watcher.IncludeSubdirectories = $true
+$watcher.NotifyFilter = [IO.NotifyFilters]::FileName -bor [System.IO.NotifyFilters]::Size
 
 # Define the watcher action
 $action = {
@@ -53,18 +56,18 @@ $action = {
 		}
 		Copy-Item -Path $path -Destination $destination -Container -Force -ErrorAction Stop
 		$message += " | Copy Success"
+		Write-Host $message
 	}
 	catch
 	{
 		$message += " | Copy Failed: '$path': $_"
+		Write-Error $message
 	}
-
-	Write-Host $message
 }
 
 # Register the event handlers
-$createdEvent = Register-ObjectEvent -InputObject $watcher -EventName Created -Action $action
 $changedEvent = Register-ObjectEvent -InputObject $watcher -EventName Changed -Action $action
+$createdEvent = Register-ObjectEvent -InputObject $watcher -EventName Created -Action $action
 $renamedEvent = Register-ObjectEvent -InputObject $watcher -EventName Renamed -Action $action
 
 # Main loop to capture termination.
@@ -91,8 +94,8 @@ finally
 {
 	Write-Host
 	Write-Host "[$(Get-Date)] Unregistering events and exiting..."
-	Unregister-Event -SourceIdentifier $createdEvent.Name
 	Unregister-Event -SourceIdentifier $changedEvent.Name
+	Unregister-Event -SourceIdentifier $createdEvent.Name
 	Unregister-Event -SourceIdentifier $renamedEvent.Name
 	$watcher.EnableRaisingEvents = $false
 	$watcher.Dispose()

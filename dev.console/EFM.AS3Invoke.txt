@@ -1,0 +1,2 @@
+CGF "CassiopeiaPapyrusExtender.SetAS3Variable" "FavoritesMenu" "root1.Menu_mc.DebugPanel_mc.Command_mc.text" "Hello World!"
+CGF "CassiopeiaPapyrusExtender.SetAS3Variable" "FavoritesMenu" "root1.Menu_mc.DebugPanel_mc.Content_tf.text" "Hello World!"

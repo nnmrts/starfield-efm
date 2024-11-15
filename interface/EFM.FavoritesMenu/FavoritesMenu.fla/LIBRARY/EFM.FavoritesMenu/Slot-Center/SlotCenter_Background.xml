@@ -29,7 +29,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Foreground_Outline" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Foreground_Outline" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.999969482421875" d="0.999969482421875" tx="181.7" ty="181.7"/>
                   </matrix>
@@ -45,7 +45,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Foreground_Outline" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Slot-Center/SlotCenter_Foreground_Outline" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.707107543945312" b="0.707107543945312" c="-0.70709228515625" d="0.707107543945312" tx="181.7" ty="181.7"/>
                   </matrix>

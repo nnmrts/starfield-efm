@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" itemID="67329b07-000001e3" linkageExportForAS="true" linkageClassName="ItemIcon" lastModified="1731504959">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon" itemID="67329b07-000001e3" linkageExportForAS="true" linkageClassName="ItemIcon" lastModified="1731543779">
   <timeline>
     <DOMTimeline name="ItemIcon">
       <layers>
-        <DOMLayer name="Labels Layer" color="#0397E6" locked="true" current="true" isSelected="true">
+        <DOMLayer name="Labels Layer" color="#000000" locked="true" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" name="Open" labelType="name" keyMode="9728">
               <elements/>
@@ -15,7 +15,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#DFCB41" locked="true">
+        <DOMLayer name="Script Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements/>
@@ -34,7 +34,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="BoundClip_mc" color="#5CA6A5" locked="true" autoNamed="false">
+        <DOMLayer name="BoundClip_mc" color="#FFCC00" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

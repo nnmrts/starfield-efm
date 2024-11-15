@@ -3,14 +3,18 @@
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          58246          58246    Scene 1 (AS 3.0 Classes Export Frame)
+      1          59510          59510    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0            90                 49267
+Scene 1              0             0                 49882
 
 Symbol                                     Shape Bytes    Text Bytes    ActionScript Bytes
 ---------------------------------------    -----------    ----------    ------------------
+DebugPanel_Background                               35             0                     0
+DebugPanel_ButtonGroup                               0             0                     0
+DebugPanel                                           0           179                     0
+MenuButton_Background                               49             0                     0
 BoundClipBox                                        15             0                     0
 DamageType                                           0            73                     0
 DamageTypeIcon                                       0             0                     0
@@ -24,33 +28,33 @@ ItemIcon                                             0             0            
 ItemIcon_BoundClip                                  15             0                     0
 ItemIcon_Art_Apparel                                66             0                     0
 ItemIcon_Art_Drink                                  54             0                     0
-ItemIcon_Art_Food                                  107             0                     0
-ItemIcon_Art_Grenade                               245             0                     0
+ItemIcon_Art_Food                                  106             0                     0
+ItemIcon_Art_Grenade                               244             0                     0
 ItemIcon_Art_Helmet                                  0             0                     0
 ItemIcon_Art_Helmet_Graphic                        107             0                     0
 ItemIcon_Art_Meds                                    0             0                     0
 ItemIcon_Art_Meds_Graphic                           76             0                     0
-ItemIcon_Art_Mine                                   96             0                     0
+ItemIcon_Art_Mine                                   95             0                     0
 ItemIcon_Art_Pack                                    0             0                     0
 ItemIcon_Art_Pack_Graphic                          148             0                     0
 ItemIcon_Art_Spacesuit                               0             0                     0
-ItemIcon_Art_Spacesuit_Graphic                     254             0                     0
-ItemIcon_Art_WeaponGeneric                         143             0                     0
+ItemIcon_Art_Spacesuit_Graphic                     253             0                     0
+ItemIcon_Art_WeaponGeneric                         142             0                     0
 FavoriteAssigningInfoDisplay                         0             0                     0
 FavoriteAssigningInfoDisplay_DamageType              0             0                     0
 FavoriteAssigningInfoDisplay_AmmoAmount              0            75                     0
 FavoriteAssigningInfoDisplay_AmmoType                0            76                     0
-FavoriteAssigningInfoDisplay_ItemName                0            78                     0
+FavoriteAssigningInfoDisplay_ItemName                0            77                     0
 FavoriteAssigningInfoDisplay_ItemNameBg             17             0                     0
 FavoritesMenu                                        0             0                     0
 SlotRing_Large                                      55             0                     0
 SlotRing_Medium                                     52             0                     0
-SlotRing_Small                                      51             0                     0
+SlotRing_Small                                      50             0                     0
 SlotEntry_Tier1_Top                                  0            72                     0
 SlotEntry_Tier1_Left                                 0            72                     0
 SlotEntry_Tier1_Bottom                               0            72                     0
 SlotEntry_Tier1_Right                                0            72                     0
-SlotCenter                                         143             0                     0
+SlotCenter                                         141             0                     0
 SlotEntry_Tier2_Right                               92            72                     0
 SlotEntry_Tier2_Bottom                              81            72                     0
 SlotEntry_Tier2_Left                                92            72                     0
@@ -58,7 +62,7 @@ SlotEntry_Tier2_Top                                 92            72            
 SlotEntry_Tier3_Right                               92            72                     0
 SlotEntry_Tier3_Bottom                              90            72                     0
 SlotEntry_Tier3_Left                                90            72                     0
-SlotEntry_Tier3_Top                                 93            72                     0
+SlotEntry_Tier3_Top                                 92            72                     0
 SlotEntry_Tier3_TopRight                             0             0                     0
 SlotEntry_Tier2_TopRight                             0             0                     0
 SlotEntry_Tier3_BottomRight                          0             0                     0
@@ -67,25 +71,29 @@ SlotEntry_Tier3_BottomLeft                           0             0            
 SlotEntry_Tier2_BottomLeft                           0             0                     0
 SlotEntry_Tier3_TopLeft                              0             0                     0
 SlotEntry_Tier2_TopLeft                              0             0                     0
-SlotGrid_Background                                 59             0                     0
+SlotGrid_Background                                 58             0                     0
 SelectQuickSlot                                      0             0                     0
+FavoritesMenu_ExitButton                             0            75                     0
 Vignette                                            19             0                     0
-Menu_ExitButton                                     24            75                     0
 SelectQuickSlot_Text                                 0            39                     0
 SlotCenter_Focus_Bottom                              0             0                     0
-SlotCenter_Focus_Bottom_Graphic                     56             0                     0
+SlotCenter_Focus_Bottom_Graphic                     55             0                     0
 SlotCenter_Focus_Left                                0             0                     0
-SlotCenter_Focus_Left_Graphic                       55             0                     0
+SlotCenter_Focus_Left_Graphic                       54             0                     0
 SlotCenter_Focus_Right                               0             0                     0
 SlotCenter_Focus_Right_Graphic                      53             0                     0
 SlotCenter_Focus_Top                                 0             0                     0
 SlotCenter_Focus_Top_Graphic                        59             0                     0
-SlotCenter_Foreground_Outline                      168             0                     0
+SlotCenter_Foreground_Outline                      167             0                     0
 SlotCenter_Background                               84             0                     0
+FavoritesMenu_Debug                                  0            75                     0
+DebugPanel_Button1                                   0            76                     0
+DebugPanel_Button2                                   0            76                     0
+DebugPanel_Button3                                   0            76                     0
 
 ActionScript Bytes    Location
 ------------------    --------
-             49267    Scene 1:Frame 1
+             49882    Scene 1:Frame 1
 
 
 

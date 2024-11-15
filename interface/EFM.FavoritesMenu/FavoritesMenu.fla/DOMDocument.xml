@@ -1,23 +1,31 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#666666" width="1920" height="1080" frameRate="30" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 24.0 build 19" majorVersion="24" buildNumber="19" vanishingPoint3DX="960" vanishingPoint3DY="540" sharedLibraryURL="fonts_en.swf" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="E2F070341A014B84A3090FD78AC9A1E5">
      <folders>
+          <DOMFolderItem name="EFM.Debug" itemID="67375cd7-00000303"/>
           <DOMFolderItem name="EFM.FavoritesMenu" itemID="6732900f-0000018e" isExpanded="true"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/Assets" itemID="67329057-0000019a" isExpanded="true"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Assets" itemID="67329057-0000019a"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Assets/DamageType" itemID="67329169-000001b6"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Assets/FavoritesEntry" itemID="67340ab9-000001db"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/Assets/ItemIcon" itemID="67329193-000001bc" isExpanded="true"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Assets/ItemIcon" itemID="67329193-000001bc"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Assets/MenuButton" itemID="6735449a-0000018a"/>
           <DOMFolderItem name="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay" itemID="673290b9-000001a5"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/SelectQuickSlot" itemID="6732910f-000001aa" isExpanded="true"/>
-          <DOMFolderItem name="EFM.FavoritesMenu/Slot-Center" itemID="67329e7d-0000021e" isExpanded="true"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/SelectQuickSlot" itemID="6732910f-000001aa"/>
+          <DOMFolderItem name="EFM.FavoritesMenu/Slot-Center" itemID="67329e7d-0000021e"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Center-Focus" itemID="6734090f-000001c6"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Entries" itemID="67340aa0-000001d6"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Grid" itemID="67329342-000001cf"/>
           <DOMFolderItem name="EFM.FavoritesMenu/Slot-Ring" itemID="6732a535-00000226"/>
-          <DOMFolderItem name="Fonts_en" itemID="6733fd43-000001a3" isExpanded="true"/>
+          <DOMFolderItem name="Fonts_en" itemID="6733fd43-000001a3"/>
      </folders>
      <fonts>
           <DOMFontItem name="Fonts_en/MAIN_Font_Bold" itemID="6643bf6d-0000015a" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL=".\fonts_en.swf" font="NB-Architekt" size="0" id="5" sourceLastImported="1731463548" embeddedCharacters="&#xA;&#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－" embedRanges="1|2|3|4|5"/>
      </fonts>
      <symbols>
+          <Include href="EFM.Debug/DebugPanel.xml" itemID="6736878e-00000201" lastModified="1731690691"/>
+          <Include href="EFM.Debug/DebugPanel_Background.xml" loadImmediate="false" itemID="6736925a-000002cb" lastModified="1731629658"/>
+          <Include href="EFM.Debug/DebugPanel_Button1.xml" loadImmediate="false" itemID="673697f8-000002d8" lastModified="1731631096"/>
+          <Include href="EFM.Debug/DebugPanel_Button2.xml" loadImmediate="false" itemID="673697dc-000002d4" lastModified="1731631068"/>
+          <Include href="EFM.Debug/DebugPanel_Button3.xml" loadImmediate="false" itemID="673697e2-000002d5" lastModified="1731631074"/>
+          <Include href="EFM.Debug/DebugPanel_ButtonGroup.xml" loadImmediate="false" itemID="673697f3-000002d7" lastModified="1731690687"/>
           <Include href="EFM.FavoritesMenu/Assets/BoundClipBox.xml" itemIcon="1" loadImmediate="false" itemID="67340f10-000001ec" lastModified="1731465160"/>
           <Include href="EFM.FavoritesMenu/Assets/DamageType/DamageType.xml" itemID="67329404-000001d5" lastModified="1731464516"/>
           <Include href="EFM.FavoritesMenu/Assets/DamageType/DamageTypeIcon.xml" itemID="673293e7-000001d4" lastModified="1731484624"/>
@@ -27,7 +35,7 @@
           <Include href="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Horizontal.xml" loadImmediate="false" itemID="67340ebc-000001e9" lastModified="1731464892"/>
           <Include href="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_Catcher_BoundClip_Vertical.xml" loadImmediate="false" itemID="67340ed2-000001ea" lastModified="1731464914"/>
           <Include href="EFM.FavoritesMenu/Assets/FavoritesEntry/SlotEntry_InfoSpacer.xml" loadImmediate="false" itemID="67340115-000001ab" lastModified="1731464556"/>
-          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon.xml" itemID="67329b07-000001e3" lastModified="1731504959"/>
+          <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon.xml" itemID="67329b07-000001e3" lastModified="1731543779"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Apparel.xml" itemID="67329b9f-000001ed" lastModified="1731464258"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Drink.xml" itemID="67329b99-000001ec" lastModified="1731464251"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Food.xml" itemID="67329b95-000001eb" lastModified="1731464244"/>
@@ -43,14 +51,16 @@
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Spacesuit_Graphic.xml" itemIcon="1" loadImmediate="false" itemID="67329c0e-000001f0" lastModified="1731464303"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_WeaponGeneric.xml" itemID="67329b4d-000001e4" lastModified="1731464181"/>
           <Include href="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_BoundClip.xml" loadImmediate="false" itemID="67329b02-000001e2" lastModified="1731464260"/>
+          <Include href="EFM.FavoritesMenu/Assets/MenuButton/MenuButton_Background.xml" loadImmediate="false" itemID="67354490-00000187" lastModified="1731544359"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay.xml" itemID="67329cdc-000001f4" lastModified="1731463697"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_AmmoAmount.xml" loadImmediate="false" itemID="6734051b-000001b0" lastModified="1731463701"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_AmmoType.xml" loadImmediate="false" itemID="67340577-000001b4" lastModified="1731463703"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_DamageType.xml" loadImmediate="false" itemID="673405b9-000001b9" lastModified="1731463700"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_ItemName.xml" loadImmediate="false" itemID="6734057a-000001b5" lastModified="1731463704"/>
           <Include href="EFM.FavoritesMenu/FavoriteAssigningInfoDisplay/FavoriteAssigningInfoDisplay_ItemNameBg.xml" loadImmediate="false" itemID="6734057d-000001b6" lastModified="1731463718"/>
-          <Include href="EFM.FavoritesMenu/FavoritesMenu.xml" itemID="673291e8-000001be" lastModified="1731504793"/>
-          <Include href="EFM.FavoritesMenu/Menu_ExitButton.xml" loadImmediate="false" itemID="67347a67-000001e9" lastModified="1731497594"/>
+          <Include href="EFM.FavoritesMenu/FavoritesMenu.xml" itemID="673291e8-000001be" lastModified="1731690704"/>
+          <Include href="EFM.FavoritesMenu/FavoritesMenu_Debug.xml" loadImmediate="false" itemID="67368826-00000214" lastModified="1731687671"/>
+          <Include href="EFM.FavoritesMenu/FavoritesMenu_ExitButton.xml" loadImmediate="false" itemID="6736881f-00000213" lastModified="1731627039"/>
           <Include href="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot.xml" itemID="67329ceb-000001f6" lastModified="1731504891"/>
           <Include href="EFM.FavoritesMenu/SelectQuickSlot/SelectQuickSlot_Text.xml" loadImmediate="false" itemID="67329f0a-00000220" lastModified="1731463695"/>
           <Include href="EFM.FavoritesMenu/Slot-Center-Focus/SlotCenter_Focus_Bottom.xml" loadImmediate="false" itemID="67341329-000001f2" lastModified="1731466076"/>
@@ -93,27 +103,6 @@
      <timelines>
           <DOMTimeline name="Scene 1">
                <layers>
-                    <DOMLayer name="DebugText_tf (Debug Only)" color="#00CC00" locked="true" outline="true" useOutlineView="true" autoNamed="false">
-                         <frames>
-                              <DOMFrame index="0" keyMode="9728">
-                                   <elements>
-                                        <DOMDynamicText name="DebugText_tf" selected="true" top="-243.15" width="670.45" height="363.1" isSelectable="false" lineType="multiline">
-                                             <matrix>
-                                                  <Matrix tx="34.3" ty="274.45"/>
-                                             </matrix>
-                                             <textRuns>
-                                                  <DOMTextRun>
-                                                       <characters>COMMAND DATA STRING SHOULD DISPLAY HERE</characters>
-                                                       <textAttrs>
-                                                            <DOMTextAttrs aliasText="false" lineHeight="27.15" size="24" bitmapSize="480" face="MAIN_Font_Bold*" fillColor="#FFFFFF"/>
-                                                       </textAttrs>
-                                                  </DOMTextRun>
-                                             </textRuns>
-                                        </DOMDynamicText>
-                                   </elements>
-                              </DOMFrame>
-                         </frames>
-                    </DOMLayer>
                     <DOMLayer name="Menu_mc" color="#617CC4" locked="true" outline="true" current="true" isSelected="true" useOutlineView="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
@@ -400,25 +389,25 @@
      </swatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
-          <PublishItem publishSize="58270" publishTime="1731505501" publishDebug="true"/>
-          <PublishItem publishSize="58259" publishTime="1731505442" publishDebug="true"/>
-          <PublishItem publishSize="58260" publishTime="1731505136" publishDebug="true"/>
-          <PublishItem publishSize="58268" publishTime="1731505129" publishDebug="true"/>
-          <PublishItem publishSize="58246" publishTime="1731505044" publishDebug="true"/>
-          <PublishItem publishSize="58300" publishTime="1731505029" publishDebug="true"/>
-          <PublishItem publishSize="58259" publishTime="1731505021" publishDebug="true"/>
-          <PublishItem publishSize="58259" publishTime="1731504970" publishDebug="true"/>
-          <PublishItem publishSize="58288" publishTime="1731504904" publishDebug="true"/>
-          <PublishItem publishSize="58269" publishTime="1731504847" publishDebug="true"/>
-          <PublishItem publishSize="58267" publishTime="1731504818" publishDebug="true"/>
-          <PublishItem publishSize="58246" publishTime="1731504700" publishDebug="true"/>
-          <PublishItem publishSize="58246" publishTime="1731504657" publishDebug="true"/>
-          <PublishItem publishSize="58258" publishTime="1731504410" publishDebug="true"/>
-          <PublishItem publishSize="58199" publishTime="1731503651" publishDebug="true"/>
-          <PublishItem publishSize="58260" publishTime="1731502891" publishDebug="true"/>
-          <PublishItem publishSize="58304" publishTime="1731502573" publishDebug="true"/>
-          <PublishItem publishSize="58199" publishTime="1731502426" publishDebug="true"/>
-          <PublishItem publishSize="58252" publishTime="1731502396" publishDebug="true"/>
-          <PublishItem publishSize="58243" publishTime="1731501823" publishDebug="true"/>
+          <PublishItem publishSize="59533" publishTime="1731690298" publishDebug="true"/>
+          <PublishItem publishSize="59501" publishTime="1731690238" publishDebug="true"/>
+          <PublishItem publishSize="59524" publishTime="1731690202" publishDebug="true"/>
+          <PublishItem publishSize="59540" publishTime="1731690141" publishDebug="true"/>
+          <PublishItem publishSize="59530" publishTime="1731689207" publishDebug="true"/>
+          <PublishItem publishSize="59513" publishTime="1731688987" publishDebug="true"/>
+          <PublishItem publishSize="59474" publishTime="1731688876" publishDebug="true"/>
+          <PublishItem publishSize="59496" publishTime="1731688821" publishDebug="true"/>
+          <PublishItem publishSize="59461" publishTime="1731688644" publishDebug="true"/>
+          <PublishItem publishSize="59430" publishTime="1731688458" publishDebug="true"/>
+          <PublishItem publishSize="9491" publishTime="1731688277" publishDebug="true"/>
+          <PublishItem publishSize="59617" publishTime="1731686171" publishDebug="true"/>
+          <PublishItem publishSize="59605" publishTime="1731684927" publishDebug="true"/>
+          <PublishItem publishSize="59564" publishTime="1731684473" publishDebug="true"/>
+          <PublishItem publishSize="59593" publishTime="1731683784" publishDebug="true"/>
+          <PublishItem publishSize="59577" publishTime="1731683635" publishDebug="true"/>
+          <PublishItem publishSize="59521" publishTime="1731683293" publishDebug="true"/>
+          <PublishItem publishSize="59522" publishTime="1731682860" publishDebug="true"/>
+          <PublishItem publishSize="59516" publishTime="1731682839" publishDebug="true"/>
+          <PublishItem publishSize="59475" publishTime="1731682152" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

@@ -52,22 +52,22 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::constructor TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
-		override protected function OnControlMapChanged(param1:Object):void
+		override protected function OnControlMapChanged(controlData:Object):void
 		{
-			trace("FavoritesEntry::OnControlMapChanged: " + param1);
+			// trace("FavoritesEntry::OnControlMapChanged: " + controlData);
 			try
 			{
-				var _loc3_:Object = null;
-				super.OnControlMapChanged(param1);
+				super.OnControlMapChanged(controlData);
 				this.Quickkey_tf.visible = this.uiController == PlatformUtils.PLATFORM_PC_KB_MOUSE;
-				var _loc2_:String = "Quickkey" + (this._EntryIndex + 1);
-				for each (_loc3_ in param1.vMappedEvents)
+				var userEventName:String = "Quickkey" + (this._EntryIndex + 1);
+
+				for each (var _loc3_:Object in controlData.vMappedEvents)
 				{
-					if (_loc3_.strUserEventName == _loc2_)
+					if (_loc3_.strUserEventName == userEventName)
 					{
 						GlobalFunc.SetText(this.Quickkey_tf, _loc3_.strButtonName, false);
 						break;
@@ -76,9 +76,9 @@ package
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesEntry::OnControlMapChanged TRACE ---------");
-				trace(e.getStackTrace());
-				GlobalFunc.InspectObject(param1, true, true);
+				// trace("FavoritesEntry::OnControlMapChanged TRACE ---------");
+				// trace(e.toString());
+				// GlobalFunc.InspectObject(controlData, true, true);
 			}
 		}
 
@@ -94,7 +94,7 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::selected.set()  TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(value, true, true);
 			}
 		}
@@ -133,7 +133,7 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::LoadIcon() TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(param1, true, true);
 			}
 		}
@@ -149,7 +149,7 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::onIconLoadAttemptComplete TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -163,7 +163,7 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::onMousePress TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(event, true, true);
 			}
 		}
@@ -178,7 +178,7 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::onMouseOver TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(event, true, true);
 			}
 		}
@@ -193,7 +193,7 @@ package
 			catch (e:Error)
 			{
 				trace("FavoritesEntry::onMouseLeave TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(event, true, true);
 			}
 		}

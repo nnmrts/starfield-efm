@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Meds_Graphic" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/ItemIcon/ItemIcon_Art_Meds_Graphic" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

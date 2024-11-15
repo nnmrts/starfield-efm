@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.Debug/DebugPanel_Background" itemID="6736925a-000002cb" scaleGridLeft="-161.75" scaleGridRight="161.75" scaleGridTop="-121.75" scaleGridBottom="121.75" lastModified="1731629658">
+  <timeline>
+    <DOMTimeline name="DebugPanel_Background">
+      <layers>
+        <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#101010"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="2" pixelHinting="true">
+                        <fill>
+                          <SolidColor color="#444444"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!-6450 -4850S6|6450 -4850!6450 -4850|6450 4850!6450 4850|-6450 4850!-6450 4850|-6450 -4850"/>
+                    <Edge cubics="!6450 -4850(;6450,-4850 6450,4850 6450,4850q6450 -4850 6450 4850);"/>
+                    <Edge cubics="!-6450 4850(;-6450,4850 -6450,-4850 -6450,-4850q-6450 4850 -6450 -4850);"/>
+                    <Edge cubics="!-6450 -4850(;-6450,-4850 6450,-4850 6450,-4850q-6450 -4850 6450 -4850);"/>
+                    <Edge cubics="!6450 4850(;6450,4850 -6450,4850 -6450,4850q6450 4850 -6450 4850);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

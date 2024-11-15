@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/BoundClipBox" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Assets/BoundClipBox" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.171875" d="0.85333251953125"/>
                   </matrix>

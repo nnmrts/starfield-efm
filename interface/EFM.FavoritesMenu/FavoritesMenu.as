@@ -27,6 +27,11 @@
 		public var SelectQuickslot_mc:MovieClip;
 		public var Vignette_mc:MovieClip;
 
+		public var ExitButton_mc:MovieClip;
+		public var DebugButton_mc:MovieClip;
+
+		public var DebugPanel_mc:DebugPanel;
+
 		// Data
 		//---------------------------------------------
 
@@ -35,12 +40,10 @@
 		private var OverEntry:Boolean = false;
 
 		private var FavoritesInfoA:Array;
-		private var AssignedItem:Object = null;
+
 
 		// Slots
 		//---------------------------------------------
-
-		private var _SelectedIndex:uint = FS_NONE;
 
 		public var Entry_0:FavoritesEntry;
 		public var Entry_1:FavoritesEntry;
@@ -191,20 +194,29 @@
 			super();
 			try
 			{
-				addEventListener(MouseEvent.CLICK, onExitMouseClick);
+				// Input Events
 				addEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDownHandler);
 				addEventListener(KeyboardEvent.KEY_UP, this.onKeyUpHandler);
 				addEventListener(FavoritesEntry.CLICK, this.SelectItem);
 				addEventListener(FavoritesEntry.MOUSE_OVER, this.onFavEntryMouseover);
 				addEventListener(FavoritesEntry.MOUSE_LEAVE, this.onFavEntryMouseleave);
+
+				// Navigation Buttons
+				ExitButton_mc.addEventListener(MouseEvent.CLICK, onExitMouseClick);
+				DebugButton_mc.addEventListener(MouseEvent.CLICK, onDebugMouseClick);
+				DebugButton_mc.visible = false;
+
+				// Data Events
 				BSUIDataManager.Subscribe("FavoritesData", this.onDataUpdate);
+
+				// Assignment Mode
 				this.AssignedItemIcon_mc.mouseEnabled = false;
 				this.AssignedItemIcon_mc.mouseChildren = false;
 			}
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::constructor TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -218,10 +230,14 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.onAddedToStage TRACE ---------");
-				trace(e.getStackTrace());
+				trace("FavoritesMenu::onAddedToStage TRACE ---------");
+				trace(e.toString());
 			}
 		}
+
+
+		// Shutdown
+		//---------------------------------------------
 
 		private function StartClosingMenu():void
 		{
@@ -234,8 +250,8 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.StartClosingMenu TRACE ---------");
-				trace(e.getStackTrace());
+				trace("FavoritesMenu::StartClosingMenu TRACE ---------");
+				trace(e.toString());
 			}
 		}
 
@@ -249,20 +265,30 @@
 			}
 			catch (e:Error)
 			{
-				trace("FavoritesMenu.onCloseAnimFinished TRACE ---------");
-				trace(e.getStackTrace());
+				trace("FavoritesMenu::onCloseAnimFinished TRACE ---------");
+				trace(e.toString());
 			}
+		}
+
+
+		// Navigation
+		//---------------------------------------------
+
+		private function onExitMouseClick(event:Event)
+		{
+			trace("FavoritesMenu::onExitMouseClick(): " + event);
+			GlobalFunc.CloseMenu("FavoritesMenu");
+		}
+
+		private function onDebugMouseClick(event:Event)
+		{
+			trace("FavoritesMenu::onDebugMouseClick(): " + event);
+			DebugPanel_mc.Toggle();
 		}
 
 
 		// Data
 		//---------------------------------------------
-
-		private function OnCommand(command:String):void
-		{
-			trace("FavoritesMenu::OnCommand: " + command);
-			MovieClip(root).DebugText_tf.text = command;
-		}
 
 		private function onDataUpdate(clientDataEvent:FromClientDataEvent):void
 		{
@@ -302,7 +328,7 @@
 			catch (e:Error)
 			{
 				// trace("FavoritesMenu::onDataUpdate TRACE ---------");
-				// trace(e.getStackTrace());
+				// trace(e.toString());
 				// GlobalFunc.InspectObject(clientDataEvent, true, true);
 			}
 		}
@@ -313,7 +339,7 @@
 
 		public function ProcessUserEvent(controlName:String, isHandled:Boolean):Boolean
 		{
-			trace("FavoritesMenu::ProcessUserEvent(controlName="+controlName+", isHandled="+isHandled+")");
+			// trace("FavoritesMenu::ProcessUserEvent(controlName="+controlName+", isHandled="+isHandled+")");
 			var favEntryID:Number = NaN;
 			var handled:Boolean = false;
 			try
@@ -346,7 +372,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::ProcessUserEvent TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 			return handled;
 		}
@@ -378,7 +404,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::onKeyDownHandler TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -400,7 +426,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::onKeyUpHandler TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -423,7 +449,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::SelectItem TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -439,30 +465,24 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu.onSelectionChange TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(this.selectedEntry, true, true);
 			}
 		}
 
 
-		// public var count:uint = 0;
 		private function onFavEntryMouseover(event:Event):void
 		{
 			trace("FavoritesMenu::onFavEntryMouseover: " + event);
-			// trace("count: " + String(count));
-
 			try
 			{
 				this.selectedIndex = event.target.entryIndex;
 				this.OverEntry = true;
-
-				// count++;
-				// BSUIDataManager.dispatchEvent(new CustomEvent("FavoritesMenu_UseQuickkey", {"uQuickkeyIndex": count}));
 			}
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::onFavEntryMouseover TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -476,19 +496,12 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::onFavEntryMouseleave TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
 
-		private function onExitMouseClick(event:Event)
-		{
-			trace("FavoritesMenu::onExitMouseClick(): " + event);
-			GlobalFunc.CloseMenu("FavoritesMenu");
-		}
-
-
-		// Other
+		// Uncategorized
 		//---------------------------------------------
 
 		public function isAssigningItem():Boolean
@@ -501,7 +514,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::isAssigningItem TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				return false;
 			}
 
@@ -524,7 +537,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::GetEntryClip TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 			return favEntry;
 		}
@@ -533,19 +546,7 @@
 		// Properties
 		//---------------------------------------------
 
-		private var CommandString:String;
-		public function get Command():String { return CommandString; }
-		public function set Command(value:String):void
-		{
-			trace("FavoritesMenu::Command.set(): " + value);
-			if (CommandString != value)
-			{
-				CommandString = value;
-				OnCommand(CommandString);
-			}
-		}
-
-
+		private var AssignedItem:Object = null;
 		public function get assignedItem():Object { return this.AssignedItem; }
 		public function set assignedItem(item:Object):void
 		{
@@ -576,26 +577,14 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::assignedItem.set() TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				GlobalFunc.InspectObject(item, true, true);
 			}
 		}
 
 
-		public function get selectedIndex():uint
-		{
-			try
-			{
-				return this._SelectedIndex;
-			}
-			catch (e:Error)
-			{
-				trace("FavoritesMenu::selectedIndex.get() TRACE ---------");
-				trace(e.getStackTrace());
-				return FS_NONE;
-			}
-			return FS_NONE;
-		}
+		private var _SelectedIndex:uint = FS_NONE;
+		public function get selectedIndex():uint { return this._SelectedIndex; }
 		public function set selectedIndex(value:uint):void
 		{
 			trace("FavoritesMenu::selectedIndex.set(): " + value);
@@ -619,7 +608,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::selectedIndex.set()  TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 		}
 
@@ -633,7 +622,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::selectedEntry.get() TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 				return null;
 			}
 			return null;
@@ -672,7 +661,7 @@
 			catch (e:Error)
 			{
 				trace("FavoritesMenu::selectionSound.get() TRACE ---------");
-				trace(e.getStackTrace());
+				trace(e.toString());
 			}
 			return value;
 		}

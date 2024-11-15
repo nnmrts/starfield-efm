@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoritesMenu" itemID="673291e8-000001be" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731504793" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/FavoritesMenu" itemID="673291e8-000001be" linkageExportForAS="true" linkageClassName="FavoritesMenu" lastModified="1731690704" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="FavoritesMenu">
+    <DOMTimeline name="FavoritesMenu" currentFrame="12">
       <layers>
-        <DOMLayer name="Comments Layer" color="#000000" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Comments Layer" color="#000000" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="21" name="Layer depth order is important here!" labelType="comment" keyMode="9728">
               <elements/>
@@ -61,6 +61,145 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
+        <DOMLayer name="DebugPanel_mc" color="#00CC00" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.Debug/DebugPanel" name="DebugPanel_mc" selected="true">
+                  <matrix>
+                    <Matrix tx="-612.4" ty="-518.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="100" y="104.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Navigation" color="#FF800A" locked="true" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="ExitButton_mc" color="#00FF00" parentLayerIndex="4" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="-500"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="-500"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_ExitButton" name="ExitButton_mc">
+                  <matrix>
+                    <Matrix ty="-500"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_ExitButton" name="ExitButton_mc" selected="true">
+                  <matrix>
+                    <Matrix ty="-500"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="0.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="DebugButton_mc" color="#FFCC00" parentLayerIndex="4" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_Debug" name="DebugButton_mc" selected="true">
+                  <matrix>
+                    <Matrix ty="-450"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_Debug" name="DebugButton_mc" centerPoint3DY="-450">
+                  <matrix>
+                    <Matrix ty="-450"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_Debug" name="DebugButton_mc" centerPoint3DY="-450">
+                  <matrix>
+                    <Matrix ty="-450"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/FavoritesMenu_Debug" name="DebugButton_mc" selected="true" centerPoint3DY="-450">
+                  <matrix>
+                    <Matrix ty="-450"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
         <DOMLayer name="ItemInfo_mc" color="#55B1E0" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
@@ -97,7 +236,7 @@ stop();]]></script>
           </frames>
         </DOMLayer>
         <DOMLayer name="Slot-Ring" color="#9900FF" locked="true" autoNamed="false" open="false" layerType="folder"/>
-        <DOMLayer name="Slot Ring Large" color="#E4C640" parentLayerIndex="5" locked="true" autoNamed="false">
+        <DOMLayer name="Slot Ring Large" color="#E4C640" parentLayerIndex="9" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="8" keyMode="9728">
               <elements>
@@ -209,7 +348,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Slot Ring Medium" color="#FF0000" parentLayerIndex="5" locked="true" autoNamed="false">
+        <DOMLayer name="Slot Ring Medium" color="#FF0000" parentLayerIndex="9" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="6" keyMode="9728">
               <elements>
@@ -321,7 +460,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Slot Ring Small" color="#0000FF" parentLayerIndex="5" locked="true" autoNamed="false">
+        <DOMLayer name="Slot Ring Small" color="#0000FF" parentLayerIndex="9" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" keyMode="9728">
               <elements>
@@ -461,7 +600,7 @@ stop();]]></script>
           </frames>
         </DOMLayer>
         <DOMLayer name="Slot-Inner" color="#9933CC" locked="true" autoNamed="false" open="false" layerType="folder"/>
-        <DOMLayer name="Entry_8" color="#AAE09E" parentLayerIndex="9" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_8" color="#AAE09E" parentLayerIndex="13" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -564,7 +703,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_2" color="#02F4A1" parentLayerIndex="9" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_2" color="#02F4A1" parentLayerIndex="13" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -667,7 +806,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_9" color="#D490EA" parentLayerIndex="9" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_9" color="#D490EA" parentLayerIndex="13" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -770,7 +909,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_3" color="#F32BDD" parentLayerIndex="9" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_3" color="#F32BDD" parentLayerIndex="13" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -977,7 +1116,7 @@ stop();]]></script>
           </frames>
         </DOMLayer>
         <DOMLayer name="Slot-Outer" color="#FF800A" locked="true" autoNamed="false" open="false" layerType="folder"/>
-        <DOMLayer name="Entry_4" color="#7D2FDA" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_4" color="#7D2FDA" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1134,7 +1273,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_10" color="#F8E361" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_10" color="#F8E361" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1291,7 +1430,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_1" color="#E0F6D4" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_1" color="#E0F6D4" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1448,7 +1587,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_7" color="#A8A49E" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_7" color="#A8A49E" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728">
               <elements>
@@ -1605,7 +1744,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_5" color="#F32CCC" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_5" color="#F32CCC" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -1762,7 +1901,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_11" color="#E5318D" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_11" color="#E5318D" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -1919,7 +2058,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_0" color="#9671B1" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_0" color="#9671B1" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -2076,7 +2215,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_6" color="#E7F684" parentLayerIndex="15" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_6" color="#E7F684" parentLayerIndex="19" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
               <elements>
@@ -2234,7 +2373,7 @@ stop();]]></script>
           </frames>
         </DOMLayer>
         <DOMLayer name="Slot-Extra" color="#FF4FFF" locked="true" autoNamed="false" open="false" layerType="folder"/>
-        <DOMLayer name="Entry_12" color="#E7F684" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_12" color="#E7F684" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -2391,7 +2530,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_13" color="#A8A49E" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_13" color="#A8A49E" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":46341,"c":-46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -2548,7 +2687,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_14" color="#009900" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_14" color="#009900" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -2705,7 +2844,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_15" color="#FF6600" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_15" color="#FF6600" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":46341,"c":-46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -2862,7 +3001,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_16" color="#6633CC" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_16" color="#6633CC" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -3019,7 +3158,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_17" color="#FF33FF" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_17" color="#FF33FF" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":-46341,"b":-46341,"c":46341,"d":-46341,"tx":0,"ty":0}'>
               <elements>
@@ -3176,7 +3315,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_18" color="#FF0000" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_18" color="#FF0000" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -3333,7 +3472,7 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Entry_19" color="#0000FF" parentLayerIndex="24" locked="true" autoNamed="false">
+        <DOMLayer name="Entry_19" color="#0000FF" parentLayerIndex="28" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="3" keyMode="9728" rigPropagationMatrix='{"a":46341,"b":-46341,"c":46341,"d":46341,"tx":0,"ty":0}'>
               <elements>
@@ -3576,68 +3715,6 @@ stop();]]></script>
                   </matrix>
                   <transformationPoint>
                     <Point/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="Buttons" color="#FF800A" locked="true" autoNamed="false" layerType="folder"/>
-        <DOMLayer name="ExitButton_mc" color="#00FF00" parentLayerIndex="35" locked="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="5" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
-                  <matrix>
-                    <Matrix ty="375"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="-0.5" y="0.5"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="5" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
-                  <matrix>
-                    <Matrix ty="375"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="-0.5" y="0.5"/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="12" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
-                  <matrix>
-                    <Matrix ty="375"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="-0.5" y="0.5"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="20" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="EFM.FavoritesMenu/Menu_ExitButton" name="ExitButton_mc">
-                  <matrix>
-                    <Matrix ty="375"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="-0.5" y="0.5"/>
                   </transformationPoint>
                   <color>
                     <Color alphaMultiplier="0"/>

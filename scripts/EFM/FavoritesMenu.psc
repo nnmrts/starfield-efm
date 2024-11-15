@@ -95,7 +95,8 @@ EndEvent
 Event OnMenuOpenCloseEvent(string asMenuName, bool abOpening)
 	Debug.Trace(self+".OnMenuOpenCloseEvent(asMenuName="+asMenuName+", abOpening="+abOpening+")")
 	If (abOpening)
-		SetDebugText("Hello Scrivener07\nUse the command `HideMenu FavoritesMenu` in console.")
+		; SendCommand("MODE-DEBUG")
+		SetDebugText("Hello Scrivener07")
 	EndIf
 EndEvent
 
@@ -126,16 +127,23 @@ string Property Name Hidden
 	EndFunction
 EndProperty
 
-string Property DebugText Hidden
-	{Represents a debug textfield on the favorites menu stage root.}
+string Property DebugPanel Hidden
+	{Represents a movieclip debug panel on the favorites menu stage root.}
 	string Function Get()
-		return "root1.DebugText_tf.text"
+		return "root1.Menu_mc.DebugPanel_mc"
 	EndFunction
 EndProperty
 
 string Property Command Hidden
 	{Represents a string property on the favorites menu `IMenu` AS3 class.}
 	string Function Get()
-		return "root1.Menu_mc.Command"
+		return DebugPanel + ".Command_tf.text"
+	EndFunction
+EndProperty
+
+string Property DebugText Hidden
+	{Represents a textfield content on the debug panel.}
+	string Function Get()
+		return DebugPanel + ".Content_tf.text"
 	EndFunction
 EndProperty

@@ -1,0 +1,82 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.Debug/DebugPanel" itemID="6736878e-00000201" linkageExportForAS="true" linkageClassName="DebugPanel" lastModified="1731690691" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="DebugPanel">
+      <layers>
+        <DOMLayer name="Tabs_mc" color="#FF9900" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.Debug/DebugPanel_ButtonGroup" name="Tabs_mc" selected="true">
+                  <matrix>
+                    <Matrix ty="26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Command_tf" color="#CC3300" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Command_tf" top="-243.15" width="636" height="32.85" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-320.5" ty="823.35"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>COMMAND DATA STRING SHOULD DISPLAY HERE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineHeight="27.15" size="24" bitmapSize="480" face="MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Content_tf" color="#00CC00" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="Content_tf" top="-243.15" width="636" height="476" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-318" ty="309.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Debug text STRING SHOULD DISPLAY HERE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineHeight="27.15" size="24" bitmapSize="480" face="MAIN_Font_Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#009999" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="EFM.Debug/DebugPanel_Background">
+                  <matrix>
+                    <Matrix d="1.17158508300781" ty="284.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

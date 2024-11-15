@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EFM.FavoritesMenu/Assets/MenuButton/MenuButton_Background" itemID="67354490-00000187" scaleGridLeft="-50.5" scaleGridRight="50.5" scaleGridTop="-9.5" scaleGridBottom="9.5" lastModified="1731544359">
+  <timeline>
+    <DOMTimeline name="MenuButton_Background">
+      <layers>
+        <DOMLayer name="Shape Outline" color="#CC33FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="2" pixelHinting="true">
+                        <fill>
+                          <SolidColor color="#444444"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!-2000 -360|2000 -360!2000 -360|2000 360!2000 360|-2000 360!-2000 360|-2000 -360"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape Fill" color="#00CC00" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#101010"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-2000 -360|2000 -360!2000 -360|2000 360!2000 360|-2000 360!-2000 360|-2000 -360"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -24,7 +24,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -42,7 +42,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -61,7 +61,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -80,7 +80,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -99,7 +99,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -118,7 +118,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -137,7 +137,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>
@@ -156,7 +156,7 @@
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
-                <DOMShape selected="true" isFloating="true">
+                <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#B5B5B5"/>

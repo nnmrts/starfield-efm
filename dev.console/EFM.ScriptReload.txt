@@ -1,0 +1,3 @@
+ReloadForm 02000807
+ReloadScript "EFM:FavoritesMenuType"
+ReloadScript "EFM:FavoritesMenu"

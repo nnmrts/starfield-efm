@@ -15,7 +15,7 @@
           <DOMFolderItem name="Fonts_en" itemID="6733fd43-000001a3" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="Fonts_en/MAIN_Font_Bold" itemID="6643bf6d-0000015a" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL=".\fonts_en.swf" font="NB-Architekt" size="0" id="5" sourceLastImported="1731463548" embeddedCharacters="&#xA;&#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－" embedRanges="1|2|3|4|5"/>
+          <DOMFontItem name="Fonts_en/MAIN_Font_Bold" itemID="6643bf6d-0000015a" linkageImportForRS="true" linkageExportInFirstFrame="false" linkageClassName="$MAIN_Font_Bold" linkageURL="fonts_en.swf" font="NB-Architekt" size="0" id="5" sourceLastImported="1731463548" embeddedCharacters="&#xA;&#xD;¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĐĘęıŁłŃńŒœŚśŠšŸŹźŻżŽžƒˆˇˉ˘˙˚˛˜˝Δμπ‐‑‒–—―‘’‚“”„†‡•…‰‹›⁄€™Ω←↑→↓∂∏∑∕√∞∫≠≤≥﹘﹣－" embedRanges="1|2|3|4|5"/>
      </fonts>
      <symbols>
           <Include href="EFM.FavoritesMenu/Assets/BoundClipBox.xml" itemIcon="1" loadImmediate="false" itemID="67340f10-000001ec" lastModified="1731465160"/>
